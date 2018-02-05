@@ -1,6 +1,6 @@
 ---
 uid: web-pages/videos/aspnet-razor-pages/index
-title: ASP.NET Razor-Seiten | Microsoft Docs
+title: ASP.NET Razor-Pages | Microsoft Docs
 author: rick-anderson
 description: "Die Videos können Sie anzeigen, um einen Drilldown in Web Pages und WebMatrix."
 ms.author: aspnetcontent

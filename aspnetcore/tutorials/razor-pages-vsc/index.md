@@ -1,7 +1,7 @@
 ---
-title: Erstellen einer Razor-Seiten-Web-App mit ASP.NET Core und Visual Studio Code
+title: Erstellen einer Razor-Pages-Web-App mit ASP.NET Core und Visual Studio Code
 author: rick-anderson
-description: Erstellen Sie eine Razor-Seiten-Webanwendung mit ASP.NET Core und EF Core.
+description: Erstellen Sie eine Razor-Pages-Webanwendung mit ASP.NET Core und EF Core.
 manager: wpickett
 ms.author: riande
 ms.date: 08/26/2017
@@ -15,15 +15,15 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="create-a-razor-pages-web-app-with-aspnet-core-and-visual-studio-code"></a>Erstellen einer Razor-Seiten-Web-App mit ASP.NET Core und Visual Studio Code
+# <a name="create-a-razor-pages-web-app-with-aspnet-core-and-visual-studio-code"></a>Erstellen einer Razor-Pages-Web-App mit ASP.NET Core und Visual Studio Code
 
 Diese Tutorialreihe ist noch in Bearbeitung.
 
-In dieser Reihe werden die Grundlagen der Erstellung einer Razor-Seiten-Web-App mit ASP.NET Core mithilfe von Visual Studio Code erläutert.
+In dieser Reihe werden die Grundlagen der Erstellung einer Razor-Pages-Web-App mit ASP.NET Core mithilfe von Visual Studio Code erläutert.
 
-1. [Getting started with Razor Pages with VS Code (Erste Schritte mit Razor-Seiten mit VS Code)](xref:tutorials/razor-pages-vsc/razor-pages-start)
-1. [Adding a model to a Razor Pages app (Hinzufügen eines Modells zu einer Razor-Seiten-Anwendung)](xref:tutorials/razor-pages-vsc/model)
-1. [Gerüstbau mit Razor-Seiten]         (xref:tutorials/razor-pages-vsc/page)
+1. [Getting started with Razor Pages with VS Code (Erste Schritte mit Razor-Pages mit VS Code)](xref:tutorials/razor-pages-vsc/razor-pages-start)
+1. [Adding a model to a Razor Pages app (Hinzufügen eines Modells zu einer Razor-Pages-Anwendung)](xref:tutorials/razor-pages-vsc/model)
+1. [Gerüstbau mit Razor-Pages]         (xref:tutorials/razor-pages-vsc/page)
 1. [Arbeiten mit SQLite](xref:tutorials/razor-pages-vsc/sql)
 1. [Aktualisieren der Seiten](xref:tutorials/razor-pages-vsc/da1)
 1. [Adding search (Hinzufügen der Suche)](xref:tutorials/razor-pages-vsc/search)

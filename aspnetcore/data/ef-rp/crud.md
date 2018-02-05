@@ -1,5 +1,5 @@
 ---
-title: Razor-Seiten mit EF-Kern - CRUD - 2-8
+title: Razor-Pages mit EF-Kern - CRUD - 2-8
 author: rick-anderson
 description: "Zeigt, wie erstellen, lesen, aktualisieren und Löschen mit EF Core"
 manager: wpickett
@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="create-read-update-and-delete---ef-core-with-razor-pages-2-of-8"></a>Erstellen Sie, lesen Sie, aktualisieren Sie und löschen Sie-EF-Core mit Razor-Seiten (2 von 8)
+# <a name="create-read-update-and-delete---ef-core-with-razor-pages-2-of-8"></a>Erstellen Sie, lesen Sie, aktualisieren Sie und löschen Sie-EF-Core mit Razor-Pages (2 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra), [Jon P Smith](https://twitter.com/thereformedprog), und [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -23,9 +23,9 @@ Durch [Tom Dykstra](https://github.com/tdykstra), [Jon P Smith](https://twitter.
 
 In diesem Lernprogramm die scaffolded CRUD-Vorgänge (erstellen, lesen, aktualisieren und löschen) Code überprüft und angepasst wird.
 
-Hinweis: Zur Minimierung des Komplexität, und behalten Sie diese Lernprogramme EF Core konzentriert, ist EF Kerncode in den Razor-Seiten-Seite-Modellen verwendet. Einige Entwickler mithilfe einer Ebene oder im Repository-Musters in eine Abstraktionsebene zwischen der Benutzeroberfläche (Razor-Seiten) und die Datenzugriffsebene zu erstellen.
+Hinweis: Zur Minimierung des Komplexität, und behalten Sie diese Lernprogramme EF Core konzentriert, ist EF Kerncode in den Razor-Pages-Seite-Modellen verwendet. Einige Entwickler mithilfe einer Ebene oder im Repository-Musters in eine Abstraktionsebene zwischen der Benutzeroberfläche (Razor-Pages) und die Datenzugriffsebene zu erstellen.
 
-In diesem Lernprogramm, erstellen, bearbeiten, löschen und Details Razor-Seiten in der *Student* Ordner geändert werden.
+In diesem Lernprogramm, erstellen, bearbeiten, löschen und Details Razor-Pages in der *Student* Ordner geändert werden.
 
 Der scaffolded Code verwendet das folgende Muster für Seiten erstellen, bearbeiten und löschen:
 
@@ -70,7 +70,7 @@ Navigieren Sie zu `Pages/Students` Seite. Die **bearbeiten**, **Details**, und *
 
 Wählen Sie einen Link Details. Die URL weist das Format `http://localhost:5000/Students/Details?id=2`. Den Studenten-ID übergeben wird, verwenden eine Abfragezeichenfolge (`?id=2`).
 
-Aktualisieren Sie die bearbeiten, Details und Löschen von Razor-Seiten verwenden die `"{id:int}"` routenvorlage. Ändern Sie die „page“-Direktive für jede dieser Seiten aus `@page` in `@page "{id:int}"`.
+Aktualisieren Sie die bearbeiten, Details und Löschen von Razor-Pages verwenden die `"{id:int}"` routenvorlage. Ändern Sie die „page“-Direktive für jede dieser Seiten aus `@page` in `@page "{id:int}"`.
 
 Eine Anforderung zur Seite mit der "{-Id: Int}" routenvorlage, die **nicht** eine ganze Zahl Route Wert gibt eine HTTP 404 (nicht gefunden) Fehler enthalten. Beispielsweise `http://localhost:5000/Students/Details` Fehler 404 zurückgegeben. Um die ID optional zu machen, fügen Sie `?` an die Routeneinschränkung an:
 
@@ -136,7 +136,7 @@ Mithilfe von `TryUpdateModel` Felder mit bereitgestellter Werte aktualisieren, i
 
 [!code-csharp[Main](intro/samples/cu/Models/StudentZsecret.cs?name=snippet_Intro&highlight=7)]
 
-Selbst wenn die app ist eine `Secret` Feld in der CREATE-/Update-Razor-Seite, ein Hacker konnte festgelegt die `Secret` Wert durch overposting. Ein Hacker ein Tool wie Fiddler verwenden kann, oder Schreiben von JavaScript, zum Bereitstellen einer `Secret` Wert bilden. Der ursprüngliche Code einschränken nicht die Felder, die der Modellbinder verwendet werden, wenn es sich um eine Student-Instanz erstellt.
+Selbst wenn die app ist eine `Secret` Feld in der CREATE-/Update-Razor-Page, ein Hacker konnte festgelegt die `Secret` Wert durch overposting. Ein Hacker ein Tool wie Fiddler verwenden kann, oder Schreiben von JavaScript, zum Bereitstellen einer `Secret` Wert bilden. Der ursprüngliche Code einschränken nicht die Felder, die der Modellbinder verwendet werden, wenn es sich um eine Student-Instanz erstellt.
 
 Alle von Ihnen gewünschten Hackers für angegebene Wert die `Secret` Formularfelds in der Datenbank aktualisiert. Die folgende Abbildung zeigt das Hinzufügen von Fiddler-Tool die `Secret` Feld (mit dem Wert "OverPost"), um die übermittelte Formularwerte.
 
@@ -147,7 +147,7 @@ Der Wert "OverPost" erfolgreich, um hinzugefügt wurde die `Secret` Eigenschaft 
 <a name="vm"></a>
 ### <a name="view-model"></a>ViewModel-Element
 
-Einem Ansichtsmodell enthält in der Regel eine Teilmenge der Eigenschaften in das von der Anwendung verwendete Modell enthalten. Das Anwendungsmodell wird häufig die Domänenmodell bezeichnet. Das Domänenmodell enthält in der Regel alle Eigenschaften, die durch die entsprechende Entität in der Datenbank erforderlich. Das Ansichtsmodell enthält nur die Eigenschaften, die für die Benutzeroberflächenebene (z. B. die Seite "erstellen") erforderlich sind. Zusätzlich zu den Ansichtsmodell einige apps verwenden ein Bindungsmodell oder Eingabe zum Übergeben von Daten zwischen der Seitenklasse Modell Razor-Seiten und den Browser. Beachten Sie Folgendes `Student` Ansichtsmodell:
+Einem Ansichtsmodell enthält in der Regel eine Teilmenge der Eigenschaften in das von der Anwendung verwendete Modell enthalten. Das Anwendungsmodell wird häufig die Domänenmodell bezeichnet. Das Domänenmodell enthält in der Regel alle Eigenschaften, die durch die entsprechende Entität in der Datenbank erforderlich. Das Ansichtsmodell enthält nur die Eigenschaften, die für die Benutzeroberflächenebene (z. B. die Seite "erstellen") erforderlich sind. Zusätzlich zu den Ansichtsmodell einige apps verwenden ein Bindungsmodell oder Eingabe zum Übergeben von Daten zwischen der Seitenklasse Modell Razor-Pages und den Browser. Beachten Sie Folgendes `Student` Ansichtsmodell:
 
 [!code-csharp[Main](intro/samples/cu/Models/StudentVM.cs)]
 
@@ -161,7 +161,7 @@ Die [SetValues](https://docs.microsoft.com/dotnet/api/microsoft.entityframeworkc
 
 Mit `StudentVM` erfordert [CreateVM.cshtml](https://github.com/aspnet/Docs/tree/master/aspnetcore/data/ef-rp/intro/samples/cu/Pages/Students/CreateVM.cshtml) aktualisiert werden, um verwenden `StudentVM` statt `Student`.
 
-In Razor-Seiten die `PageModel` abgeleiteten Klasse wird das Modell anzeigen. 
+In Razor-Pages die `PageModel` abgeleiteten Klasse wird das Modell anzeigen. 
 
 ## <a name="update-the-edit-page"></a>Aktualisieren Sie die Seite "Bearbeiten"
 
@@ -224,7 +224,7 @@ Der vorangehende Code Ruft die ausgewählte Entität ruft dann die `Remove` Meth
 
 ### <a name="update-the-delete-razor-page"></a>Aktualisieren Sie die Razor-Löschseite
 
-Die folgende hervorgehobene Fehlermeldung der löschen Razor-Seite hinzufügen.
+Die folgende hervorgehobene Fehlermeldung der löschen Razor-Page hinzufügen.
 
 [!code-cshtml[Main](intro/samples/cu/Pages/Students/Delete.cshtml?range=1-13&highlight=10)]
 
@@ -240,7 +240,7 @@ Student-Startseite "oder" andere Links funktionieren nicht:
 @page "{id:int}"
 ```
 
-Jeder Razor-Seite umfasst die `@page` Richtlinie.
+Jeder Razor-Page umfasst die `@page` Richtlinie.
 
 >[!div class="step-by-step"]
 [Zurück](xref:data/ef-rp/intro)

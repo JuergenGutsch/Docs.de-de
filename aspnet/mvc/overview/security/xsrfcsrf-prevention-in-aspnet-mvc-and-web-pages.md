@@ -83,7 +83,7 @@ Die Nutzlast der Anti-XSRF-Token werden verschlüsselt und signiert, damit Sie d
 
 ## <a name="generating-the-tokens"></a>Generieren von Token
 
-Um die Anti-XSRF-Token zu generieren, rufen die [ @Html.AntiForgeryToken ](https://msdn.microsoft.com/library/dd470175.aspx) Methode aus einer MVC-Ansicht oder @AntiForgery.GetHtml() aus einer Razor-Seite. Die Common Language Runtime führt dann die folgenden Schritte aus:
+Um die Anti-XSRF-Token zu generieren, rufen die [ @Html.AntiForgeryToken ](https://msdn.microsoft.com/library/dd470175.aspx) Methode aus einer MVC-Ansicht oder @AntiForgery.GetHtml() aus einer Razor-Page. Die Common Language Runtime führt dann die folgenden Schritte aus:
 
 1. Wenn die aktuelle HTTP-Anforderung bereits eine Sitzung Anti-XSRF-Token enthält (das Cookie Anti-XSRF \_ \_RequestVerificationToken), das Sicherheitstoken wird daraus extrahiert. Wenn die HTTP-Anforderung enthält kein Anti-XSRF-Token-Sitzung oder wenn Fehler bei der Extraktion des Sicherheitstokens, ein neues zufälliges Anti-XSRF-Token generiert werden.
 2. Ein Feld Anti-XSRF-Token wird mithilfe des Sicherheitstokens aus vorigen Schritt (1) und die Identität des aktuellen angemeldeten Benutzers generiert. (Weitere Informationen zum Ermitteln der Benutzeridentität finden Sie unter der  **[Szenarien mit Unterstützung für spezielle](#_Scenarios_with_special)**  Abschnitt weiter unten.) Darüber hinaus Wenn ein [IAntiForgeryAdditionalDataProvider](https://msdn.microsoft.com/library/jj158328(v=vs.111).aspx) wird konfiguriert, die Common Language Runtime ruft seine [GetAdditionalData](https://msdn.microsoft.com/library/system.web.helpers.iantiforgeryadditionaldataprovider.getadditionaldata(v=vs.111).aspx) Methode und die zurückgegebene Zeichenfolge im Feldtoken enthalten. (Siehe die  **[Konfigurations- und Erweiterbarkeit](#_Configuration_and_extensibility)**  Abschnitt, um weitere Informationen.)
@@ -91,7 +91,7 @@ Um die Anti-XSRF-Token zu generieren, rufen die [ @Html.AntiForgeryToken ](https
 
 ## <a name="validating-the-tokens"></a>Überprüfen die Token
 
-Um die eingehenden Anti-XSRF-Token zu überprüfen, die Entwickler umfasst eine [ValidateAntiForgeryToken](https://msdn.microsoft.com/library/system.web.mvc.validateantiforgerytokenattribute(VS.108).aspx) Attribut für ihre MVC-Aktion oder des Controllers oder She Aufrufe `@AntiForgery.Validate()` aus ihrem Razor-Seite. Die Common Language Runtime führt die folgenden Schritte aus:
+Um die eingehenden Anti-XSRF-Token zu überprüfen, die Entwickler umfasst eine [ValidateAntiForgeryToken](https://msdn.microsoft.com/library/system.web.mvc.validateantiforgerytokenattribute(VS.108).aspx) Attribut für ihre MVC-Aktion oder des Controllers oder She Aufrufe `@AntiForgery.Validate()` aus ihrem Razor-Page. Die Common Language Runtime führt die folgenden Schritte aus:
 
 1. Die eingehende Sitzungstoken und das Feldtoken werden gelesen, und die Anti-XSRF-Token extrahiert aus jedem. Die Anti-XSRF-Token müssen pro Schritt (2) in der Routine Generation identisch sein.
 2. Wenn der aktuelle Benutzer authentifiziert ist, wird ihr Benutzername mit dem Benutzernamen in das Feldtoken gespeicherten verglichen. Die Benutzernamen übereinstimmen.

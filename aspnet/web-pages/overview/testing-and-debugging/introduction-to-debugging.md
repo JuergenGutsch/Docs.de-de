@@ -134,7 +134,7 @@ Sie können die aktuellen Werte von Variablen und durchlaufen Sie den Code Zeile
 
 ![Werte anzeigen](introduction-to-debugging/_static/image3.png)
 
-Informationen zur Verwendung von integrierten Debuggers in Visual Studio zum Debuggen von ASP.NET Razor-Seiten finden Sie unter [Programmieren von ASP.NET Web Pages (Razor) mit Visual Studio](https://go.microsoft.com/fwlink/?LinkId=205854).
+Informationen zur Verwendung von integrierten Debuggers in Visual Studio zum Debuggen von ASP.NET Razor-Pages finden Sie unter [Programmieren von ASP.NET Web Pages (Razor) mit Visual Studio](https://go.microsoft.com/fwlink/?LinkId=205854).
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

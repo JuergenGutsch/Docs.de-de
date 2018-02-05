@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen der Suche zu ASP.NET Core Razor-Seiten"
+title: "Hinzufügen der Suche zu ASP.NET Core Razor-Pages"
 author: rick-anderson
-description: "Informationen zum Hinzufügen der Suche zu ASP.NET Core Razor-Seiten"
+description: "Informationen zum Hinzufügen der Suche zu ASP.NET Core Razor-Pages"
 manager: wpickett
 ms.author: riande
 ms.date: 08/07/2017

@@ -73,7 +73,7 @@ Standardmäßig müssen der Text und alle Abschnitte in einer Inhaltsseite alle 
 
 Um anzuweisen, das Anzeigemodul, die Text oder Abschnitte ignoriert werden sollen, rufen Sie die `IgnoreBody` und `IgnoreSection` Methoden.
 
-Der Text und jeder Abschnitt in einer Razor-Seite müssen entweder gerendert oder ignoriert werden.
+Der Text und jeder Abschnitt in einer Razor-Page müssen entweder gerendert oder ignoriert werden.
 
 <a name="viewimports"></a>
 

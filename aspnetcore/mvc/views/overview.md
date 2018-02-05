@@ -19,7 +19,7 @@ ms.lasthandoff: 01/24/2018
 
 Durch [Steve Smith](https://ardalis.com/) und [Luke Latham](https://github.com/guardrex)
 
-Dieses Dokument erläutert, Ansichten, die in ASP.NET Core MVC-Anwendungen verwendet wird. Informationen für Razor-Seiten finden Sie unter [Einführung in Razor-Seiten](xref:mvc/razor-pages/index).
+Dieses Dokument erläutert, Ansichten, die in ASP.NET Core MVC-Anwendungen verwendet wird. Informationen für Razor-Pages finden Sie unter [Einführung in Razor-Pages](xref:mvc/razor-pages/index).
 
 In der **M**Odel -**V**vorhandenes -**C**Ontroller (MVC)-Muster, die *Ansicht* verarbeitet die app Daten Präsentation und Benutzerinteraktion. Eine Sicht ist eine HTML-Vorlage mit eingebetteten [Razor Markup](xref:mvc/views/razor). Razor-Markup ist Code, der Interaktion mit HTML-Markup, um eine Webseite zu erzeugen, die an den Client gesendet wird.
 
@@ -186,7 +186,7 @@ namespace WebApplication1.ViewModels
 
 ### <a name="weakly-typed-data-viewdata-and-viewbag"></a>Schwach typisierte Daten (ViewData und ViewBag)
 
-Hinweis: `ViewBag` ist in der Razor-Seiten nicht verfügbar.
+Hinweis: `ViewBag` ist in der Razor-Pages nicht verfügbar.
 
 Zusätzlich zu den stark typisierten Ansichten Ansichten haben Zugriff auf eine *schwach typisierte* (so genannte *lose typisierten*) Sammeln von Daten. Im Gegensatz zu starke Typen *unsichere Typen* (oder *lose Typen*) bedeutet, dass Sie explizit den Typ der Daten deklarieren nicht, Sie verwenden. Die Auflistung der schwach typisierten Daten können für kleine Mengen von Daten aus dem Controller und Ansichten übergeben.
 
@@ -245,7 +245,7 @@ Arbeiten Sie mit den Daten in einer Ansicht:
 
 **ViewBag**
 
-Hinweis: `ViewBag` ist in der Razor-Seiten nicht verfügbar.
+Hinweis: `ViewBag` ist in der Razor-Pages nicht verfügbar.
 
 `ViewBag`ist eine [DynamicViewData](/aspnet/core/api/microsoft.aspnetcore.mvc.viewfeatures.internal.dynamicviewdata) -Objekt, das dynamischen Zugriff auf die Objekte, die in gespeicherten `ViewData`. `ViewBag`ist besonders angenehm beim besser zu handhaben, da es keine Typumwandlung erforderlich. Das folgende Beispiel zeigt, wie Sie `ViewBag` dasselbe Ergebnis erzielt als mit `ViewData` oben:
 
@@ -278,7 +278,7 @@ public IActionResult SomeAction()
 
 **ViewData und ViewBag gleichzeitig zu verwenden**
 
-Hinweis: `ViewBag` ist in der Razor-Seiten nicht verfügbar.
+Hinweis: `ViewBag` ist in der Razor-Pages nicht verfügbar.
 
 Da `ViewData` und `ViewBag` finden Sie in den gleichen zugrunde liegende `ViewData` -Auflistung, können Sie beide `ViewData` und `ViewBag` mischen und zwischen ihnen beim Lesen und Schreiben von Werten entsprechen.
 
@@ -318,7 +318,7 @@ Mit beiden `ViewData` und `ViewBag` auf die gleiche Uhrzeit funktioniert wie mis
 
 **Zusammenfassung der Unterschiede zwischen ViewData und ViewBag**
 
- `ViewBag`ist nicht verfügbar in der Razor-Seiten.
+ `ViewBag`ist nicht verfügbar in der Razor-Pages.
 
 * `ViewData`
   * Leitet sich von [ViewDataDictionary](/aspnet/core/api/microsoft.aspnetcore.mvc.viewfeatures.viewdatadictionary), sodass er Wörterbucheigenschaften verfügt, die hilfreich sein, z. B. `ContainsKey`, `Add`, `Remove`, und `Clear`.

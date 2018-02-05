@@ -1,7 +1,7 @@
 ---
-title: Erste Schritte mit Razor-Seiten mit ASP.NET Core
+title: Erste Schritte mit Razor-Pages mit ASP.NET Core
 author: rick-anderson
-description: Erste Schritte mit Razor-Seiten mit ASP.NET Core
+description: Erste Schritte mit Razor-Pages mit ASP.NET Core
 manager: wpickett
 ms.author: riande
 ms.date: 12/22/2017
@@ -15,17 +15,17 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="get-started-with-razor-pages-in-aspnet-core"></a>Erste Schritte mit Razor-Seiten in ASP.NET Core
+# <a name="get-started-with-razor-pages-in-aspnet-core"></a>Erste Schritte mit Razor-Pages in ASP.NET Core
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT)
 
-In diesem Tutorial lernen Sie Grundlegendes zur Erstellung einer ASP.NET Core-Webapp mit Razor-Seiten. Razor-Seiten sind der empfohlene Weg für die Erstellung von Benutzeroberflächen für Web-Apps in ASP.NET Core.
+In diesem Tutorial lernen Sie Grundlegendes zur Erstellung einer ASP.NET Core-Webapp mit Razor-Pages. Razor-Pages sind der empfohlene Weg für die Erstellung von Benutzeroberflächen für Web-Apps in ASP.NET Core.
 
 Es gibt drei Versionen dieses Tutorials:
 
 * Windows: Dieses Tutorial
-* macOS: [Erste Schritte mit Razor-Seiten mit Visual Studio für Mac](xref:tutorials/razor-pages-mac/razor-pages-start)
-* macOS, Linux und Windows: [Erste Schritte mit Razor-Seiten in ASP.NET Core mit Visual Studio Code](xref:tutorials/razor-pages-vsc/razor-pages-start)
+* macOS: [Erste Schritte mit Razor-Pages mit Visual Studio für Mac](xref:tutorials/razor-pages-mac/razor-pages-start)
+* macOS, Linux und Windows: [Erste Schritte mit Razor-Pages in ASP.NET Core mit Visual Studio Code](xref:tutorials/razor-pages-vsc/razor-pages-start)
 
 [Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 

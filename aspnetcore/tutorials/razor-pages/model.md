@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
+title: "Hinzufügen eines Modells zu einer App mit Razor-Pages in ASP.NET Core"
 author: rick-anderson
-description: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
+description: "Hinzufügen eines Modells zu einer App mit Razor-Pages in ASP.NET Core"
 manager: wpickett
 ms.author: riande
 ms.date: 07/27/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="adding-a-model-to-a-razor-pages-app"></a>Hinzufügen eines Modells zu einer App mit Razor-Seiten
+# <a name="adding-a-model-to-a-razor-pages-app"></a>Hinzufügen eines Modells zu einer App mit Razor-Pages
 
 [!INCLUDE[model1](../../includes/RP/model1.md)]
 
@@ -92,4 +92,4 @@ Im nächsten Tutorial finden Sie Erläuterungen zu den Dateien, die durch den Ge
 
 >[!div class="step-by-step"]
 [Vorheriges Tutorial: Getting Started (Erste Schritte)](xref:tutorials/razor-pages/razor-pages-start)
-[Nächstes Tutorial: Scaffolded Razor Pages (Razor-Seiten mit erfolgtem Gerüstbau)](xref:tutorials/razor-pages/page)    
+[Nächstes Tutorial: Scaffolded Razor Pages (Razor-Pages mit erfolgtem Gerüstbau)](xref:tutorials/razor-pages/page)    

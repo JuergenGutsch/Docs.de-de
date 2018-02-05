@@ -17,9 +17,9 @@ ms.lasthandoff: 01/30/2018
 ---
 # <a name="working-with-data-in-aspnet-core"></a>Arbeiten mit Daten in ASP.NET Core 
 
-* [Erste Schritte mit Razor-Seiten und Entity Framework Core unter Verwendung von Visual Studio](xref:data/ef-rp/index)
+* [Erste Schritte mit Razor-Pages und Entity Framework Core unter Verwendung von Visual Studio](xref:data/ef-rp/index)
 
-   * [Erste Schritte mit Razor-Seiten und EF](xref:data/ef-rp/intro)
+   * [Erste Schritte mit Razor-Pages und EF](xref:data/ef-rp/intro)
    * [Create-, Read-, Update- und Delete-Vorgänge (CRUD)](xref:data/ef-rp/crud)
    * [Sortieren, Filtern, Paginieren und Gruppieren](xref:data/ef-rp/sort-filter-page)
    * [Migrationen](xref:data/ef-rp/migrations)

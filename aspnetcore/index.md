@@ -50,8 +50,8 @@ ASP.NET Core besteht vollständig aus [NuGet](https://www.nuget.org/)-Paketen. D
 ASP.NET Core MVC bietet Funktionen zum Erstellen von [Web-APIs](xref:tutorials/index#build-web-apis) und [Web-Apps](xref:tutorials/index#build-web-apps):
 
 * Das Muster [Model-View-Controller (MVC)](xref:mvc/overview) sorgt dafür, dass Ihre Web-APIs und Web-Apps [testfähig](testing/index.md) sind.
-* [Razor-Seiten](xref:mvc/razor-pages/index) (neu in ASP.NET Core 2.0) sind ein seitenbasiertes Programmiermodell, mit dem das Erstellen einer Webbenutzeroberfläche einfacher und produktiver wird.
-* Das [Razor-Markup](xref:mvc/views/razor) bietet eine produktive Syntax für [Razor-Seiten](xref:mvc/razor-pages/index) und [MVC-Ansichten](xref:mvc/views/overview).
+* [Razor-Pages](xref:mvc/razor-pages/index) (neu in ASP.NET Core 2.0) sind ein seitenbasiertes Programmiermodell, mit dem das Erstellen einer Webbenutzeroberfläche einfacher und produktiver wird.
+* Das [Razor-Markup](xref:mvc/views/razor) bietet eine produktive Syntax für [Razor-Pages](xref:mvc/razor-pages/index) und [MVC-Ansichten](xref:mvc/views/overview).
 * [Taghilfsprogramme](xref:mvc/views/tag-helpers/intro) ermöglichen serverseitigem Code das Mitwirken am Erstellen und Rendern von HTML-Elementen in Razor-Dateien.
 * Die integrierte Unterstützung für [mehrere Datenformate und Inhaltsaushandlung](mvc/models/formatting.md) ermöglicht Ihren Web-APIs das Erreichen einer breiten Palette von Clients, wie z.B. Browser und Mobilgeräte.
 * Die [Modellbindung](xref:mvc/models/model-binding) ordnet Daten aus HTTP-Anforderungen automatisch Aktionsmethodenparametern zu.
@@ -65,7 +65,7 @@ ASP.NET Core integriert sich nahtlos in gängige clientseitige Frameworks und Bi
 
 Weitere Informationen finden Sie in den folgenden Ressourcen:
 
-* [Erste Schritte mit Razor-Seiten](xref:tutorials/razor-pages/razor-pages-start)
+* [Erste Schritte mit Razor-Pages](xref:tutorials/razor-pages/razor-pages-start)
 * [ASP.NET Core-Tutorials](xref:tutorials/index)
 * [ASP.NET Core – Grundlagen](xref:fundamentals/index)
 * Im [wöchentlichen ASP.NET Community Standup](https://live.asp.net/) werden die Fortschritte und Pläne des Teams behandelt. Zudem werden neue Blogs und Drittanbietersoftware vorgestellt.

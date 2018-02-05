@@ -1,7 +1,7 @@
 ---
-title: "Gerüstbau mit Razor-Seiten in ASP.NET Core"
+title: "Gerüstbau mit Razor-Pages in ASP.NET Core"
 author: rick-anderson
-description: "Gibt nähere Informationen über durch Gerüstbau erstellte Razor-Seiten."
+description: "Gibt nähere Informationen über durch Gerüstbau erstellte Razor-Pages."
 manager: wpickett
 ms.author: riande
 ms.date: 09/27/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="scaffolded-razor-pages-in-aspnet-core"></a>Gerüstbau mit Razor-Seiten in ASP.NET Core
+# <a name="scaffolded-razor-pages-in-aspnet-core"></a>Gerüstbau mit Razor-Pages in ASP.NET Core
 
 [!INCLUDE[model1](../../includes/RP/page1.md)]
 

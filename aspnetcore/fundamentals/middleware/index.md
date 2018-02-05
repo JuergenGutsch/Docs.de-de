@@ -114,7 +114,7 @@ Die Middeware für statische Dateien wird am Anfang der Pipeline aufgerufen, dam
 # <a name="aspnet-core-2xtabaspnetcore2x"></a>[ASP.NET Core 2.x](#tab/aspnetcore2x)
 
 
-Wenn die Anforderung nicht von der Middleware für statische Dateien behandelt wird, wird sie an die Identity-Middleware (`app.UseAuthentication`) übergeben, die die Authentifizierung durchführt. Identity schließt keine unautorisierten Anforderungen kurz. Auch wenn Identity Anforderungen authentifiziert, erfolgt die Autorisierung (und Ablehnung) erst dann, wenn MVC eine spezifische Razor-Seite oder einen Controller und eine Aktion ausgewählt hat.
+Wenn die Anforderung nicht von der Middleware für statische Dateien behandelt wird, wird sie an die Identity-Middleware (`app.UseAuthentication`) übergeben, die die Authentifizierung durchführt. Identity schließt keine unautorisierten Anforderungen kurz. Auch wenn Identity Anforderungen authentifiziert, erfolgt die Autorisierung (und Ablehnung) erst dann, wenn MVC eine spezifische Razor-Page oder einen Controller und eine Aktion ausgewählt hat.
 
 # <a name="aspnet-core-1xtabaspnetcore1x"></a>[ASP.NET Core 1.x](#tab/aspnetcore1x)
 

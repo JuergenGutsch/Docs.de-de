@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen eines neuen Felds zu einer Razor-Seite"
+title: "Hinzufügen eines neuen Felds zu einer Razor-Page"
 author: rick-anderson
-description: "Veranschaulicht das Hinzufügen ein neues Felds zu einer Razor-Seite mit Entity Framework Core"
+description: "Veranschaulicht das Hinzufügen ein neues Felds zu einer Razor-Page mit Entity Framework Core"
 manager: wpickett
 ms.author: riande
 ms.date: 08/07/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="adding-a-new-field-to-a-razor-page"></a>Hinzufügen eines neuen Felds zu einer Razor-Seite
+# <a name="adding-a-new-field-to-a-razor-page"></a>Hinzufügen eines neuen Felds zu einer Razor-Page
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT)
 

@@ -4,7 +4,7 @@ Im Beispiel werden alle drei apps, die Cookieauthentifizierung gemeinsam Cookie 
 
 | Projekt                             | Beschreibung |
 | ----------------------------------- | ----------- |
-| CookieAuth.Core                     | ASP.NET 2.0-Razor-Seiten Core app ohne Verwendung von ASP.NET Core Identity |
+| CookieAuth.Core                     | ASP.NET 2.0-Razor-Pages Core app ohne Verwendung von ASP.NET Core Identity |
 | CookieAuthWithIdentity.Core         | ASP.NET Core 2.0 MVC-Anwendung mit ASP.NET Core Identität |
 | CookieAuthWithIdentity.NETFramework | ASP.NET Framework 4.6.1 MVC-Anwendung mit ASP.NET Identity |
 

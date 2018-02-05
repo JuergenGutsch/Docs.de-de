@@ -1,5 +1,5 @@
 ---
-title: "Razor-Seiten mit EF-Core - Aktualisieren von verknüpften Daten - 7, 8"
+title: "Razor-Pages mit EF-Core - Aktualisieren von verknüpften Daten - 7, 8"
 author: rick-anderson
 description: "In diesem Lernprogramm werden Sie verknüpfte Daten aktualisieren, durch die Aktualisierung von foreign Key-Felder und Navigationseigenschaften."
 manager: wpickett
@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="updating-related-data---ef-core-razor-pages-7-of-8"></a>Aktualisieren von verknüpften Daten - EF Core Razor-Seiten (7 von 8)
+# <a name="updating-related-data---ef-core-razor-pages-7-of-8"></a>Aktualisieren von verknüpften Daten - EF Core Razor-Pages (7 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra), und [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -71,7 +71,7 @@ Das vorhergehende Markup nimmt folgende Änderungen:
 * Fügt die Option "Select-Abteilung". Diese Änderung wird anstelle der ersten Abteilung "Select-Abteilung" gerendert.
 * Fügt eine validierungsmeldung angezeigt, wenn die Abteilung nicht ausgewählt ist.
 
-Die Razor-Seite verwendet der [wählen Sie Tag Helper](xref:mvc/views/working-with-forms#the-select-tag-helper):
+Die Razor-Page verwendet der [wählen Sie Tag Helper](xref:mvc/views/working-with-forms#the-select-tag-helper):
 
 [!code-cshtml[Main](intro/samples/cu/Pages/Courses/Create.cshtml?range=28-35&highlight=3-6)]
 
@@ -113,7 +113,7 @@ Update der `OnGetAsync` Methode in der *Pages/Courses/Details.cshtml.cs* Datei:
 
 ### <a name="modify-the-delete-and-details-pages"></a>Ändern Sie die Seiten löschen und Details
 
-Aktualisieren Sie das Löschen von Razor-Seite durch Folgendes Markup:
+Aktualisieren Sie das Löschen von Razor-Page durch Folgendes Markup:
 
 [!code-cshtml[Main](intro/samples/cu/Pages/Courses/Delete.cshtml?highlight=15-20)]
 
@@ -212,7 +212,7 @@ Aktualisieren Sie das Modell erstellen Dozenten durch den folgenden Code:
 
 Der vorhergehende Code ist ähnlich wie die *Pages/Instructors/Edit.cshtml.cs* Code.
 
-Aktualisieren Sie die Instructor-Erstellen von Razor-Seite durch Folgendes Markup:
+Aktualisieren Sie die Instructor-Erstellen von Razor-Page durch Folgendes Markup:
 
 [!code-cshtml[Main](intro/samples/cu/Pages/Instructors/Create.cshtml?highlight=32-62)]
 

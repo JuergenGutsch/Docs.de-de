@@ -26,7 +26,7 @@ Websites bestehen häufig aus einzelnen Web-apps, die durch die Zusammenarbeit. 
 
 Im Beispiel werden alle drei apps, die Cookieauthentifizierung gemeinsam Cookie veranschaulicht:
 
-* ASP.NET 2.0-Razor-Seiten Core app ohne [ASP.NET Core Identity](xref:security/authentication/identity)
+* ASP.NET 2.0-Razor-Pages Core app ohne [ASP.NET Core Identity](xref:security/authentication/identity)
 * ASP.NET Core 2.0 MVC-Anwendung mit ASP.NET Core Identität
 * ASP.NET Framework 4.6.1 MVC-Anwendung mit ASP.NET Identity
 

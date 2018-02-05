@@ -1,5 +1,5 @@
 ---
-title: Razor-Seiten Route und app-Konvention Funktionen in ASP.NET Core
+title: Razor-Pages Route und app-Konvention Funktionen in ASP.NET Core
 author: guardrex
 description: Ermitteln Sie, wie Route und app-Anbieter Konvention Modellfunktionen Steuerelement Seite routing, Ermittlungs- und Verarbeitung Ihnen helfen.
 ms.author: riande
@@ -15,11 +15,11 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/19/2018
 ---
-# <a name="razor-pages-route-and-app-convention-features-in-aspnet-core"></a>Razor-Seiten Route und app-Konvention Funktionen in ASP.NET Core
+# <a name="razor-pages-route-and-app-convention-features-in-aspnet-core"></a>Razor-Pages Route und app-Konvention Funktionen in ASP.NET Core
 
 Von [Luke Latham](https://github.com/guardrex)
 
-Erfahren Sie, wie Seite Route und app-Anbieter Konvention Modellfunktionen verwenden, um Seite routing, Ermittlungs- und Verarbeitung in Razor-Seiten-apps zu steuern. Wenn Sie benutzerdefinierte Seite die Routen für einzelne Seiten konfigurieren müssen, Konfigurieren des Routings zu Seiten mit den [AddPageRoute Konvention](#configure-a-page-route) weiter unten in diesem Thema beschrieben.
+Erfahren Sie, wie Seite Route und app-Anbieter Konvention Modellfunktionen verwenden, um Seite routing, Ermittlungs- und Verarbeitung in Razor-Pages-apps zu steuern. Wenn Sie benutzerdefinierte Seite die Routen für einzelne Seiten konfigurieren müssen, Konfigurieren des Routings zu Seiten mit den [AddPageRoute Konvention](#configure-a-page-route) weiter unten in diesem Thema beschrieben.
 
 Verwenden der [Beispiel-app](https://github.com/aspnet/Docs/tree/master/aspnetcore/mvc/razor-pages/razor-pages-convention-features/sample) ([zum Herunterladen von](xref:tutorials/index#how-to-download-a-sample)), die in diesem Thema beschriebenen Funktionen zu untersuchen.
 
@@ -32,7 +32,7 @@ Verwenden der [Beispiel-app](https://github.com/aspnet/Docs/tree/master/aspnetco
 
 ## <a name="add-route-and-app-model-conventions"></a>Hinzufügen der Route und der app Model-Konventionen
 
-Fügen Sie einen Delegaten für [IPageConvention](/dotnet/api/microsoft.aspnetcore.mvc.applicationmodels.ipageconvention) hinzuzufügenden Route und app-Modell-Konventionen, die für die Razor-Seiten gelten.
+Fügen Sie einen Delegaten für [IPageConvention](/dotnet/api/microsoft.aspnetcore.mvc.applicationmodels.ipageconvention) hinzuzufügenden Route und app-Modell-Konventionen, die für die Razor-Pages gelten.
 
 **Hinzufügen einer Route Modell Konvention für alle Seiten**
 
@@ -171,7 +171,7 @@ Anfordern von Informationen zur Seite "im Beispiel" unter `localhost:5000/About`
 
 Die Seite app-Modell wird verwendet, um den relativen Pfad für Segmente zu überprüfen, die auf der Seite Page2 verursachen die *OtherPages* Ordner. Wenn die Bedingung übergibt, wird eine Kopfzeile hinzugefügt. Wenn dies nicht der Fall, wird die `EmptyFilter` angewendet wird.
 
-`EmptyFilter`ist ein [Aktionsfilter](xref:mvc/controllers/filters#action-filters). Da Aktionsfilter von Razor-Seiten, ignoriert werden die `EmptyFilter` Nein Ops erwartungsgemäß, wenn der Pfad keinen `OtherPages/Page2`.
+`EmptyFilter`ist ein [Aktionsfilter](xref:mvc/controllers/filters#action-filters). Da Aktionsfilter von Razor-Pages, ignoriert werden die `EmptyFilter` Nein Ops erwartungsgemäß, wenn der Pfad keinen `OtherPages/Page2`.
 
 Fordern Sie das Beispiel Page2 Seite am `localhost:5000/OtherPages/Page2` und überprüfen Sie die Kopfzeilen so, dass das Resultset anzuzeigen:
 
@@ -179,7 +179,7 @@ Fordern Sie das Beispiel Page2 Seite am `localhost:5000/OtherPages/Page2` und ü
 
 **Eine Factory Filter konfigurieren**
 
-[ConfigureFilter](/dotnet/api/microsoft.extensions.dependencyinjection.pageconventioncollectionextensions.configurefilter?view=aspnetcore-2.0#Microsoft_Extensions_DependencyInjection_PageConventionCollectionExtensions_ConfigureFilter_Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_System_Func_Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModel_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata__) konfiguriert die angegebene Factory anzuwendende [Filter](xref:mvc/controllers/filters) für alle Razor-Seiten.
+[ConfigureFilter](/dotnet/api/microsoft.extensions.dependencyinjection.pageconventioncollectionextensions.configurefilter?view=aspnetcore-2.0#Microsoft_Extensions_DependencyInjection_PageConventionCollectionExtensions_ConfigureFilter_Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_System_Func_Microsoft_AspNetCore_Mvc_ApplicationModels_PageApplicationModel_Microsoft_AspNetCore_Mvc_Filters_IFilterMetadata__) konfiguriert die angegebene Factory anzuwendende [Filter](xref:mvc/controllers/filters) für alle Razor-Pages.
 
 Die Beispiel-app bietet ein Beispiel für eine [Filter Factory](xref:mvc/controllers/filters#ifilterfactory) durch Hinzufügen eines Headers `FilterFactoryHeader`, mit zwei Werten, um die app Seiten:
 
@@ -195,7 +195,7 @@ Anfordern von Informationen zur Seite "im Beispiel" unter `localhost:5000/About`
 
 ## <a name="replace-the-default-page-app-model-provider"></a>Ersetzen Sie den Standardanbieter für Seite-app
 
-Razor-Seiten verwendet die `IPageApplicationModelProvider` Benutzeroberfläche zum Erstellen einer [DefaultPageApplicationModelProvider](/dotnet/api/microsoft.aspnetcore.mvc.razorpages.internal.defaultpageapplicationmodelprovider). Sie können von den Standardanbieter für Ihre eigene Implementierungslogik für die Verarbeitung und Handler Ermittlung bereitstellen erben. Die standardmäßige Implementierung ([Verweisquelle](https://github.com/aspnet/Mvc/blob/rel/2.0.1/src/Microsoft.AspNetCore.Mvc.RazorPages/Internal/DefaultPageApplicationModelProvider.cs)) richtet Konventionen für *unbenannte* und *mit dem Namen* Handler benennen, die unten beschrieben ist.
+Razor-Pages verwendet die `IPageApplicationModelProvider` Benutzeroberfläche zum Erstellen einer [DefaultPageApplicationModelProvider](/dotnet/api/microsoft.aspnetcore.mvc.razorpages.internal.defaultpageapplicationmodelprovider). Sie können von den Standardanbieter für Ihre eigene Implementierungslogik für die Verarbeitung und Handler Ermittlung bereitstellen erben. Die standardmäßige Implementierung ([Verweisquelle](https://github.com/aspnet/Mvc/blob/rel/2.0.1/src/Microsoft.AspNetCore.Mvc.RazorPages/Internal/DefaultPageApplicationModelProvider.cs)) richtet Konventionen für *unbenannte* und *mit dem Namen* Handler benennen, die unten beschrieben ist.
 
 **Unbenannte Handler-Standardmethoden**
 
@@ -262,7 +262,7 @@ Registrieren der `CustomPageApplicationModelProvider` in die `Startup` Klasse:
 
 [!code-csharp[Main](razor-pages-convention-features/sample/Startup.cs?name=snippet10)]
 
-Der Code-Behind-Datei *Index.cshtml.cs* wird gezeigt, wie die normalen Handler Methode Benennungskonventionen für Seiten in der app geändert werden. Die normalen "On" Präfix Benennung mit Razor-Seiten verwendet wird entfernt. Die Methode, die die Seite Status initialisiert heißt jetzt `Get`. Sie können sehen, dass diese Konvention, die in der app verwendet werden, wenn Sie eine Code-Behind-Datei für jede der Seiten, öffnen.
+Der Code-Behind-Datei *Index.cshtml.cs* wird gezeigt, wie die normalen Handler Methode Benennungskonventionen für Seiten in der app geändert werden. Die normalen "On" Präfix Benennung mit Razor-Pages verwendet wird entfernt. Die Methode, die die Seite Status initialisiert heißt jetzt `Get`. Sie können sehen, dass diese Konvention, die in der app verwendet werden, wenn Sie eine Code-Behind-Datei für jede der Seiten, öffnen.
 
 Jedes der anderen Methoden beginnen Sie mit dem HTTP-Verb, das beschreibt, deren Verarbeitung. Die beiden Methoden, die mit beginnt `Delete` normalerweise als DELETE HTTP-Verben, aber die Logik in behandelt werden würde `TryParseHandlerMethod` legt explizit das Verb POST für beide Handler.
 
@@ -278,9 +278,9 @@ Beachten Sie die Handlernamen in bereitgestellten *Index.cshtml* entsprechen den
 
 ## <a name="mvc-filters-and-the-page-filter-ipagefilter"></a>MVC-Filter und die Seitenfilter (IPageFilter)
 
-MVC [Aktionsfilter](xref:mvc/controllers/filters#action-filters) werden von Razor-Seiten ignoriert, da Razor-Seiten Ereignishandlermethoden verwenden. Andere Arten von MVC-Filtern für Ihre Verwendung verfügbar sind: [Autorisierung](xref:mvc/controllers/filters#authorization-filters), [Ausnahme](xref:mvc/controllers/filters#exception-filters), [Ressource](xref:mvc/controllers/filters#resource-filters), und [Ergebnis](xref:mvc/controllers/filters#result-filters). Weitere Informationen finden Sie unter der [Filter](xref:mvc/controllers/filters) Thema.
+MVC [Aktionsfilter](xref:mvc/controllers/filters#action-filters) werden von Razor-Pages ignoriert, da Razor-Pages Ereignishandlermethoden verwenden. Andere Arten von MVC-Filtern für Ihre Verwendung verfügbar sind: [Autorisierung](xref:mvc/controllers/filters#authorization-filters), [Ausnahme](xref:mvc/controllers/filters#exception-filters), [Ressource](xref:mvc/controllers/filters#resource-filters), und [Ergebnis](xref:mvc/controllers/filters#result-filters). Weitere Informationen finden Sie unter der [Filter](xref:mvc/controllers/filters) Thema.
 
-Die Seite zu filtern ([IPageFilter](/dotnet/api/microsoft.aspnetcore.mvc.filters.ipagefilter)) ist ein Filter, die für die Razor-Seiten gilt. Es schließt die Ausführung einer Seite Handler-Methode. Sie können Sie benutzerdefinierten Code in Phasen der seitenausführung Handler-Methode zu verarbeiten. Hier ist ein Beispiel aus der Beispiel-app:
+Die Seite zu filtern ([IPageFilter](/dotnet/api/microsoft.aspnetcore.mvc.filters.ipagefilter)) ist ein Filter, die für die Razor-Pages gilt. Es schließt die Ausführung einer Seite Handler-Methode. Sie können Sie benutzerdefinierten Code in Phasen der seitenausführung Handler-Methode zu verarbeiten. Hier ist ein Beispiel aus der Beispiel-app:
 
 [!code-csharp[Main](razor-pages-convention-features/sample/Filters/ReplaceRouteValueFilterAttribute.cs?name=snippet1)]
 
@@ -296,4 +296,4 @@ Die Beispiel-app mit auf der Seite "Page3" anfordern `localhost:5000/OtherPages/
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Autorisierungskonventionen für Razor-Seiten](xref:security/authorization/razor-pages-authorization)
+* [Autorisierungskonventionen für Razor-Pages](xref:security/authorization/razor-pages-authorization)

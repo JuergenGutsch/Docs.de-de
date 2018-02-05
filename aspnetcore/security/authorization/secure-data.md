@@ -1,7 +1,7 @@
 ---
 title: "Erstellen einer ASP.NET Core-app mit Benutzerdaten durch Autorisierung geschützt"
 author: rick-anderson
-description: "Informationen Sie zum Erstellen einer Razor-Seiten-app mit Benutzerdaten durch Autorisierung geschützt. Enthält SSL, Authentifizierung und Sicherheit, ASP.NET Core Identity."
+description: "Informationen Sie zum Erstellen einer Razor-Pages-app mit Benutzerdaten durch Autorisierung geschützt. Enthält SSL, Authentifizierung und Sicherheit, ASP.NET Core Identity."
 manager: wpickett
 ms.author: riande
 ms.date: 01/24/2018
@@ -114,7 +114,7 @@ Zum Umleiten von HTTP-Anforderungen zu HTTPS finden Sie unter [URL umschreiben M
 
 ### <a name="require-authenticated-users"></a>Erfordern Sie authentifizierte Benutzern
 
-Legen Sie die Standardrichtlinie für die Authentifizierung der Benutzer authentifiziert werden müssen. Sie können die Authentifizierung auf Methodenebene Razor-Seite, Controller oder Aktionen mit abwählen der `[AllowAnonymous]` Attribut. Festlegen der Standardrichtlinie für die Authentifizierung Benutzer authentifiziert werden müssen schützt neu hinzugefügten Razor-Seiten und Controllern aus. Mit Authentifizierung erforderlich, in der Standardeinstellung sicherer ist als der vertrauenden Seite auf das neue Domänencontroller und Razor-Seiten enthalten die `[Authorize]` Attribut. Fügen Sie Folgendes an der `ConfigureServices` Methode der *Startup.cs* Datei:
+Legen Sie die Standardrichtlinie für die Authentifizierung der Benutzer authentifiziert werden müssen. Sie können die Authentifizierung auf Methodenebene Razor-Page, Controller oder Aktionen mit abwählen der `[AllowAnonymous]` Attribut. Festlegen der Standardrichtlinie für die Authentifizierung Benutzer authentifiziert werden müssen schützt neu hinzugefügten Razor-Pages und Controllern aus. Mit Authentifizierung erforderlich, in der Standardeinstellung sicherer ist als der vertrauenden Seite auf das neue Domänencontroller und Razor-Pages enthalten die `[Authorize]` Attribut. Fügen Sie Folgendes an der `ConfigureServices` Methode der *Startup.cs* Datei:
 
 [!code-csharp[Main](secure-data/samples/final2/Startup.cs?name=snippet_defaultPolicy&highlight=31-999)]
 
@@ -183,7 +183,7 @@ Verwendung von Entity Framework Core Services müssen registriert werden, für d
 
 ## <a name="support-authorization"></a>Support-Autorisierung
 
-In diesem Abschnitt Aktualisieren der Razor-Seiten und fügen Sie eine Operations Anforderungen-Klasse.
+In diesem Abschnitt Aktualisieren der Razor-Pages und fügen Sie eine Operations Anforderungen-Klasse.
 
 ### <a name="review-the-contact-operations-requirements-class"></a>Überprüfen Sie die Kontaktinformationen Vorgänge Anforderungen-Klasse
 
@@ -191,9 +191,9 @@ In diesem Abschnitt Aktualisieren der Razor-Seiten und fügen Sie eine Operation
 
 [!code-csharp[Main](secure-data/samples/final2/Authorization/ContactOperations.cs)]
 
-### <a name="create-a-base-class-for-the-razor-pages"></a>Erstellen Sie eine Basisklasse für die Razor-Seiten
+### <a name="create-a-base-class-for-the-razor-pages"></a>Erstellen Sie eine Basisklasse für die Razor-Pages
 
-Erstellen Sie eine Basisklasse, die in den Kontakten Razor-Seiten verwendeten Dienste enthält. Die Basisklasse setzt diese Initialisierungscode an einem zentralen Ort:
+Erstellen Sie eine Basisklasse, die in den Kontakten Razor-Pages verwendeten Dienste enthält. Die Basisklasse setzt diese Initialisierungscode an einem zentralen Ort:
 
 [!code-csharp[Main](secure-data/samples/final2/Pages/Contacts/DI_BasePageModel.cs)]
 
@@ -249,7 +249,7 @@ Update der **bearbeiten** und **löschen** verknüpft *Pages/Contacts/Index.csht
 [!code-cshtml[Main](secure-data/samples/final2/Pages/Contacts/Index.cshtml?highlight=34-36,64-999)]
 
 > [!WARNING]
-> Ausblenden von Links von Benutzern, die keine Berechtigung zum Ändern von Daten haben Sichern nicht die app. Durch das Ausblenden Links wird die app durch Anzeigen der einzige gültige Links Benutzerfreundlicher. Benutzer können die generierten URLs zum Aufrufen bearbeiten und Löschen von Operationen mit Daten, die sie besitzen keine hack. Der Razor-Seite oder ein Domänencontroller muss zugriffsüberprüfungen zum Schutz der Daten erzwingen.
+> Ausblenden von Links von Benutzern, die keine Berechtigung zum Ändern von Daten haben Sichern nicht die app. Durch das Ausblenden Links wird die app durch Anzeigen der einzige gültige Links Benutzerfreundlicher. Benutzer können die generierten URLs zum Aufrufen bearbeiten und Löschen von Operationen mit Daten, die sie besitzen keine hack. Der Razor-Page oder ein Domänencontroller muss zugriffsüberprüfungen zum Schutz der Daten erzwingen.
 
 ### <a name="update-details"></a>Updatedetails
 
@@ -291,7 +291,7 @@ Erstellen eines Kontakts in der Administrator-Browser. Kopieren Sie die URL zum 
 
 ## <a name="create-the-starter-app"></a>Erstellen der Starter-app
 
-* Erstellen Sie eine Razor-Seiten-app mit dem Namen "ContactManager"
+* Erstellen Sie eine Razor-Pages-app mit dem Namen "ContactManager"
 
   * Erstellen Sie die app mit **einzelne Benutzerkonten**.
   * Nennen Sie sie "ContactManager", sodass Ihr Namespace den Namespace, die im Beispiel verwendeten entspricht.

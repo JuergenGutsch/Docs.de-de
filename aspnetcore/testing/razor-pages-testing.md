@@ -1,7 +1,7 @@
 ---
-title: "Einheit für Razor-Seiten und Integrationstests zu legen, die in ASP.NET Core"
+title: "Einheit für Razor-Pages und Integrationstests zu legen, die in ASP.NET Core"
 author: guardrex
-description: "Erfahren Sie, wie Komponententests und die Integration von Tests für Razor-Seiten-apps erstellen."
+description: "Erfahren Sie, wie Komponententests und die Integration von Tests für Razor-Pages-apps erstellen."
 manager: wpickett
 ms.author: riande
 ms.custom: mvc
@@ -16,21 +16,21 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="razor-pages-unit-and-integration-testing-in-aspnet-core"></a>Einheit für Razor-Seiten und Integrationstests zu legen, die in ASP.NET Core
+# <a name="razor-pages-unit-and-integration-testing-in-aspnet-core"></a>Einheit für Razor-Pages und Integrationstests zu legen, die in ASP.NET Core
 
 Von [Luke Latham](https://github.com/guardrex)
 
-ASP.NET Core unterstützt Einheit und Integrationstests für die Razor-Seiten-Apps. Testen der Datenzugriffsebene (DAL), Seite "-Modelle und integrierte Page-Komponenten kann sichergestellt werden:
+ASP.NET Core unterstützt Einheit und Integrationstests für die Razor-Pages-Apps. Testen der Datenzugriffsebene (DAL), Seite "-Modelle und integrierte Page-Komponenten kann sichergestellt werden:
 
-* Teile einer app Razor-Seiten arbeiten unabhängig voneinander und zusammen als eine Einheit während der Erstellung der app an.
+* Teile einer app Razor-Pages arbeiten unabhängig voneinander und zusammen als eine Einheit während der Erstellung der app an.
 * Klassen und Methoden haben Bereiche Verantwortung beschränkt.
 * Zusätzlicher Dokumentation vorhanden ist, auf wie die Anwendung Verhalten soll.
 * Regressionen, die Fehler, die durch das Updates auf den Code zu geschaltet sind, werden während der automatischen Erstellung und Bereitstellung gefunden.
 
-In diesem Thema wird vorausgesetzt, dass Sie ein grundlegendes Verständnis der Razor-Seiten-apps, die Komponententests und die Integration testen. Wenn Sie mit Razor-Seiten-apps oder testen Konzepten nicht vertraut sind, finden Sie unter den folgenden Themen:
+In diesem Thema wird vorausgesetzt, dass Sie ein grundlegendes Verständnis der Razor-Pages-apps, die Komponententests und die Integration testen. Wenn Sie mit Razor-Pages-apps oder testen Konzepten nicht vertraut sind, finden Sie unter den folgenden Themen:
 
-* [Introduction to Razor Pages (Einführung in Razor-Seiten)](xref:mvc/razor-pages/index)
-* [Getting started with Razor Pages (Erste Schritte mit Razor-Seiten)](xref:tutorials/razor-pages/razor-pages-start)
+* [Introduction to Razor Pages (Einführung in Razor-Pages)](xref:mvc/razor-pages/index)
+* [Getting started with Razor Pages (Erste Schritte mit Razor-Pages)](xref:tutorials/razor-pages/razor-pages-start)
 * [UnitTests von c# in .NET Core mit Dotnet Test- und xUnit](/dotnet/articles/core/testing/unit-testing-with-dotnet-test)
 * [Integrationstests](xref:testing/integration-testing)
 
@@ -51,7 +51,7 @@ dotnet test
 
 ## <a name="message-app-organization"></a>Organisation der Nachrichten-app
 
-Die Nachrichten-app ist ein einfaches Razor-Seiten Nachrichtensystem, das mit den folgenden Merkmalen:
+Die Nachrichten-app ist ein einfaches Razor-Pages Nachrichtensystem, das mit den folgenden Merkmalen:
 
 * Die Indexseite der app (*Pages/Index.cshtml* und *Pages/Index.cshtml.cs*) eine Benutzeroberfläche und die Seite stellt Modellmethoden bereit, um zu steuern, die Hinzufügung, löschen und Analyse von Nachrichten (durchschnittliche Wörtern pro Nachricht) .
 * Eine Nachricht wird beschrieben, durch die `Message` Klasse (*Data/Message.cs*) mit zwei Eigenschaften: `Id` (Schlüssel) und `Text` (Nachricht). Die `Text` Eigenschaft ist erforderlich, und auf 200 Zeichen beschränkt.
@@ -61,7 +61,7 @@ Die Nachrichten-app ist ein einfaches Razor-Seiten Nachrichtensystem, das mit de
 
 &#8224; Das Thema EF [Testen mit InMemory](/ef/core/miscellaneous/testing/in-memory), wird erläutert, wie eine in-Memory-Datenbank, die für Tests mit MSTest verwendet. In diesem Thema verwendet die [xUnit](https://xunit.github.io/) Testframework. Testen Konzepte und Test-Implementierungen in anderen Testframeworks sind ähnlich, aber nicht identisch.
 
-Auch wenn die app nicht verwendet die [Repositorymusters](http://martinfowler.com/eaaCatalog/repository.html) ist ein Beispiel für effektive nicht die [Arbeitseinheit (UoW) Muster](https://martinfowler.com/eaaCatalog/unitOfWork.html), Razor-Seiten unterstützt diese Muster der Entwicklung. Weitere Informationen finden Sie unter [Entwerfen der Infrastruktur Persistenzebene](/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design), [implementieren das Repository und die Einheit der Arbeit Muster in einer ASP.NET MVC-Anwendung](/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application), und [testen Controllerlogik](/aspnet/core/mvc/controllers/testing) (im Beispiel wird das Repositorymuster implementiert).
+Auch wenn die app nicht verwendet die [Repositorymusters](http://martinfowler.com/eaaCatalog/repository.html) ist ein Beispiel für effektive nicht die [Arbeitseinheit (UoW) Muster](https://martinfowler.com/eaaCatalog/unitOfWork.html), Razor-Pages unterstützt diese Muster der Entwicklung. Weitere Informationen finden Sie unter [Entwerfen der Infrastruktur Persistenzebene](/dotnet/standard/microservices-architecture/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design), [implementieren das Repository und die Einheit der Arbeit Muster in einer ASP.NET MVC-Anwendung](/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application), und [testen Controllerlogik](/aspnet/core/mvc/controllers/testing) (im Beispiel wird das Repositorymuster implementiert).
 
 ## <a name="test-app-organization"></a>Testen von app-Organisation
 

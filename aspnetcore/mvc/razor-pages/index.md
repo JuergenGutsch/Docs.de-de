@@ -1,7 +1,7 @@
 ---
-title: "Einführung in Razor-Seiten in ASP.NET Core"
+title: "Einführung in Razor-Pages in ASP.NET Core"
 author: Rick-Anderson
-description: "ASP.NET Core-Lernprogramm für Razor-Seiten. Enthält MVC Core, ASP.NET Core 2.x, Visual Studio 2017 sowie eine Einführung in die Webentwicklung. Diese Dokumentation stellt eine Übersicht über die Verwendung von Razor-Seiten in ASP.NET Core bereit, um die Entwicklung von auf Seiten bezogene Szenarios zu vereinfachen."
+description: "ASP.NET Core-Lernprogramm für Razor-Pages. Enthält MVC Core, ASP.NET Core 2.x, Visual Studio 2017 sowie eine Einführung in die Webentwicklung. Diese Dokumentation stellt eine Übersicht über die Verwendung von Razor-Pages in ASP.NET Core bereit, um die Entwicklung von auf Seiten bezogene Szenarios zu vereinfachen."
 manager: wpickett
 ms.author: riande
 ms.date: 09/12/2017
@@ -15,15 +15,15 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="introduction-to-razor-pages-in-aspnet-core"></a>Einführung in Razor-Seiten in ASP.NET Core
+# <a name="introduction-to-razor-pages-in-aspnet-core"></a>Einführung in Razor-Pages in ASP.NET Core
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT) und [Ryan Nowak](https://github.com/rynowak)
 
-Razor-Seiten ist ein neues Feature von ASP.NET Core MVC, mit dem codierungsseitige Szenarios einfacher und produktiver werden.
+Razor-Pages ist ein neues Feature von ASP.NET Core MVC, mit dem codierungsseitige Szenarios einfacher und produktiver werden.
 
 Weitere Informationen zu einem Tutorial, in dem der Model-View-Controller-Ansatz verwendet wird, finden Sie unter [Getting started with ASP.NET Core MVC (Erste Schritte mit ASP.NET Core MVC)](xref:tutorials/first-mvc-app/start-mvc).
 
-Dieses Dokument bietet eine Einführung in Razor-Seiten. Es handelt sich nicht um ein Schritt-für-Schritt-Tutorial. Wenn es Ihnen Probleme bereitet, die Ausführungen in einigen Abschnitten nachzuvollziehen, lesen Sie [Erste Schritte mit Razor-Seiten](xref:tutorials/razor-pages/razor-pages-start).
+Dieses Dokument bietet eine Einführung in Razor-Pages. Es handelt sich nicht um ein Schritt-für-Schritt-Tutorial. Wenn es Ihnen Probleme bereitet, die Ausführungen in einigen Abschnitten nachzuvollziehen, lesen Sie [Erste Schritte mit Razor-Pages](xref:tutorials/razor-pages/razor-pages-start).
 
 <a name="prerequisites"></a>
 
@@ -38,11 +38,11 @@ Wenn Sie Visual Studio verwenden, installieren Sie [Visual Studio](https://www.v
 
 <a name="rpvs17"></a>
 
-## <a name="creating-a-razor-pages-project"></a>Erstellen eines Projekts mit Razor-Seiten
+## <a name="creating-a-razor-pages-project"></a>Erstellen eines Projekts mit Razor-Pages
 
 # <a name="visual-studiotabvisual-studio"></a>[Visual Studio](#tab/visual-studio) 
 
-Weitere Informationen zum Erstellen eines Projekts mit Razor-Seiten mithilfe von Visual Studio finden Sie unter [Getting started with Razor Pages (Erste Schritte mit Razor-Seiten)](xref:tutorials/razor-pages/razor-pages-start).
+Weitere Informationen zum Erstellen eines Projekts mit Razor-Pages mithilfe von Visual Studio finden Sie unter [Getting started with Razor Pages (Erste Schritte mit Razor-Pages)](xref:tutorials/razor-pages/razor-pages-start).
 
 #   <a name="visual-studio-for-mactabvisual-studio-mac"></a>[Visual Studio für Mac](#tab/visual-studio-mac)
 
@@ -60,9 +60,9 @@ Führen Sie `dotnet new razor` über die Befehlszeile aus.
 
 ---
 
-## <a name="razor-pages"></a>Razor-Seiten
+## <a name="razor-pages"></a>Razor-Pages
 
-Razor-Seiten ist in *Startup.cs* aktiviert:
+Razor-Pages ist in *Startup.cs* aktiviert:
 
 [!code-cs[main](index/sample/RazorPagesIntro/Startup.cs?name=snippet_Startup)]
 
@@ -80,9 +80,9 @@ Das Seitenmodell *Pages/Index2.cshtml.cs*:
 
 [!code-cs[main](index/sample/RazorPagesIntro/Pages/Index2.cshtml.cs)]
 
-Die `PageModel`-Klassendatei hat standardmäßig den gleichen Namen wie die Datei mit Razor-Seiten, nur dass außerdem *cs* angefügt wird. Die vorherige Datei mit Razor-Seiten lautet beispielsweise *Pages/Index2.cshtml*. Die Datei mit der `PageModel`-Klasse heißt *Pages/Index2.cshtml.cs*.
+Die `PageModel`-Klassendatei hat standardmäßig den gleichen Namen wie die Datei mit Razor-Pages, nur dass außerdem *cs* angefügt wird. Die vorherige Datei mit Razor-Pages lautet beispielsweise *Pages/Index2.cshtml*. Die Datei mit der `PageModel`-Klasse heißt *Pages/Index2.cshtml.cs*.
 
-Die Zuordnungen von URL-Pfaden zu Seiten werden durch den Speicherort der Seite im Dateisystem bestimmt. Die folgende Tabelle zeigt einen Pfad zu Razor-Seiten und die entsprechende URL:
+Die Zuordnungen von URL-Pfaden zu Seiten werden durch den Speicherort der Seite im Dateisystem bestimmt. Die folgende Tabelle zeigt einen Pfad zu Razor-Pages und die entsprechende URL:
 
 | Dateiname und Pfad               | Entsprechende URL |
 | ----------------- | ------------ |
@@ -93,12 +93,12 @@ Die Zuordnungen von URL-Pfaden zu Seiten werden durch den Speicherort der Seite 
 
 Notizen:
 
-* Die Runtime sucht standardmäßig im Ordner *Pages* (Seiten) nach Dateien mit Razor-Seiten.
+* Die Runtime sucht standardmäßig im Ordner *Pages* (Seiten) nach Dateien mit Razor-Pages.
 * Wenn eine Seite nicht in einer URL enthalten ist, ist `Index` die Standardseite.
 
 ## <a name="writing-a-basic-form"></a>Schreiben eines einfachen Formulars
 
-Features von Razor-Seiten erstellen allgemeine Muster, die einfach mit Webbrowsern verwendet werden können. Die [Modellbindung](xref:mvc/models/model-binding), [Taghilfsprogramme](xref:mvc/views/tag-helpers/intro) und alle HTML-Hilfsprogramme *funktionieren nur* mit den Eigenschaften, die in einer Klasse der Razor-Seiten definiert wurden. Nehmen wir z.B. eine Seite, die ein allgemeines Kontaktformular für das `Contact`-Modell implementiert:
+Features von Razor-Pages erstellen allgemeine Muster, die einfach mit Webbrowsern verwendet werden können. Die [Modellbindung](xref:mvc/models/model-binding), [Taghilfsprogramme](xref:mvc/views/tag-helpers/intro) und alle HTML-Hilfsprogramme *funktionieren nur* mit den Eigenschaften, die in einer Klasse der Razor-Pages definiert wurden. Nehmen wir z.B. eine Seite, die ein allgemeines Kontaktformular für das `Contact`-Modell implementiert:
 
 Für die Beispiele in diesem Dokument wird `DbContext` in der Datei [Startup.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/mvc/razor-pages/index/sample/RazorPagesContacts/Startup.cs#L15-L16) initialisiert.
 
@@ -129,7 +129,7 @@ Die Seite hat eine `OnPostAsync`-*Handlermethode*, die auf `POST`-Anforderungen 
 * `OnGet`, um den für eine Seite erforderlichen Status zu initialisieren. [OnGet](#OnGet)-Beispiel
 * `OnPost`, um Formularübermittlungen zu behandeln
 
-Das Namenssuffix `Async` ist optional. Es wird jedoch standardmäßig häufig für asynchrone Funktionen verwendet. Der `OnPostAsync`-Code im vorhergehenden Beispiel ähnelt dem, was Sie normalerweise in einem Controller schreiben würden. Der vorhergehende Code ist typisch für Razor-Seiten. Die meisten primitiven MVC-Typen wie die [Modellbindung](xref:mvc/models/model-binding), die [Validierung](xref:mvc/models/validation) und Aktionsergebnisse werden freigegeben.  <!-- Review: Ryan, can we get a list of what is shared and what isn't? -->
+Das Namenssuffix `Async` ist optional. Es wird jedoch standardmäßig häufig für asynchrone Funktionen verwendet. Der `OnPostAsync`-Code im vorhergehenden Beispiel ähnelt dem, was Sie normalerweise in einem Controller schreiben würden. Der vorhergehende Code ist typisch für Razor-Pages. Die meisten primitiven MVC-Typen wie die [Modellbindung](xref:mvc/models/model-binding), die [Validierung](xref:mvc/models/validation) und Aktionsergebnisse werden freigegeben.  <!-- Review: Ryan, can we get a list of what is shared and what isn't? -->
 
 Die vorherige `OnPostAsync`-Methode:
 
@@ -150,7 +150,7 @@ Die Eigenschaft `Customer` verwendet das `[BindProperty]`-Attribut, um die Model
 
 [!code-cs[main](index/sample/RazorPagesContacts/Pages/Create.cshtml.cs?name=snippet_PageModel&highlight=10-11)]
 
-Razor-Seiten binden Eigenschaften standardmäßig nur an Nicht-GET-Verben. Durch die Bindung an Eigenschaften können Sie den Umfang von Codes reduzieren, den Sie schreiben müssen. Die Bindung reduziert den Code mithilfe der gleichen Eigenschaft, um Formularfelder (`<input asp-for="Customer.Name" />`) zu rendern und die Eingabe zu akzeptieren.
+Razor-Pages binden Eigenschaften standardmäßig nur an Nicht-GET-Verben. Durch die Bindung an Eigenschaften können Sie den Umfang von Codes reduzieren, den Sie schreiben müssen. Die Bindung reduziert den Code mithilfe der gleichen Eigenschaft, um Formularfelder (`<input asp-for="Customer.Name" />`) zu rendern und die Eingabe zu akzeptieren.
 
 Die Startseite (*Index.cshtml*):
 
@@ -206,14 +206,14 @@ Die `OnPostDeleteAsync`-Methode:
 
 <a name="xsrf"></a>
 
-## <a name="xsrfcsrf-and-razor-pages"></a>XSRF/CSRF und Razor-Seiten
+## <a name="xsrfcsrf-and-razor-pages"></a>XSRF/CSRF und Razor-Pages
 
-Sie müssen keinen Code für die [Antifälschungsvalidierung](xref:security/anti-request-forgery) schreiben. Die Generierung und Validierung von Antifälschungstoken ist automatisch in Razor-Seiten enthalten.
+Sie müssen keinen Code für die [Antifälschungsvalidierung](xref:security/anti-request-forgery) schreiben. Die Generierung und Validierung von Antifälschungstoken ist automatisch in Razor-Pages enthalten.
 
 <a name="layout"></a>
-## <a name="using-layouts-partials-templates-and-tag-helpers-with-razor-pages"></a>Verwenden von Layouts, Teilansichten, Vorlagen und Taghilfsprogrammen mit Razor-Seiten
+## <a name="using-layouts-partials-templates-and-tag-helpers-with-razor-pages"></a>Verwenden von Layouts, Teilansichten, Vorlagen und Taghilfsprogrammen mit Razor-Pages
 
-Razor-Seiten funktionieren mit allen Funktionen des Razor-Anzeigemoduls. Layouts, Teilansichten, Vorlagen, Taghilfsprogramme, *_ViewStart.cshtml*, *_ViewImports.cshtml* funktionieren auf die gleiche Weise wie für herkömmliche Razor-Ansichten.
+Razor-Pages funktionieren mit allen Funktionen des Razor-Anzeigemoduls. Layouts, Teilansichten, Vorlagen, Taghilfsprogramme, *_ViewStart.cshtml*, *_ViewImports.cshtml* funktionieren auf die gleiche Weise wie für herkömmliche Razor-Ansichten.
 
 Lassen Sie uns diese Seite mithilfe einiger dieser Funktionen entwirren.
 
@@ -232,11 +232,11 @@ Die Eigenschaft [Layout](xref:mvc/views/layout#specifying-a-layout) wird in *Pag
 
 [!code-cshtml[main](index/sample/RazorPagesContacts2/Pages/_ViewStart.cshtml)]
 
-**Hinweis:** Das Layout befindet sich im Ordner *Pages* (Seiten). Seiten suchen hierarchisch nach anderen Ansichten (Layouts, Vorlagen oder Teilansichten) und beginnen im gleichen Ordner wie die aktuelle Seite. Ein Layout im Ordner *Seiten* kann aus jeder Razor-Seite unter dem Ordner *Pages* verwendet werden.
+**Hinweis:** Das Layout befindet sich im Ordner *Pages* (Seiten). Seiten suchen hierarchisch nach anderen Ansichten (Layouts, Vorlagen oder Teilansichten) und beginnen im gleichen Ordner wie die aktuelle Seite. Ein Layout im Ordner *Seiten* kann aus jeder Razor-Page unter dem Ordner *Pages* verwendet werden.
 
-Wir empfehlen Ihnen, die Layoutdatei **nicht** im Ordner *Views/Shared* (Ansichten/Freigegeben) zu platzieren. *Views/Shared* ist ein MVC-Ansichtsmuster. Razor-Seiten basieren auf der Ordnerhierarchie, nicht auf Pfadkonventionen.
+Wir empfehlen Ihnen, die Layoutdatei **nicht** im Ordner *Views/Shared* (Ansichten/Freigegeben) zu platzieren. *Views/Shared* ist ein MVC-Ansichtsmuster. Razor-Pages basieren auf der Ordnerhierarchie, nicht auf Pfadkonventionen.
 
-Die Ansichtensuche in einer Razor-Seite enthält den Ordner *Pages*. Die Layouts, Vorlagen und Teilansichten, die Sie mit MVC-Controllern und herkömmlichen Razor-Ansichten verwenden, *funktionieren einfach so*.
+Die Ansichtensuche in einer Razor-Page enthält den Ordner *Pages*. Die Layouts, Vorlagen und Teilansichten, die Sie mit MVC-Controllern und herkömmlichen Razor-Ansichten verwenden, *funktionieren einfach so*.
 
 Fügen Sie eine Datei *Pages/_ViewImports.cshtml* hinzu:
 
@@ -262,7 +262,7 @@ Die Datei *Pages/_ViewImports.cshtml* legt den folgenden Namespace fest:
 
 [!code-cshtml[main](index/sample/RazorPagesContacts2/Pages/_ViewImports.cshtml?highlight=1)]
 
-Der generierte Namespace für die Razor-Seite *Pages/Customers/Edit.cshtml* ist identisch mit der CodeBehind-Datei. Die `@namespace`-Anweisung wurde entworfen, damit die einem Projekt hinzugefügten C#-Klassen und mit Seiten generierter Code *einfach so funktionieren*, ohne dass eine `@using`-Anweisung für die CodeBehind-Datei hinzugefügt werden muss.
+Der generierte Namespace für die Razor-Page *Pages/Customers/Edit.cshtml* ist identisch mit der CodeBehind-Datei. Die `@namespace`-Anweisung wurde entworfen, damit die einem Projekt hinzugefügten C#-Klassen und mit Seiten generierter Code *einfach so funktionieren*, ohne dass eine `@using`-Anweisung für die CodeBehind-Datei hinzugefügt werden muss.
 
 **Hinweis:** `@namespace` funktioniert auch mit konventionellen Razor-Ansichten.
 
@@ -274,7 +274,7 @@ Die aktualisierte Umgebungsdatei *Pages/Create.cshtml*:
 
 [!code-cshtml[main](index/sample/RazorPagesContacts2/Pages/Customers/Create.cshtml?highlight=2)]
 
-Die [Razor-Seiten-Startprojekt](#rpvs17) enthält die Seite *Pages/_ValidationScriptsPartial.cshtml*, die die clientseitige Validierung bindet.
+Die [Razor-Pages-Startprojekt](#rpvs17) enthält die Seite *Pages/_ValidationScriptsPartial.cshtml*, die die clientseitige Validierung bindet.
 
 <a name="url_gen"></a>
 
@@ -384,11 +384,11 @@ Informationen zum Vorkompilieren von Ansichten finden Sie unter [Razor view comp
 
 [Laden Sie Beispielcode herunter, oder zeigen Sie ihn an](https://github.com/aspnet/Docs/tree/master/aspnetcore/mvc/razor-pages/index/sample).
 
-Lesen Sie auch den Artikel [Getting started with Razor Pages in ASP.NET Core (Erste Schritte mit Razor-Seiten in ASP.NET Core)](xref:tutorials/razor-pages/razor-pages-start), der auf diese Einführung aufbaut.
+Lesen Sie auch den Artikel [Getting started with Razor Pages in ASP.NET Core (Erste Schritte mit Razor-Pages in ASP.NET Core)](xref:tutorials/razor-pages/razor-pages-start), der auf diese Einführung aufbaut.
 
-### <a name="specify-that-razor-pages-are-at-the-content-root"></a>Festlegen des Inhaltsstammverzeichnisses für Razor-Seiten
+### <a name="specify-that-razor-pages-are-at-the-content-root"></a>Festlegen des Inhaltsstammverzeichnisses für Razor-Pages
 
-Standardmäßig lautet das Stammverzeichnis für Razor-Seiten */Pages*. Fügen Sie [WithRazorPagesAtContentRoot](/dotnet/api/microsoft.extensions.dependencyinjection.mvcrazorpagesmvcbuilderextensions.withrazorpagesatcontentroot) zu [AddMvc](/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addmvc#Microsoft_Extensions_DependencyInjection_MvcServiceCollectionExtensions_AddMvc_Microsoft_Extensions_DependencyInjection_IServiceCollection_) hinzu, um anzugeben, dass sich Ihre Razor-Dateien im Inhaltsstammverzeichnis ([ContentRootPath](/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.contentrootpath)) der App befinden:
+Standardmäßig lautet das Stammverzeichnis für Razor-Pages */Pages*. Fügen Sie [WithRazorPagesAtContentRoot](/dotnet/api/microsoft.extensions.dependencyinjection.mvcrazorpagesmvcbuilderextensions.withrazorpagesatcontentroot) zu [AddMvc](/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addmvc#Microsoft_Extensions_DependencyInjection_MvcServiceCollectionExtensions_AddMvc_Microsoft_Extensions_DependencyInjection_IServiceCollection_) hinzu, um anzugeben, dass sich Ihre Razor-Dateien im Inhaltsstammverzeichnis ([ContentRootPath](/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.contentrootpath)) der App befinden:
 
 ```csharp
 services.AddMvc()
@@ -399,9 +399,9 @@ services.AddMvc()
     .WithRazorPagesAtContentRoot();
 ```
 
-### <a name="specify-that-razor-pages-are-at-a-custom-root-directory"></a>Festlegen eines benutzerdefinierten Stammverzeichnisses für Razor-Seiten
+### <a name="specify-that-razor-pages-are-at-a-custom-root-directory"></a>Festlegen eines benutzerdefinierten Stammverzeichnisses für Razor-Pages
 
-Fügen Sie [WithRazorPagesRoot](/dotnet/api/microsoft.extensions.dependencyinjection.mvcrazorpagesmvccorebuilderextensions.withrazorpagesroot) zu [AddMvc](/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addmvc#Microsoft_Extensions_DependencyInjection_MvcServiceCollectionExtensions_AddMvc_Microsoft_Extensions_DependencyInjection_IServiceCollection_) hinzu, um anzugeben, dass Ihre Razor-Seiten sich in einem benutzerdefinierten Stammverzeichnis in der App befinden (geben Sie einen relativen Pfad an):
+Fügen Sie [WithRazorPagesRoot](/dotnet/api/microsoft.extensions.dependencyinjection.mvcrazorpagesmvccorebuilderextensions.withrazorpagesroot) zu [AddMvc](/dotnet/api/microsoft.extensions.dependencyinjection.mvcservicecollectionextensions.addmvc#Microsoft_Extensions_DependencyInjection_MvcServiceCollectionExtensions_AddMvc_Microsoft_Extensions_DependencyInjection_IServiceCollection_) hinzu, um anzugeben, dass Ihre Razor-Pages sich in einem benutzerdefinierten Stammverzeichnis in der App befinden (geben Sie einen relativen Pfad an):
 
 ```csharp
 services.AddMvc()
@@ -414,7 +414,7 @@ services.AddMvc()
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Getting started with Razor Pages (Erste Schritte mit Razor-Seiten)](xref:tutorials/razor-pages/razor-pages-start)
-* [Autorisierungskonventionen für Razor-Seiten](xref:security/authorization/razor-pages-authorization)
-* [Benutzerdefinierte Routen- und Seitenmodellanbieter für Razor-Seiten](xref:mvc/razor-pages/razor-pages-convention-features)
-* [Unit- und Integrationstests für Razor-Seiten](xref:testing/razor-pages-testing)
+* [Getting started with Razor Pages (Erste Schritte mit Razor-Pages)](xref:tutorials/razor-pages/razor-pages-start)
+* [Autorisierungskonventionen für Razor-Pages](xref:security/authorization/razor-pages-authorization)
+* [Benutzerdefinierte Routen- und Seitenmodellanbieter für Razor-Pages](xref:mvc/razor-pages/razor-pages-convention-features)
+* [Unit- und Integrationstests für Razor-Pages](xref:testing/razor-pages-testing)

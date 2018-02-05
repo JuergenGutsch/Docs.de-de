@@ -1,7 +1,7 @@
 ---
-title: Razor-Seiten mit Entity Framework Core - 8-Lernprogramm 1
+title: Razor-Pages mit Entity Framework Core - 8-Lernprogramm 1
 author: rick-anderson
-description: Veranschaulicht das Erstellen einer Razor-Seiten-app, die mit Entity Framework Core
+description: Veranschaulicht das Erstellen einer Razor-Pages-app, die mit Entity Framework Core
 manager: wpickett
 ms.author: riande
 ms.date: 11/15/2017
@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="getting-started-with-razor-pages-and-entity-framework-core-using-visual-studio-1-of-8"></a>Erste Schritte mit Razor-Seiten und Entity Framework Core mithilfe von Visual Studio (1 von 8)
+# <a name="getting-started-with-razor-pages-and-entity-framework-core-using-visual-studio-1-of-8"></a>Erste Schritte mit Razor-Pages und Entity Framework Core mithilfe von Visual Studio (1 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra) und [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -29,7 +29,7 @@ Die Beispiel-app ist eine Website für eine fiktive Contoso-Universität. Es umf
 
 [!INCLUDE[install 2.0](../../includes/install2.0.md)]
 
-Vertrautheit mit [Razor-Seiten](xref:mvc/razor-pages/index). Neue Programmierer sollten abschließen [erste Schritte mit Razor-Seiten](xref:tutorials/razor-pages/razor-pages-start) vor dem Starten dieser Serie.
+Vertrautheit mit [Razor-Pages](xref:mvc/razor-pages/index). Neue Programmierer sollten abschließen [erste Schritte mit Razor-Pages](xref:tutorials/razor-pages/razor-pages-start) vor dem Starten dieser Serie.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
@@ -48,15 +48,15 @@ Benutzer können anzeigen und Studenten, Kurs und Instructor-Informationen aktua
 
 ![Studenten bearbeiten (Seite)](intro/_static/student-edit.png)
 
-Den Stil der Benutzeroberfläche von dieser Website liegt nahe bei was von den integrierten Vorlagen generiert wird. Das Lernprogramm Schwerpunkt liegt auf dem EF-Core mit Razor-Seiten, nicht die Benutzeroberfläche.
+Den Stil der Benutzeroberfläche von dieser Website liegt nahe bei was von den integrierten Vorlagen generiert wird. Das Lernprogramm Schwerpunkt liegt auf dem EF-Core mit Razor-Pages, nicht die Benutzeroberfläche.
 
-## <a name="create-a-razor-pages-web-app"></a>Erstellen Sie eine Web-app mit Razor-Seiten
+## <a name="create-a-razor-pages-web-app"></a>Erstellen Sie eine Web-app mit Razor-Pages
 
 * Klicken Sie in Visual Studio im Menü **Datei** auf **Neu** > **Projekt**.
 * Erstellen Sie eine neue ASP.NET Core-Webanwendung. Nennen Sie das Projekt **ContosoUniversity**. Es ist wichtig, den Projektnamen *ContosoUniversity* daher die Namespaces überein, wenn Code kopieren/einfügen.
  ![neue ASP.NET Core-Webanwendung](intro/_static/np.png)
 * Wählen Sie in der Dropdownliste **ASP.NET Core 2.0** aus, und klicken Sie anschließend auf **Webanwendung**.
- ![Webanwendung (Razor-Seiten)](../../mvc/razor-pages/index/_static/np2.png)
+ ![Webanwendung (Razor-Pages)](../../mvc/razor-pages/index/_static/np2.png)
 
 Drücken Sie **F5**, um die App im Debugmodus auszuführen, oder **STRG+F5** zur Ausführung ohne Anfügen des Debuggers.
 
@@ -159,7 +159,7 @@ Wenn die Datenbank erstellt wird, EF Core Tabellen erstellt, deren Namen identis
 
 ## <a name="register-the-context-with-dependency-injection"></a>Registrieren Sie den Kontext mit Abhängigkeitsinjektion
 
-ASP.NET Core enthält [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection). Dienste (z. B. EF Core Datenbankkontext) werden während des Anwendungsstarts Abhängigkeitsinjektion registriert. Komponenten, die diese Dienste (z. B. Razor-Seiten) erfordern, werden diese Dienste über Konstruktorparameter bereitgestellt. Der Konstruktorcode, die eine Instanz des DB-Kontext abruft, wird später in diesem Lernprogramm gezeigt.
+ASP.NET Core enthält [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection). Dienste (z. B. EF Core Datenbankkontext) werden während des Anwendungsstarts Abhängigkeitsinjektion registriert. Komponenten, die diese Dienste (z. B. Razor-Pages) erfordern, werden diese Dienste über Konstruktorparameter bereitgestellt. Der Konstruktorcode, die eine Instanz des DB-Kontext abruft, wird später in diesem Lernprogramm gezeigt.
 
 Zum Registrieren `SchoolContext` als Dienst öffnen *Startup.cs*, und fügen Sie die markierten Zeilen, die die `ConfigureServices` Methode.
 

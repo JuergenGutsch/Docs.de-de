@@ -1,5 +1,5 @@
 ---
-title: Razor-Seiten Autorisierung Konventionen in ASP.NET Core
+title: Razor-Pages Autorisierung Konventionen in ASP.NET Core
 author: guardrex
 description: "Informationen Sie zum Zugriff auf den Seiten mit den Konventionen beim Start zu steuern, die Autorisierung von Benutzern und ermöglichen anonyme Benutzern den Zugriff auf einzelne Seiten oder Ordner von Seiten."
 manager: wpickett
@@ -15,11 +15,11 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="razor-pages-authorization-conventions-in-aspnet-core"></a>Razor-Seiten Autorisierung Konventionen in ASP.NET Core
+# <a name="razor-pages-authorization-conventions-in-aspnet-core"></a>Razor-Pages Autorisierung Konventionen in ASP.NET Core
 
 Von [Luke Latham](https://github.com/guardrex)
 
-Eine Möglichkeit zum Steuern des Zugriffs in Ihrer app Razor-Seiten ist Autorisierung Konventionen beim Start verwendet. Diese Konventionen können Sie zum Autorisieren von Benutzern und Zulassen von anonymen Benutzern den Zugriff auf einzelne Seiten oder Ordner von Seiten. Die Konventionen, die automatisch in diesem Thema beschriebenen gelten [Autorisierungsfilter](xref:mvc/controllers/filters#authorization-filters) zum Steuern des Zugriffs.
+Eine Möglichkeit zum Steuern des Zugriffs in Ihrer app Razor-Pages ist Autorisierung Konventionen beim Start verwendet. Diese Konventionen können Sie zum Autorisieren von Benutzern und Zulassen von anonymen Benutzern den Zugriff auf einzelne Seiten oder Ordner von Seiten. Die Konventionen, die automatisch in diesem Thema beschriebenen gelten [Autorisierungsfilter](xref:mvc/controllers/filters#authorization-filters) zum Steuern des Zugriffs.
 
 [Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/security/authorization/razor-pages-authorization/sample) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 
@@ -29,7 +29,7 @@ Verwenden der [AuthorizePage](/dotnet/api/microsoft.extensions.dependencyinjecti
 
 [!code-csharp[Main](razor-pages-authorization/sample/Startup.cs?name=snippet1&highlight=2,4)]
 
-Der angegebene Pfad ist Ansichtsmodul-Pfads, der Razor-Seiten Stamm relativen Pfad ohne Erweiterung und enthält nur Schrägstriche ist.
+Der angegebene Pfad ist Ansichtsmodul-Pfads, der Razor-Pages Stamm relativen Pfad ohne Erweiterung und enthält nur Schrägstriche ist.
 
 Ein [AuthorizePage Überladung](/dotnet/api/microsoft.extensions.dependencyinjection.pageconventioncollectionextensions.authorizepage#Microsoft_Extensions_DependencyInjection_PageConventionCollectionExtensions_AuthorizePage_Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_System_String_System_String_) ist verfügbar, wenn Sie eine Autorisierungsrichtlinie angeben müssen.
 
@@ -39,7 +39,7 @@ Verwenden der [AuthorizeFolder](/dotnet/api/microsoft.extensions.dependencyinjec
 
 [!code-csharp[Main](razor-pages-authorization/sample/Startup.cs?name=snippet1&highlight=2,5)]
 
-Der angegebene Pfad ist Ansichtsmodul-Pfads, der relative Razor-Seiten Stammpfad ist.
+Der angegebene Pfad ist Ansichtsmodul-Pfads, der relative Razor-Pages Stammpfad ist.
 
 Ein [AuthorizeFolder Überladung](/dotnet/api/microsoft.extensions.dependencyinjection.pageconventioncollectionextensions.authorizefolder#Microsoft_Extensions_DependencyInjection_PageConventionCollectionExtensions_AuthorizeFolder_Microsoft_AspNetCore_Mvc_ApplicationModels_PageConventionCollection_System_String_System_String_) ist verfügbar, wenn Sie eine Autorisierungsrichtlinie angeben müssen.
 
@@ -49,7 +49,7 @@ Verwenden der [AllowAnonymousToPage](/dotnet/api/microsoft.extensions.dependency
 
 [!code-csharp[Main](razor-pages-authorization/sample/Startup.cs?name=snippet1&highlight=2,6)]
 
-Der angegebene Pfad ist Ansichtsmodul-Pfads, der Razor-Seiten Stamm relativen Pfad ohne Erweiterung und enthält nur Schrägstriche ist.
+Der angegebene Pfad ist Ansichtsmodul-Pfads, der Razor-Pages Stamm relativen Pfad ohne Erweiterung und enthält nur Schrägstriche ist.
 
 ## <a name="allow-anonymous-access-to-a-folder-of-pages"></a>Anonymen Zugriff auf einen Ordner der Seiten zulassen
 
@@ -57,7 +57,7 @@ Verwenden der [AllowAnonymousToFolder](/dotnet/api/microsoft.extensions.dependen
 
 [!code-csharp[Main](razor-pages-authorization/sample/Startup.cs?name=snippet1&highlight=2,7)]
 
-Der angegebene Pfad ist Ansichtsmodul-Pfads, der relative Razor-Seiten Stammpfad ist.
+Der angegebene Pfad ist Ansichtsmodul-Pfads, der relative Razor-Pages Stammpfad ist.
 
 ## <a name="note-on-combining-authorized-and-anonymous-access"></a>Hinweis zur Kombination von autorisiert und anonymem Zugriff
 
@@ -79,5 +79,5 @@ Die notwendige Autorisierung auf der Seite "Private" funktioniert nicht, da bei 
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Benutzerdefinierte Routen- und Seitenmodellanbieter für Razor-Seiten](xref:mvc/razor-pages/razor-pages-convention-features)
+* [Benutzerdefinierte Routen- und Seitenmodellanbieter für Razor-Pages](xref:mvc/razor-pages/razor-pages-convention-features)
 * [PageConventionCollection](/dotnet/api/microsoft.aspnetcore.mvc.applicationmodels.pageconventioncollection) Klasse

@@ -110,7 +110,7 @@ Sie können die automatische Generierung von fälschungssicherheitstoken für HT
   ```
 
 > [!NOTE]
-> [Razor-Seiten](xref:mvc/razor-pages/index) vor XSRF/CSRF automatisch geschützt sind. Sie müssen keinen zusätzlichen Code schreiben. Finden Sie unter [XSRF/CSRF und Razor-Seiten](xref:mvc/razor-pages/index#xsrf) für Weitere Informationen.
+> [Razor-Pages](xref:mvc/razor-pages/index) vor XSRF/CSRF automatisch geschützt sind. Sie müssen keinen zusätzlichen Code schreiben. Finden Sie unter [XSRF/CSRF und Razor-Pages](xref:mvc/razor-pages/index#xsrf) für Weitere Informationen.
 
 Die am häufigsten verwendete Ansatz zum Schutz vor CSRF-Angriffen wird das token für die domänensynchronisierung-Muster (STP). STP ist eine Technik, die verwendet werden, wenn der Benutzer eine Seite mit Daten anfordert. Der Server sendet ein Token, das die Identität des aktuellen Benutzers an den Client zugeordnet. Der Client sendet das Token wieder an den Server für die Überprüfung. Wenn der Server ein Token, die Identität des authentifizierten Benutzers übereinstimmt empfängt, wird die Anforderung abgelehnt. Das Token ist eindeutig und unvorhersehbar. Das Token kann auch verwendet werden, um sicherzustellen, dass ordnungsgemäße Sequenzierung einer Reihe von Anforderungen (sicherstellen, dass Seite 1 vorausgeht Seite 2 vor der Seite "3"). Alle Formulare in ASP.NET Core MVC-Vorlagen generiert antiforgery-Token. Die folgenden zwei Beispiele für ansichtslogik antiforgery Token zu generieren:
 

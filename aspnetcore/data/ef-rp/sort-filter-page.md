@@ -1,5 +1,5 @@
 ---
-title: Razor-Seiten mit EF-Core - Sortierung, Filter, Paging - 3 von 8
+title: Razor-Pages mit EF-Core - Sortierung, Filter, Paging - 3 von 8
 author: rick-anderson
 description: "In diesem Lernprogramm fügen Sie sortieren, Filtern und paging Funktionen zur Seite mit ASP.NET Core und Entity Framework Core."
 ms.author: riande
@@ -14,7 +14,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="sorting-filtering-paging-and-grouping---ef-core-with-razor-pages-3-of-8"></a>Sortieren, filtern, paging und Gruppierung - EF-Core mit Razor-Seiten (3 von 8)
+# <a name="sorting-filtering-paging-and-grouping---ef-core-with-razor-pages-3-of-8"></a>Sortieren, filtern, paging und Gruppierung - EF-Core mit Razor-Pages (3 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra), [Rick Anderson](https://twitter.com/RickAndMSFT), und [Jon P Smith](https://twitter.com/thereformedprog)
 
@@ -191,9 +191,9 @@ Alle Parameter sind null, wenn:
 
 Wenn ein Auslagerung Link geklickt wird, enthält die Indexvariable Seite die Seitenzahl angezeigt.
 
-`CurrentSort`Stellt den Razor-Seite mit der aktuellen Sortierung. Die aktuelle Sortierreihenfolge muss in den Paginierungslinks, behalten Sie die Sortierreihenfolge beim Paging enthalten sein.
+`CurrentSort`Stellt den Razor-Page mit der aktuellen Sortierung. Die aktuelle Sortierreihenfolge muss in den Paginierungslinks, behalten Sie die Sortierreihenfolge beim Paging enthalten sein.
 
-`CurrentFilter`Stellt den Razor-Seite mit die aktuelle Filterzeichenfolge bereit. Die `CurrentFilter` Wert:
+`CurrentFilter`Stellt den Razor-Page mit die aktuelle Filterzeichenfolge bereit. Die `CurrentFilter` Wert:
 
 * Muss in die Auslagerungsdatei Links enthalten sein, um die filtereinstellungen während der Auslagerung zu gewährleisten.
 * Muss in das Textfeld wiederhergestellt werden, wenn die Seite erneut angezeigt wird.
@@ -211,7 +211,7 @@ Die `PaginatedList.CreateAsync` -Methode konvertiert die Student-Abfrage in eine
 
 Die zwei Fragezeichen in `PaginatedList.CreateAsync` darstellen der [Null-Sammeloperator](https://docs.microsoft.com/ dotnet/csharp/language-reference/operators/null-conditional-operator). Der Null-Sammeloperator definiert einen Standardwert für einen NULL-Werte zulässt. Der Ausdruck `(pageIndex ?? 1)` bedeutet, dass der Rückgabewert von `pageIndex` , wenn er einen Wert aufweist. Wenn `pageIndex` verfügt über einen Wert verfügen, geben 1 zurück.
 
-## <a name="add-paging-links-to-the-student-razor-page"></a>Paginierungslinks zu den Student Razor-Seite hinzufügen
+## <a name="add-paging-links-to-the-student-razor-page"></a>Paginierungslinks zu den Student Razor-Page hinzufügen
 
 Aktualisieren Sie das Markup in *Students/Index.cshtml*. Die Änderungen werden hervorgehoben:
 
@@ -245,7 +245,7 @@ Durchlaufen Sie den Debugger.
 In diesem Schritt *Pages/About.cshtml* wird aktualisiert, um anzuzeigen, wie viele Studenten für jedes Registrierungsdatum registriert haben. Das Update Gruppierung verwendet, und umfasst die folgenden Schritte aus:
 
 * Erstellen Sie eine Modellklasse Ansicht für die Daten, die verwendet werden, indem Sie die **zu** Seite.
-* Ändern Sie das Modell für Razor-Seite und die Seite.
+* Ändern Sie das Modell für Razor-Page und die Seite.
 
 ### <a name="create-the-view-model"></a>Erstellen des Modells anzeigen
 
@@ -263,9 +263,9 @@ Update der *Pages/About.cshtml.cs* Datei durch den folgenden Code:
 
 Registrierungsdatum Student-Entität gruppiert, berechnet die Anzahl der Entitäten in jeder Gruppe und speichert die Ergebnisse in einer Auflistung von LINQ-Anweisung `EnrollmentDateGroup` Model-Objekte anzeigen.
 
-Hinweis: Die LINQ `group` Befehl wird derzeit von EF Core nicht unterstützt. Im vorangehenden Code werden alle Studentendatensätze von SQL Server zurückgegeben. Die `group` Befehl wird in der app Razor-Seiten nicht auf dem SQL Server angewendet. EF Core 2.1 unterstützt diese LINQ `group` Operator und die Gruppierung tritt auf, auf dem SQL Server. Finden Sie unter [Relational: übersetzen GroupBy()-Funktion to SQL unterstützen](https://github.com/aspnet/EntityFrameworkCore/issues/2341). [EF Core 2.1](https://github.com/aspnet/EntityFrameworkCore/wiki/roadmap) werden mit .NET Core 2.1 veröffentlicht werden. Weitere Informationen finden Sie unter der [Roadmap für die .NET Core](https://github.com/dotnet/core/blob/master/roadmap.md).
+Hinweis: Die LINQ `group` Befehl wird derzeit von EF Core nicht unterstützt. Im vorangehenden Code werden alle Studentendatensätze von SQL Server zurückgegeben. Die `group` Befehl wird in der app Razor-Pages nicht auf dem SQL Server angewendet. EF Core 2.1 unterstützt diese LINQ `group` Operator und die Gruppierung tritt auf, auf dem SQL Server. Finden Sie unter [Relational: übersetzen GroupBy()-Funktion to SQL unterstützen](https://github.com/aspnet/EntityFrameworkCore/issues/2341). [EF Core 2.1](https://github.com/aspnet/EntityFrameworkCore/wiki/roadmap) werden mit .NET Core 2.1 veröffentlicht werden. Weitere Informationen finden Sie unter der [Roadmap für die .NET Core](https://github.com/dotnet/core/blob/master/roadmap.md).
 
-### <a name="modify-the-about-razor-page"></a>Ändern Sie die zu den Razor-Seiten
+### <a name="modify-the-about-razor-page"></a>Ändern Sie die zu den Razor-Pages
 
 Ersetzen Sie den Code in der *Views/Home/About.cshtml* Datei durch den folgenden Code:
 

@@ -1,7 +1,7 @@
 ---
-title: "Gerüstbau mit Razor-Seiten in ASP.NET Core"
+title: "Gerüstbau mit Razor-Pages in ASP.NET Core"
 author: rick-anderson
-description: "Gibt nähere Informationen zu Razor-Seiten, die durch Gerüstbau unter Mac generiert wurden."
+description: "Gibt nähere Informationen zu Razor-Pages, die durch Gerüstbau unter Mac generiert wurden."
 ms.author: riande
 manager: wpickett
 ms.date: 1/27/2018

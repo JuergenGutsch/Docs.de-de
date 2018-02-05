@@ -1,6 +1,6 @@
 # <a name="aspnet-core-authorization-sample"></a>Beispiel für ASP.NET Core-Autorisierung
 
-Dieses Beispiel veranschaulicht die Verwendung von Razor-Seiten Autorisierung von Konventionen. In diesem Beispiel wird veranschaulicht, die in beschriebenen Funktionen der [Razor-Seiten Autorisierung Konventionen](https://docs.microsoft.com/aspnet/core/security/authorization/razor-pages-authorization) Thema.
+Dieses Beispiel veranschaulicht die Verwendung von Razor-Pages Autorisierung von Konventionen. In diesem Beispiel wird veranschaulicht, die in beschriebenen Funktionen der [Razor-Pages Autorisierung Konventionen](https://docs.microsoft.com/aspnet/core/security/authorization/razor-pages-authorization) Thema.
 
 Benutzerautorisierung in diesem Beispiel verwendet die Cookieauthentifizierung Funktionen, in beschrieben der [Cookieauthentifizierung verwenden, ohne ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/cookie) Thema. Informationen zur Verwendung von ASP.NET Core Identity finden Sie unter den Themen in der [Authentifizierung](https://docs.microsoft.com/aspnet/core/security/authentication/index) Abschnitt der Dokumentation.
 

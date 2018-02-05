@@ -36,7 +36,7 @@ ms.lasthandoff: 11/10/2017
     - [Erstellen Sie eine Bearbeitungsseite für Daten in WebMatrix](introduction/create-an-edit-data-page-in-webmatrix.md)
     - [Erstellen Sie eine Seite "Daten löschen" in WebMatrix](introduction/create-a-delete-data-page-in-webmatrix.md)
     - [Veröffentlichen einer Websites mit dem Internet mithilfe von WebMatrix](introduction/publish-a-website-to-the-internet-using-webmatrix.md)
-- [ASP.NET Razor-Seiten](aspnet-razor-pages/index.md)
+- [ASP.NET Razor-Pages](aspnet-razor-pages/index.md)
 
     - [Erste Schritte mit WebMatrix und ASP.NET Web Pages](aspnet-razor-pages/getting-started-with-webmatrix-and-aspnet-web-pages.md)
     - [Einführung in ASP.NET Web-Programmierung Razor-Syntax](aspnet-razor-pages/introduction-to-aspnet-web-programming-using-the-razor-syntax.md)

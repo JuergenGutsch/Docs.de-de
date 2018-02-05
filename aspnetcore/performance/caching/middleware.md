@@ -67,7 +67,7 @@ services.AddResponseCaching(options =>
 
 ## <a name="varybyquerykeys"></a>VaryByQueryKeys
 
-Bei Verwendung von MVC/Web-API-Controllern oder Modellen für Razor-Seiten-Seite, die `ResponseCache` Attribut gibt an, die Parameter zum Festlegen der entsprechenden Header für das Zwischenspeichern von Antworten erforderlich sind. Der einzige Parameter der der `ResponseCache` -Attribut, das die Middleware zwingend erforderlich ist `VaryByQueryKeys`, nicht dem tatsächlichen HTTP-Header entsprechen. Weitere Informationen finden Sie unter [ResponseCache Attribut](xref:performance/caching/response#responsecache-attribute).
+Bei Verwendung von MVC/Web-API-Controllern oder Modellen für Razor-Pages-Seite, die `ResponseCache` Attribut gibt an, die Parameter zum Festlegen der entsprechenden Header für das Zwischenspeichern von Antworten erforderlich sind. Der einzige Parameter der der `ResponseCache` -Attribut, das die Middleware zwingend erforderlich ist `VaryByQueryKeys`, nicht dem tatsächlichen HTTP-Header entsprechen. Weitere Informationen finden Sie unter [ResponseCache Attribut](xref:performance/caching/response#responsecache-attribute).
 
 Wenn nicht die `ResponseCache` -Attribut, Zwischenspeichern von Antworten mit variiert werden kann die `VaryByQueryKeys` Funktion. Verwenden der `ResponseCachingFeature` direkt aus der `IFeatureCollection` von der `HttpContext`:
 

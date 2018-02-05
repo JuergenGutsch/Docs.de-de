@@ -61,7 +61,7 @@ Sie müssen das fälschungssicherheitstoken nonsafe Methoden (POST, PUT, DELETE)
 
 ## <a name="anti-forgery-tokens-in-aspnet-mvc"></a>Fälschungssicherheitstoken in ASP.NET MVC
 
-Verwenden Sie zum Hinzufügen der fälschungssicherheitstoken zu einer Razor-Seite der **HtmlHelper.AntiForgeryToken** Hilfsmethode:
+Verwenden Sie zum Hinzufügen der fälschungssicherheitstoken zu einer Razor-Page der **HtmlHelper.AntiForgeryToken** Hilfsmethode:
 
 [!code-cshtml[Main](preventing-cross-site-request-forgery-csrf-attacks/samples/sample3.cshtml)]
 

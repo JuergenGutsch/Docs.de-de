@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen der Validierung"
 author: rick-anderson
-description: "Erläutert, wie einer Razor-Seite Validierung hinzugefügt wird."
+description: "Erläutert, wie einer Razor-Page Validierung hinzugefügt wird."
 manager: wpickett
 ms.author: riande
 ms.date: 08/07/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="adding-validation-to-a-razor-page"></a>Hinzufügen der Validierung zu einer Razor-Seite
+# <a name="adding-validation-to-a-razor-page"></a>Hinzufügen der Validierung zu einer Razor-Page
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -23,9 +23,9 @@ In diesem Abschnitt wird dem Modell `Movie` Validierungslogik hinzugefügt. Die 
 
 ## <a name="validation"></a>Validierung
 
-Ein wesentlicher Grundsatz der Softwareentwicklung heißt [DRY](https://wikipedia.org/wiki/Don%27t_repeat_yourself) (**D**on't **R**epeat **Y**ourself, dt. Wiederholen Sie sich nicht). Razor-Seiten sind für Entwicklungsaufgaben gedacht, bei denen Funktionalität einmal angegeben und in der gesamten App übernommen wird. Der DRY-Ansatz kann die Codemenge in einer App reduzieren. Durch diesen Ansatz wird Code weniger fehleranfällig und lässt sich leichter testen und verwalten.
+Ein wesentlicher Grundsatz der Softwareentwicklung heißt [DRY](https://wikipedia.org/wiki/Don%27t_repeat_yourself) (**D**on't **R**epeat **Y**ourself, dt. Wiederholen Sie sich nicht). Razor-Pages sind für Entwicklungsaufgaben gedacht, bei denen Funktionalität einmal angegeben und in der gesamten App übernommen wird. Der DRY-Ansatz kann die Codemenge in einer App reduzieren. Durch diesen Ansatz wird Code weniger fehleranfällig und lässt sich leichter testen und verwalten.
 
-Die von Razor-Seiten und Entity Framework gebotene Unterstützung der Validierung ist ein gutes Beispiel des DRY-Prinzips. Validierungsregeln werden an zentraler Stelle (in der Modellklasse) deklarativ angegeben und überall in der App erzwungen.
+Die von Razor-Pages und Entity Framework gebotene Unterstützung der Validierung ist ein gutes Beispiel des DRY-Prinzips. Validierungsregeln werden an zentraler Stelle (in der Modellklasse) deklarativ angegeben und überall in der App erzwungen.
 
 ### <a name="adding-validation-rules-to-the-movie-model"></a>Hinzufügen von Validierungsregeln zum Modell „Movie“
 
@@ -44,7 +44,7 @@ Validierungsattribute geben das Verhalten an, das für Modelleigenschaften erzwu
 
 Dadurch, dass Validierungsregeln von ASP.NET Core automatisch erzwungen werden, wird eine App stabiler. Die automatische Validierung für Modelle hilft beim Schutz der App, da Sie nicht daran denken müssen, diesen anzuwenden, sobald neuer Code hinzugefügt wird.
 
-### <a name="validation-error-ui-in-razor-pages"></a>Benutzeroberflächenoption für Validierungsfehler in Razor-Seiten
+### <a name="validation-error-ui-in-razor-pages"></a>Benutzeroberflächenoption für Validierungsfehler in Razor-Pages
 
 Führen Sie die App aus, und navigieren Sie zu „Pages/Movies“.
 
@@ -57,7 +57,7 @@ Klicken Sie auf den Link **Neu erstellen**. Füllen Sie das Formular mit einigen
 
 Wie Sie sehen, hat das Formular in allen Feldern mit einem ungültigen Wert automatisch eine Validierungsfehlermeldung angezeigt. Die Fehlermeldungen werden sowohl auf Clientseite (mithilfe von JavaScript und jQuery) als auch auf Serverseite erzwungen (wenn ein Benutzer JavaScript deaktiviert hat).
 
-Ein entscheidender Vorteil ist, dass **keine** Codeänderungen auf den Seiten „Erstellen“ oder „Bearbeiten“ erforderlich waren. Nach Anwenden von „DataAnnotations“ auf das Modell wurde die Benutzeroberflächenvalidierung aktiviert. Die in diesem Tutorial erstellten Razor-Seiten haben die Validierungsregeln automatisch übernommen (mithilfe der Validierungsattribute für die Eigenschaften der Modellklasse `Movie`). Testen Sie die Validierung mithilfe der Seite „Bearbeiten“. Es erfolgt dieselbe Validierung.
+Ein entscheidender Vorteil ist, dass **keine** Codeänderungen auf den Seiten „Erstellen“ oder „Bearbeiten“ erforderlich waren. Nach Anwenden von „DataAnnotations“ auf das Modell wurde die Benutzeroberflächenvalidierung aktiviert. Die in diesem Tutorial erstellten Razor-Pages haben die Validierungsregeln automatisch übernommen (mithilfe der Validierungsattribute für die Eigenschaften der Modellklasse `Movie`). Testen Sie die Validierung mithilfe der Seite „Bearbeiten“. Es erfolgt dieselbe Validierung.
 
 Die Formulardaten werden erst an den Server zurückgesendet, wenn auf Clientseite keine Validierungsfehler auftreten. Überprüfen Sie mithilfe von mindestens einem der folgenden Ansätze, ob keine Formulardaten bereitgestellt werden:
 
@@ -89,7 +89,7 @@ Der folgende Code zeigt einen Teil der Seite *Create.cshtml*, deren Gerüst Sie 
 
 Das [Hilfsprogramm für Eingabetags](xref:mvc/views/working-with-forms) verwendet die Attribute von [DataAnnotations](https://docs.microsoft.com/aspnet/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-6) und generiert HTML-Attribute, die auf der Clientseite für die jQuery-Validierung erforderlich sind. Das [Hilfsprogramm für Validierungstags](xref:mvc/views/working-with-forms#the-validation-tag-helpers) zeigt Validierungsfehler. Weitere Informationen finden Sie unter [Validierung](xref:mvc/models/validation).
 
-Die Seiten „Erstellen“ und „Bearbeiten“ weisen keine Validierungsregeln auf. Die Validierungsregeln und Fehlerzeichenfolgen werden nur in der `Movie`-Klasse angegeben. Diese Validierungsregeln gelten automatisch für Razor-Seiten, die das Modell `Movie` bearbeiten.
+Die Seiten „Erstellen“ und „Bearbeiten“ weisen keine Validierungsregeln auf. Die Validierungsregeln und Fehlerzeichenfolgen werden nur in der `Movie`-Klasse angegeben. Diese Validierungsregeln gelten automatisch für Razor-Pages, die das Modell `Movie` bearbeiten.
 
 Wenn Validierungslogik geändert werden muss, erfolgt dies nur im Modell. Die Validierung erfolgt in der gesamten Anwendung einheitlich (Validierungslogik ist zentral definiert). Die zentrale Validierung unterstützt sauberen Code und erleichtert dessen Verwaltung und Aktualisierung.
 
@@ -132,7 +132,7 @@ Der folgende Code zeigt die Kombination von Attributen in einer Zeile:
 
 [!code-csharp[Main](razor-pages-start/sample/RazorPagesMovie/Models/MovieDateRatingDAmult.cs?name=snippet1)]
 
-[Erste Schritte mit Razor-Seiten und EF Core](xref:data/ef-rp/intro) zeigt erweiterte EF Core-Vorgänge mit Razor-Seiten.
+[Erste Schritte mit Razor-Pages und EF Core](xref:data/ef-rp/intro) zeigt erweiterte EF Core-Vorgänge mit Razor-Pages.
 
 ### <a name="publish-to-azure"></a>Veröffentlichen in Azure
 

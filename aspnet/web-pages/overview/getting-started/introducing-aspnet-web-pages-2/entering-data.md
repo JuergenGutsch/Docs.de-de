@@ -238,7 +238,7 @@ Eine letzte Schritt besteht darin, um erhalten vereinfachen die *AddMovie* Seite
 
 [!code-cshtml[Main](entering-data/samples/sample14.cshtml)]
 
-Wie vorhin, ASP.NET interpretiert die `~` Operator als Stammverzeichnis der Website. Müssen Sie verwenden nicht die `~` -Operator können Sie das Markup `<a href="./AddMovie">Add a movie</a>` oder auf andere Weise auf den Pfad zu definieren, die HTML versteht. Aber die `~` Operator ist ein guter Allgemein Ansatz bei der Erstellung von Links für Razor-Seiten, da die Site flexibler ist – Wenn Sie die aktuelle Seite in einen Unterordner verschieben, der Link wird weiterhin fahren Sie mit der *AddMovie* Seite. (Beachten Sie, dass die `~` Operator funktioniert nur in *cshtml* Seiten. ASP.NET weiß, aber es ist keine standard-HTML.)
+Wie vorhin, ASP.NET interpretiert die `~` Operator als Stammverzeichnis der Website. Müssen Sie verwenden nicht die `~` -Operator können Sie das Markup `<a href="./AddMovie">Add a movie</a>` oder auf andere Weise auf den Pfad zu definieren, die HTML versteht. Aber die `~` Operator ist ein guter Allgemein Ansatz bei der Erstellung von Links für Razor-Pages, da die Site flexibler ist – Wenn Sie die aktuelle Seite in einen Unterordner verschieben, der Link wird weiterhin fahren Sie mit der *AddMovie* Seite. (Beachten Sie, dass die `~` Operator funktioniert nur in *cshtml* Seiten. ASP.NET weiß, aber es ist keine standard-HTML.)
 
 Wenn Sie fertig sind, führen die *Filme* Seite. Es wird auf dieser Seite formuliert werden:
 

@@ -19,7 +19,7 @@ ms.lasthandoff: 01/30/2018
 
 * [Komponententests](/dotnet/articles/core/testing/unit-testing-with-dotnet-test)
 * [Integrationstests](xref:testing/integration-testing)
-* [Unit- und Integrationstests für Razor-Seiten](xref:testing/razor-pages-testing)
+* [Unit- und Integrationstests für Razor-Pages](xref:testing/razor-pages-testing)
 * [Testen von Controllern](xref:mvc/controllers/testing)
 * [Debuggen von ASP.NET Core 2.x-Quellcode](https://github.com/aspnet/Docs/issues/4155)
 * [Remotedebuggen](/visualstudio/debugger/remote-debugging-azure)

@@ -28,7 +28,7 @@ durch [Tom FitzMacken](https://github.com/tfitzmac)
 > 
 > - Was müssen Sie (falls zutreffend) zum Arbeiten mit ASP.NET Web Pages in Ihrer Version von Visual Studio installieren.
 > - Wie Sie die Unterstützung für ASP.NET Web Pages Visual Web Developer 2010 Express hinzufügen.
-> - Wie Sie Funktionen zum Arbeiten mit ASP.NET Razor-Seiten, einschließlich IntelliSense und der Debugger in Visual Studio verwenden.
+> - Wie Sie Funktionen zum Arbeiten mit ASP.NET Razor-Pages, einschließlich IntelliSense und der Debugger in Visual Studio verwenden.
 >   
 > 
 > ## <a name="software-versions-used-in-the-tutorial"></a>In diesem Lernprogramm verwendeten Versionen der Software
@@ -42,7 +42,7 @@ durch [Tom FitzMacken](https://github.com/tfitzmac)
 > Dieses Lernprogramm funktioniert auch mit ASP.NET Web Pages 2, Visual Studio 2012, Visual Studio 2010 und WebMatrix 2.
 
 
-Sie können ASP.NET Web Pages mit Razor-Syntax, die mithilfe von WebMatrix oder viele andere Code-Editoren programmieren. Sie können auch Microsoft Visual Studio, eine voll ausgestattete integrierte Entwicklungsumgebung (IDE), die einen Satz leistungsstarken Tools bietet für viele Arten von Anwendungen (nicht nur Websites) erstellen. Um mit ASP.NET Razor-Seiten arbeiten, können Sie entweder eine der vollständigen Editionen von Visual Studio oder das kostenlose [Visual Studio Express für Web](https://www.visualstudio.com/downloads/download-visual-studio-vs#d-2013-express) Edition.
+Sie können ASP.NET Web Pages mit Razor-Syntax, die mithilfe von WebMatrix oder viele andere Code-Editoren programmieren. Sie können auch Microsoft Visual Studio, eine voll ausgestattete integrierte Entwicklungsumgebung (IDE), die einen Satz leistungsstarken Tools bietet für viele Arten von Anwendungen (nicht nur Websites) erstellen. Um mit ASP.NET Razor-Pages arbeiten, können Sie entweder eine der vollständigen Editionen von Visual Studio oder das kostenlose [Visual Studio Express für Web](https://www.visualstudio.com/downloads/download-visual-studio-vs#d-2013-express) Edition.
 
 Zwei besonders nützliche, Funktionen, die Visual Studio für die Programmierung mit Webseiten ASP.NET Razor bereitstellt sind:
 

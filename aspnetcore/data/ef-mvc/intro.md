@@ -19,7 +19,7 @@ ms.lasthandoff: 01/30/2018
 
 Durch [Tom Dykstra](https://github.com/tdykstra) und [Rick Anderson](https://twitter.com/RickAndMSFT)
 
-Eine Razor-Seiten Version dieses Lernprogramms steht [hier](xref:data/ef-rp/intro). Die Version für Razor-Seiten ist leichter zu verstehen und deckt mehr EF-Features ab. Es wird empfohlen, Sie führen Sie die [Razor-Seiten Version dieses Lernprogramms](xref:data/ef-rp/intro).
+Eine Razor-Pages Version dieses Lernprogramms steht [hier](xref:data/ef-rp/intro). Die Version für Razor-Pages ist leichter zu verstehen und deckt mehr EF-Features ab. Es wird empfohlen, Sie führen Sie die [Razor-Pages Version dieses Lernprogramms](xref:data/ef-rp/intro).
 
 Die Contoso-University Beispielwebanwendung veranschaulicht, wie ASP.NET Core 2.0 MVC-Webanwendungen, die mit Entity Framework (EF) Core 2.0 und Visual Studio 2017.
 

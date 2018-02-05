@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen eines Modells zu einer Razor-Seiten-App mit Visual Studio für Mac"
+title: "Hinzufügen eines Modells zu einer Razor-Pages-App mit Visual Studio für Mac"
 author: rick-anderson
-description: "Hinzufügen eines Modells zu einer Razor-Seiten-App in ASP.NET Core mithilfe von Visual Studio für Mac"
+description: "Hinzufügen eines Modells zu einer Razor-Pages-App in ASP.NET Core mithilfe von Visual Studio für Mac"
 manager: wpickett
 ms.author: riande
 ms.date: 08/27/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="adding-a-model-to-a-razor-pages-app-in-aspnet-core-with-visual-studio-for-mac"></a>Hinzufügen eines Modells zu einer Razor-Seiten-App in ASP.NET Core mit Visual Studio für Mac
+# <a name="adding-a-model-to-a-razor-pages-app-in-aspnet-core-with-visual-studio-for-mac"></a>Hinzufügen eines Modells zu einer Razor-Pages-App in ASP.NET Core mit Visual Studio für Mac
 
 [!INCLUDE[model1](../../includes/RP/model1.md)]
 
@@ -75,4 +75,4 @@ Im nächsten Tutorial finden Sie Erläuterungen zu den Dateien, die durch den Ge
 
 >[!div class="step-by-step"]
 [Vorheriges Tutorial: Getting Started (Erste Schritte)](xref:tutorials/razor-pages-mac/razor-pages-start)
-[Nächstes Tutorial: Scaffolded Razor Pages (Razor-Seiten mit erfolgtem Gerüstbau)](xref:tutorials/razor-pages-mac/page)
+[Nächstes Tutorial: Scaffolded Razor Pages (Razor-Pages mit erfolgtem Gerüstbau)](xref:tutorials/razor-pages-mac/page)

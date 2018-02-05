@@ -146,7 +146,7 @@ Die dritte Option für das Diagramm ist die Verwendung eine XML-Datei wie die Da
 > 
 > Allerdings müssen gelegentlich Sie arbeiten mit einer Klasse, die nicht in einem Namespace, die für Sie automatisch importiert wird. In diesem Fall können Sie entweder den vollqualifizierten Namen von dieser Klasse ab, oder Sie können den Namespace, der die Klasse enthält, manuell importieren. Um einen Namespace zu importieren, verwenden Sie die `using` Anweisung (`import` in Visual Basic), wie Sie in einem Beispiel vorhin den Artikel.
 > 
-> Z. B. die `DataSet` Klasse befindet sich in der `System.Data` Namespace. Die `System.Data` Namespace ist nicht automatisch für ASP.NET Razor-Seiten zur Verfügung. Aus diesem Grund zur Bearbeitung der `DataSet` -Klasse unter Verwendung des vollqualifizierten Namens, können Sie Code wie folgt verwenden:
+> Z. B. die `DataSet` Klasse befindet sich in der `System.Data` Namespace. Die `System.Data` Namespace ist nicht automatisch für ASP.NET Razor-Pages zur Verfügung. Aus diesem Grund zur Bearbeitung der `DataSet` -Klasse unter Verwendung des vollqualifizierten Namens, können Sie Code wie folgt verwenden:
 > 
 > `var dataSet = new System.Data.DataSet();`
 > 

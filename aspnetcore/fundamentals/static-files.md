@@ -234,7 +234,7 @@ Das vorhergehende Codebeispiel wird eine Anforderung für eine Datei mit einem u
 ### <a name="considerations"></a>Weitere Überlegungen
 
 > [!WARNING]
-> `UseDirectoryBrowser`und `UseStaticFiles` kann Offenlegung von geheimen Schlüsseln. Deaktivieren von Verzeichnissuche in der Produktion wird dringend empfohlen. Überprüfen Sie sorgfältig, welche Verzeichnisse aktiviert sind, über `UseStaticFiles` oder `UseDirectoryBrowser`. Das gesamte Verzeichnis und seinen Unterverzeichnissen werden öffentlich zugegriffen werden kann. Store-Dateien für die Bereitstellung für die Öffentlichkeit geeignet ist in einem dedizierten Verzeichnis, z. B.  *\<Content_root > / "Wwwroot"*. Trennen Sie diese Dateien von MVC-Ansichten mit Razor-Seiten (nur 2.x), Konfigurationsdateien usw. ein.
+> `UseDirectoryBrowser`und `UseStaticFiles` kann Offenlegung von geheimen Schlüsseln. Deaktivieren von Verzeichnissuche in der Produktion wird dringend empfohlen. Überprüfen Sie sorgfältig, welche Verzeichnisse aktiviert sind, über `UseStaticFiles` oder `UseDirectoryBrowser`. Das gesamte Verzeichnis und seinen Unterverzeichnissen werden öffentlich zugegriffen werden kann. Store-Dateien für die Bereitstellung für die Öffentlichkeit geeignet ist in einem dedizierten Verzeichnis, z. B.  *\<Content_root > / "Wwwroot"*. Trennen Sie diese Dateien von MVC-Ansichten mit Razor-Pages (nur 2.x), Konfigurationsdateien usw. ein.
 
 * Die URLs für Inhalte, die verfügbar gemacht, mit `UseDirectoryBrowser` und `UseStaticFiles` unterliegen die Groß-/Kleinschreibung und zeichenbeschränkungen des zugrunde liegenden Dateisystems. Windows ist z. B. Groß-/Kleinschreibung beachten&mdash;Mac und Linux nicht.
 

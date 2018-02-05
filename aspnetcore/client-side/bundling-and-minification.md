@@ -67,11 +67,11 @@ Browser sind ziemlich aufwändig im Hinblick auf HTTP-Anforderungsheader. Die Ge
 
 ## <a name="choose-a-bundling-and-minification-strategy"></a>Wählen Sie eine Strategie Bündelung und Minimierung
 
-Die Razor-Seiten und MVC-Projektvorlagen bieten eine Out-of-Box-Lösung für Bündelung und Minimierung bestehend aus einer JSON-Konfigurationsdatei an. Drittanbieter-tools, z. B. die [Gulp](xref:client-side/using-gulp) und [Grunt](xref:client-side/using-grunt) task Runner, Aufgaben mit etwas mehr Komplexität. Ein Tool eines Drittanbieters ist ideal, wenn der Entwicklungsworkflow Verarbeitung hinter Bündelung und Minimierung erfordert&mdash;z. B. Linting und Image-Optimierung. Verwenden Sie zur Entwurfszeit Bündelung und Minimierung, werden die verkleinerte Dateien vor der Bereitstellung der app erstellt. Bundling und Minimierung mit vor der Bereitstellung bietet den Vorteil des reduzierten Serverlast. Allerdings es ist wichtig zu wissen, während der Entwurfszeit Bündelung und Minimierung Build Komplexität erhöht und kann nur für statische Dateien.
+Die Razor-Pages und MVC-Projektvorlagen bieten eine Out-of-Box-Lösung für Bündelung und Minimierung bestehend aus einer JSON-Konfigurationsdatei an. Drittanbieter-tools, z. B. die [Gulp](xref:client-side/using-gulp) und [Grunt](xref:client-side/using-grunt) task Runner, Aufgaben mit etwas mehr Komplexität. Ein Tool eines Drittanbieters ist ideal, wenn der Entwicklungsworkflow Verarbeitung hinter Bündelung und Minimierung erfordert&mdash;z. B. Linting und Image-Optimierung. Verwenden Sie zur Entwurfszeit Bündelung und Minimierung, werden die verkleinerte Dateien vor der Bereitstellung der app erstellt. Bundling und Minimierung mit vor der Bereitstellung bietet den Vorteil des reduzierten Serverlast. Allerdings es ist wichtig zu wissen, während der Entwurfszeit Bündelung und Minimierung Build Komplexität erhöht und kann nur für statische Dateien.
 
 ## <a name="configure-bundling-and-minification"></a>Konfigurieren von Bündelung und Minimierung
 
-Geben Sie die Razor-Seiten und MVC-Projektvorlagen einen *bundleconfig.json* Konfigurationsdatei an, die die Optionen für jedes Paket definiert. Standardmäßig wird eine Paket-Konfiguration für die benutzerdefinierte JavaScript definiert (*wwwroot/js/site.js*) und Stylesheet (*wwwroot/css/site.css*) Dateien:
+Geben Sie die Razor-Pages und MVC-Projektvorlagen einen *bundleconfig.json* Konfigurationsdatei an, die die Optionen für jedes Paket definiert. Standardmäßig wird eine Paket-Konfiguration für die benutzerdefinierte JavaScript definiert (*wwwroot/js/site.js*) und Stylesheet (*wwwroot/css/site.css*) Dateien:
 
 [!code-json[](../client-side/bundling-and-minification/samples/BuildBundlerMinifierApp/bundleconfig.json)]
 

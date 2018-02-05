@@ -1,5 +1,5 @@
 ---
-title: Razor-Seiten mit EF-Kern - Datenmodell - 5 8
+title: Razor-Pages mit EF-Kern - Datenmodell - 5 8
 author: rick-anderson
 description: "In diesem Lernprogramm fügen Sie weitere Entitäten und Beziehungen und das Datenmodell anpassen, indem Sie Formatierung, Überprüfung und Zuordnungsregeln für die Datenbank angeben."
 manager: wpickett
@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="creating-a-complex-data-model---ef-core-with-razor-pages-tutorial-5-of-8"></a>Erstellen ein Modell mit komplexen Daten - EF-Core mit Razor-Seiten Lernprogramm (5 von 8)
+# <a name="creating-a-complex-data-model---ef-core-with-razor-pages-tutorial-5-of-8"></a>Erstellen ein Modell mit komplexen Daten - EF-Core mit Razor-Pages Lernprogramm (5 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra) und [Rick Anderson](https://twitter.com/RickAndMSFT)
 

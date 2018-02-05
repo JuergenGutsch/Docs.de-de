@@ -1,7 +1,7 @@
 ---
-title: Erste Schritte mit Razor-Seiten mit ASP.NET Core unter Mac
+title: Erste Schritte mit Razor-Pages mit ASP.NET Core unter Mac
 author: rick-anderson
-description: "Erster Schritte bei Razor-Seiten in ASP.NET Core mithilfe von Visual Studio für Mac"
+description: "Erster Schritte bei Razor-Pages in ASP.NET Core mithilfe von Visual Studio für Mac"
 manager: wpickett
 ms.author: riande
 ms.date: 07/27/2017
@@ -15,11 +15,11 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="getting-started-with-razor-pages-in-aspnet-core-with-visual-studio-for-mac"></a>Erste Schritte mit Razor-Seiten in ASP.NET Core mit Visual Studio für Mac
+# <a name="getting-started-with-razor-pages-in-aspnet-core-with-visual-studio-for-mac"></a>Erste Schritte mit Razor-Pages in ASP.NET Core mit Visual Studio für Mac
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT)
 
-In diesem Tutorial lernen Sie Grundlegendes zur Erstellung einer ASP.NET Core-Webapp mit Razor-Seiten. Es wird empfohlen, zuerst das Tutorial [Einführung in Razor-Seiten](xref:mvc/razor-pages/index) zu lesen, bevor Sie mit diesem Tutorial beginnen. Razor-Seiten sind der empfohlene Weg für die Erstellung von Benutzeroberflächen für Webanwendungen in ASP.NET Core.
+In diesem Tutorial lernen Sie Grundlegendes zur Erstellung einer ASP.NET Core-Webapp mit Razor-Pages. Es wird empfohlen, zuerst das Tutorial [Einführung in Razor-Pages](xref:mvc/razor-pages/index) zu lesen, bevor Sie mit diesem Tutorial beginnen. Razor-Pages sind der empfohlene Weg für die Erstellung von Benutzeroberflächen für Webanwendungen in ASP.NET Core.
 
 ## <a name="prerequisites"></a>Erforderliche Komponenten
 
@@ -38,7 +38,7 @@ cd RazorPagesMovie
 dotnet run
 ```
 
-Diese Befehle verwenden die [.NET Core-CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet), um ein Projekt mit Razor-Seiten zu erstellen und auszuführen. Öffnen Sie in einem Browser „http://localhost:5000“, um sich die Anwendung anzeigen zu lassen.
+Diese Befehle verwenden die [.NET Core-CLI](https://docs.microsoft.com/dotnet/core/tools/dotnet), um ein Projekt mit Razor-Pages zu erstellen und auszuführen. Öffnen Sie in einem Browser „http://localhost:5000“, um sich die Anwendung anzeigen zu lassen.
 
 ![Start- oder Indexseite](../razor-pages/razor-pages-start/_static/home.png)
 

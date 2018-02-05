@@ -21,13 +21,13 @@ Die folgenden detaillierten Anleitungen für die Entwicklung von ASP.NET Core-An
 
 ## <a name="build-web-apps"></a>Erstellen von Web-Apps
 
-[Razor-Seiten](xref:mvc/razor-pages/index) sind der empfohlene Ansatz für das Erstellen einer neuen Web-UI-App mit ASP.NET Core 2.0.
+[Razor-Pages](xref:mvc/razor-pages/index) sind der empfohlene Ansatz für das Erstellen einer neuen Web-UI-App mit ASP.NET Core 2.0.
 
-* [Einführung in Razor-Seiten in ASP.NET Core](xref:mvc/razor-pages/index)
-* Erstellen einer Razor-Seiten-Web-App mit ASP.NET Core
+* [Einführung in Razor-Pages in ASP.NET Core](xref:mvc/razor-pages/index)
+* Erstellen einer Razor-Pages-Web-App mit ASP.NET Core
 
-   * [Razor-Seiten unter Mac](xref:tutorials/razor-pages-mac/index)
-   * [Razor-Seiten mit VS Code](xref:tutorials/razor-pages-vsc/index)  
+   * [Razor-Pages unter Mac](xref:tutorials/razor-pages-mac/index)
+   * [Razor-Pages mit VS Code](xref:tutorials/razor-pages-vsc/index)  
 
 * Erstellen einer ASP.NET Core-MVC-Web-App
 

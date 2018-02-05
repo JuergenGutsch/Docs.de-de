@@ -19,7 +19,7 @@ ms.lasthandoff: 01/30/2018
 
 * [Introduction (Einführung)](introduction.md)
 
-* [Autorisierung von Razor-Seiten](xref:security/authorization/razor-pages-authorization)
+* [Autorisierung von Razor-Pages](xref:security/authorization/razor-pages-authorization)
 
 * [Einfache Autorisierung](simple.md)
 

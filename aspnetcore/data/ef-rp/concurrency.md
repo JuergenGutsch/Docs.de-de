@@ -1,5 +1,5 @@
 ---
-title: "Razor-Seiten mit EF - Parallelität - 8 von 8-Kern"
+title: "Razor-Pages mit EF - Parallelität - 8 von 8-Kern"
 author: rick-anderson
 description: "Dieses Lernprogramm zeigt, wie Konflikte zu behandeln, wenn mehrere Benutzer gleichzeitig derselben Entität aktualisieren."
 manager: wpickett
@@ -17,7 +17,7 @@ ms.lasthandoff: 01/30/2018
 ---
 En-us /
 
-# <a name="handling-concurrency-conflicts---ef-core-with-razor-pages-8-of-8"></a>Parallelitätskonflikte - EF-Core mit Razor-Seiten (8 von 8)
+# <a name="handling-concurrency-conflicts---ef-core-with-razor-pages-8-of-8"></a>Parallelitätskonflikte - EF-Core mit Razor-Pages (8 von 8)
 
 Durch [Rick Anderson](https://twitter.com/RickAndMSFT), [Tom Dykstra](https://github.com/tdykstra), und [Jon P Smith](https://twitter.com/thereformedprog)
 
@@ -211,7 +211,7 @@ Die folgenden hervorgehobenen Code legt die `RowVersion` Wert in den neuen Wert 
 
 [!code-csharp[](intro/samples/cu/Pages/Departments/Edit.cshtml.cs?name=snippet_try&highlight=23)]
 
-Die `ModelState.Remove` Anweisung ist erforderlich, da `ModelState` hat die alte `RowVersion` Wert. Der Razor-Seite der `ModelState` Wert für ein Feld Vorrang vor den Modell-Eigenschaftswerte hat, wenn beide vorhanden sind.
+Die `ModelState.Remove` Anweisung ist erforderlich, da `ModelState` hat die alte `RowVersion` Wert. Der Razor-Page der `ModelState` Wert für ein Feld Vorrang vor den Modell-Eigenschaftswerte hat, wenn beide vorhanden sind.
 
 ## <a name="update-the-edit-page"></a>Aktualisieren Sie die Seite "Bearbeiten"
 

@@ -95,7 +95,7 @@ https://localhost:44399/Speakers/Index/2?page=%2FSpeaker
 ```
 
 > [!NOTE]
-> Verwenden der `asp-page` Attribut in Razor-Seiten, die URLs muss ein relativer Pfad sein, z. B. `"./Speaker"`. Relative Pfade in der `asp-page` Attribut sind nicht verfügbar in MVC-Ansichten. Verwenden Sie stattdessen die Syntax "/" für MVC-Ansichten.
+> Verwenden der `asp-page` Attribut in Razor-Pages, die URLs muss ein relativer Pfad sein, z. B. `"./Speaker"`. Relative Pfade in der `asp-page` Attribut sind nicht verfügbar in MVC-Ansichten. Verwenden Sie stattdessen die Syntax "/" für MVC-Ansichten.
 
 ### <a name="asp-route-value"></a>asp-route-{value}
 

@@ -92,5 +92,5 @@ Die App zeigt die per Seeding hinzugefügten Daten:
 Im nächsten Tutorial wird die Präsentation der Daten bereinigt.
 
 >[!div class="step-by-step"]
-[Zurück: Gerüstbau mit Razor-Seiten](xref:tutorials/razor-pages/page)
+[Zurück: Gerüstbau mit Razor-Pages](xref:tutorials/razor-pages/page)
 [Weiter: Aktualisieren der Seiten](xref:tutorials/razor-pages/da1)

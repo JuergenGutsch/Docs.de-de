@@ -32,7 +32,7 @@ ASP.NET ist ein ausgereiftes Framework, das sämtliche Dienste bietet, die zum E
 | ASP.NET Core | ASP.NET |
 |---|---|
 |Entwickeln für Windows, macOS oder Linux|Entwickeln für Windows|
-|[Razor-Seiten](xref:mvc/razor-pages/index) werden für das Erstellen einer Webbenutzeroberfläche mit ASP.NET Core 2.0 empfohlen. Siehe auch [MVC](xref:mvc/overview) und [Web-API](xref:tutorials/first-web-api).|Verwenden von [Web Forms](https://docs.microsoft.com/aspnet/web-forms), [SignalR](https://docs.microsoft.com/aspnet/signalr), [MVC](https://docs.microsoft.com/aspnet/mvc), [Web API](https://docs.microsoft.com/aspnet/web-api/) oder [Web Pages](https://docs.microsoft.com/aspnet/web-pages)|
+|[Razor-Pages](xref:mvc/razor-pages/index) werden für das Erstellen einer Webbenutzeroberfläche mit ASP.NET Core 2.0 empfohlen. Siehe auch [MVC](xref:mvc/overview) und [Web-API](xref:tutorials/first-web-api).|Verwenden von [Web Forms](https://docs.microsoft.com/aspnet/web-forms), [SignalR](https://docs.microsoft.com/aspnet/signalr), [MVC](https://docs.microsoft.com/aspnet/mvc), [Web API](https://docs.microsoft.com/aspnet/web-api/) oder [Web Pages](https://docs.microsoft.com/aspnet/web-pages)|
 |Mehrere Versionen pro Computer|Eine Version pro Computer|
 |Entwickeln mit Visual Studio, [Visual Studio für Mac](https://www.visualstudio.com/vs/visual-studio-mac/) oder [Visual Studio Code](https://code.visualstudio.com/) unter Verwendung von C# oder F#|Entwickeln mit Visual Studio unter Verwendung von C#, VB oder F#|
 |Höhere Leistung als ASP.NET|Gute Leistung|
@@ -41,7 +41,7 @@ ASP.NET ist ein ausgereiftes Framework, das sämtliche Dienste bietet, die zum E
 ## <a name="aspnet-core-scenarios"></a>ASP.NET Core-Szenarien
 
 <!-- update link to Razor Pages mvc movie series when done -->
-* [Razor-Seiten](xref:mvc/razor-pages/index) werden für das Erstellen einer Webbenutzeroberfläche mit ASP.NET Core 2.0 empfohlen.
+* [Razor-Pages](xref:mvc/razor-pages/index) werden für das Erstellen einer Webbenutzeroberfläche mit ASP.NET Core 2.0 empfohlen.
 * [Websites](xref:tutorials/first-mvc-app/index)
 * [APIs](xref:tutorials/first-web-api)
 

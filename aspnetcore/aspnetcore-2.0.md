@@ -19,14 +19,14 @@ ms.lasthandoff: 01/24/2018
 
 In diesem Artikel werden die wichtigsten Änderungen in ASP.NET Core 2.0 hervorgehoben und Links zu relevanter Dokumentation bereitgestellt.
 
-## <a name="razor-pages"></a>Razor-Seiten
+## <a name="razor-pages"></a>Razor-Pages
 
-Razor-Seiten ist ein neues Feature von ASP.NET Core MVC, mit dem codierungsseitige Szenarios einfacher und produktiver werden.
+Razor-Pages ist ein neues Feature von ASP.NET Core MVC, mit dem codierungsseitige Szenarios einfacher und produktiver werden.
 
 Weitere Informationen finden Sie in der Einführung und im Tutorial:
 
-* [Introduction to Razor Pages (Einführung in Razor-Seiten)](xref:mvc/razor-pages/index)
-* [Getting started with Razor Pages (Erste Schritte mit Razor-Seiten)](xref:tutorials/razor-pages/razor-pages-start)
+* [Introduction to Razor Pages (Einführung in Razor-Pages)](xref:mvc/razor-pages/index)
+* [Getting started with Razor Pages (Erste Schritte mit Razor-Pages)](xref:tutorials/razor-pages/razor-pages-start)
 
 ## <a name="aspnet-core-metapackage"></a>ASP.NET Core-Metapaket
 

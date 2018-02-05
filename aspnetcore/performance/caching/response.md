@@ -19,7 +19,7 @@ ms.lasthandoff: 01/30/2018
 Durch [John Luo](https://github.com/JunTaoLuo), [Rick Anderson](https://twitter.com/RickAndMSFT), [Steve Smith](https://ardalis.com/), und [Luke Latham](https://github.com/guardrex)
 
 > [!NOTE]
-> Zwischenspeichern von Antworten [wird nicht unterstützt in Razor-Seiten mit ASP.NET Core 2.0](https://github.com/aspnet/Mvc/issues/6437). Diese Funktion wird in unterstützt die [Version 2.1 von ASP.NET Core](https://github.com/aspnet/Home/wiki/Roadmap).
+> Zwischenspeichern von Antworten [wird nicht unterstützt in Razor-Pages mit ASP.NET Core 2.0](https://github.com/aspnet/Mvc/issues/6437). Diese Funktion wird in unterstützt die [Version 2.1 von ASP.NET Core](https://github.com/aspnet/Home/wiki/Roadmap).
   
 [Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/performance/caching/response/sample) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 
@@ -74,13 +74,13 @@ Weitere Informationen finden Sie unter [arbeiten mit einem verteilten Cache](xre
 
 ### <a name="cache-tag-helper"></a>Cache-Tag-Hilfsprogramm
 
-Den Inhalt aus einer MVC-Ansicht oder Razor-Seite können mit dem Tag-Helfer Cache zwischengespeichert werden. Der Cache-Tag-Hilfsmethode verwendet im Arbeitsspeicher zwischenspeichern, um Daten zu speichern.
+Den Inhalt aus einer MVC-Ansicht oder Razor-Page können mit dem Tag-Helfer Cache zwischengespeichert werden. Der Cache-Tag-Hilfsmethode verwendet im Arbeitsspeicher zwischenspeichern, um Daten zu speichern.
 
 Weitere Informationen finden Sie unter [Cache Tag Helper in ASP.NET Core MVC](xref:mvc/views/tag-helpers/builtin-th/cache-tag-helper).
 
 ### <a name="distributed-cache-tag-helper"></a>Verteilter Cache-Tag-Hilfsprogramm
 
-Den Inhalt aus einer MVC-Ansicht oder Razor-Seite in verteilten Cloud oder Webfarm-Szenarien können mit verteilten Cache-Tag-Hilfsprogramm zwischengespeichert werden. Das verteilte Cache-Tag-Hilfsobjekt verwendet SQL Server oder Redis zum Speichern von Daten an.
+Den Inhalt aus einer MVC-Ansicht oder Razor-Page in verteilten Cloud oder Webfarm-Szenarien können mit verteilten Cache-Tag-Hilfsprogramm zwischengespeichert werden. Das verteilte Cache-Tag-Hilfsobjekt verwendet SQL Server oder Redis zum Speichern von Daten an.
 
 Weitere Informationen finden Sie unter [verteilten Cache Tag Helper](xref:mvc/views/tag-helpers/builtin-th/distributed-cache-tag-helper).
 

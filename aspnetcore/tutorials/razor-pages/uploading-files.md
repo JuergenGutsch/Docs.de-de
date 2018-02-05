@@ -1,7 +1,7 @@
 ---
-title: Hochladen von Dateien auf eine Razor-Seite in ASP.NET Core
+title: Hochladen von Dateien auf eine Razor-Page in ASP.NET Core
 author: guardrex
-description: Erfahren Sie, wie Sie Dateien auf eine Razor-Seite hochladen.
+description: Erfahren Sie, wie Sie Dateien auf eine Razor-Page hochladen.
 ms.author: riande
 manager: wpickett
 ms.date: 09/12/2017
@@ -15,11 +15,11 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/19/2018
 ---
-# <a name="uploading-files-to-a-razor-page-in-aspnet-core"></a>Hochladen von Dateien auf eine Razor-Seite in ASP.NET Core
+# <a name="uploading-files-to-a-razor-page-in-aspnet-core"></a>Hochladen von Dateien auf eine Razor-Page in ASP.NET Core
 
 Von [Luke Latham](https://github.com/guardrex)
 
-In diesem Abschnitt wird veranschaulicht, wie Dateien auf eine Razor-Seite hochgeladen werden.
+In diesem Abschnitt wird veranschaulicht, wie Dateien auf eine Razor-Page hochgeladen werden.
 
 Die [RazorPagesMovie-Beispiel-App](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie) in diesem Tutorial verwendet die einfache Modellbindung zum Hochladen von Dateien. Dies ist beim Hochladen von kleinen Dateien besonders praktisch. Informationen zum Streamen von großen Dateien finden Sie unter [Hochladen großer Dateien über Streaming](xref:mvc/models/file-uploads#uploading-large-files-with-streaming).
 
@@ -27,7 +27,7 @@ In den folgenden Schritten fügen Sie eine Funktion zum Hochladen eines Filmzeit
 
 ## <a name="add-a-fileupload-class"></a>Hinzufügen einer FileUpload-Klasse
 
-Im folgenden Beispiel erstellen Sie eine Razor-Seite, die einige Dateiuploads verarbeitet. Fügen Sie eine `FileUpload`-Klasse hinzu, die an die Seite gebunden ist, um die Zeitplandaten abzurufen. Klicken Sie mit der rechten Maustaste auf den Ordner *Modelle*. Wählen Sie **Hinzufügen** > **Klasse** aus. Nennen Sie die Klasse **FileUpload**, und fügen Sie Ihr die folgenden Eigenschaften hinzu:
+Im folgenden Beispiel erstellen Sie eine Razor-Page, die einige Dateiuploads verarbeitet. Fügen Sie eine `FileUpload`-Klasse hinzu, die an die Seite gebunden ist, um die Zeitplandaten abzurufen. Klicken Sie mit der rechten Maustaste auf den Ordner *Modelle*. Wählen Sie **Hinzufügen** > **Klasse** aus. Nennen Sie die Klasse **FileUpload**, und fügen Sie Ihr die folgenden Eigenschaften hinzu:
 
 [!code-csharp[Main](razor-pages-start/sample/RazorPagesMovie/Models/FileUpload.cs)]
 
@@ -66,7 +66,7 @@ Add-Migration AddScheduleTable
 Update-Database
 ```
 
-## <a name="add-a-file-upload-razor-page"></a>Hinzufügen einer Dateiupload-Razor-Seite
+## <a name="add-a-file-upload-razor-page"></a>Hinzufügen einer Dateiupload-Razor-Page
 
 Erstellen Sie im Ordner *Seiten* einen Ordner *Zeitpläne*. Erstellen Sie im Ordner *Zeitpläne* eine Seite namens *Index.cshtml* zum Hochladen eines Zeitplans mit dem folgenden Inhalt:
 
@@ -98,7 +98,7 @@ Wenn das Formular auf dem Server bereitgestellt wird, wird `ModelState` überpr�
 
 [!code-csharp[Main](razor-pages-start/snapshot_sample/RazorPagesMovie/Pages/Schedules/Index.cshtml.cs?name=snippet4)]
 
-## <a name="link-the-file-upload-razor-page"></a>Verknüpfen der Dateiupload-Razor-Seite
+## <a name="link-the-file-upload-razor-page"></a>Verknüpfen der Dateiupload-Razor-Page
 
 Öffnen Sie *_Layout.cshtml*, und fügen Sie eine Verknüpfung zu der Navigationsleiste hinzu, um die Dateiuploadseite zu erreichen:
 
@@ -120,11 +120,11 @@ Die `OnPostAsync`-Methode verarbeitet das Löschen des Zeitplans über ihre `id`
 
 Nachdem der Zeitplan erfolgreich gelöscht wurde, sendet `RedirectToPage` den Benutzer zurück zur *Index.cshtml*-Seite der Zeitpläne.
 
-## <a name="the-working-schedules-razor-page"></a>Die Razor-Seite der Arbeitszeitpläne
+## <a name="the-working-schedules-razor-page"></a>Die Razor-Page der Arbeitszeitpläne
 
 Wenn die Seite geladen wird, werden Bezeichnungen und Eingaben für den Zeitplantitel, den öffentlichen Zeitplan und den privaten Zeitplan mit einer „Absenden“-Schaltfläche gerendert:
 
-![Razor-Seite der Zeitpläne wie beim ersten Ladevorgang ohne Validierungsfehler und leere Felder](uploading-files/_static/browser1.png)
+![Razor-Page der Zeitpläne wie beim ersten Ladevorgang ohne Validierungsfehler und leere Felder](uploading-files/_static/browser1.png)
 
 Das Klicken auf die Schaltfläche **Hochladen**, ohne eines der Felder aufzufüllen, verstößt gegen die `[Required]`-Attribute für das Modell. `ModelState` ist ungültig. Die Validierungsfehlermeldungen werden dem Benutzer angezeigt:
 
@@ -144,7 +144,7 @@ Der Benutzer kann von dort aus auf den Link **Löschen** klicken, um zur Anzeige
 
 Informationen zur Behandlung von Problemen beim Hochladen von `IFormFile` finden Sie unter [Dateiuploads in ASP.NET Core](xref:mvc/models/file-uploads#troubleshooting) im Abschnitt „Problembehandlung“.
 
-Vielen Dank für Ihr Interesse an dieser Einführung in Razor-Seiten. Wir freuen uns über Kommentare, die Sie hinterlassen. [Erste Schritte mit MVC und EF Core](xref:data/ef-mvc/intro) ist ein ausgezeichneter Anschlussartikel an dieses Tutorial.
+Vielen Dank für Ihr Interesse an dieser Einführung in Razor-Pages. Wir freuen uns über Kommentare, die Sie hinterlassen. [Erste Schritte mit MVC und EF Core](xref:data/ef-mvc/intro) ist ein ausgezeichneter Anschlussartikel an dieses Tutorial.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 

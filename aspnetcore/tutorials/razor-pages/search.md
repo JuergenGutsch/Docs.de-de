@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen der Suche zu ASP.NET Core Razor-Seiten"
+title: "Hinzufügen der Suche zu ASP.NET Core Razor-Pages"
 author: rick-anderson
-description: "Informationen zum Hinzufügen der Suche zu ASP.NET Core Razor-Seiten"
+description: "Informationen zum Hinzufügen der Suche zu ASP.NET Core Razor-Pages"
 manager: wpickett
 ms.author: riande
 ms.date: 08/07/2017
@@ -15,7 +15,7 @@ ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="adding-search-to-a-razor-pages-app"></a>Hinzufügen einer Suchfunktion zu einer Razor-Seiten-Anwendung
+# <a name="adding-search-to-a-razor-pages-app"></a>Hinzufügen einer Suchfunktion zu einer Razor-Pages-Anwendung
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT)
 

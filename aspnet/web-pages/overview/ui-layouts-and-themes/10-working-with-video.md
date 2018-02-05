@@ -30,7 +30,7 @@ durch [Tom FitzMacken](https://github.com/tfitzmac)
 > - Das Hinzufügen von Videos zu einer Webseite.
 > - Vorgehensweise Videoplayer Attribute festgelegt werden.
 > 
-> Hierbei handelt es sich um den ASP.NET Razor-Seiten in diesem Artikel vorgestellten Funktionen dar:
+> Hierbei handelt es sich um den ASP.NET Razor-Pages in diesem Artikel vorgestellten Funktionen dar:
 > 
 > - Die `Video` Helper.
 >   
@@ -56,7 +56,7 @@ Wenn Sie möchten ein Video abspielen, die auf eine eigene Website (nicht auf ei
 <a id="Choosing_a_Video_Player"></a>
 ## <a name="choosing-a-video-player"></a>Einen Video Player auswählen
 
-Es gibt viele Formate für Videodateien, und jedes Format in der Regel erfordert einen anderen Player und eine andere Möglichkeit, die der Spieler zu konfigurieren. In ASP.NET Razor-Seiten, können Sie ein Video in einer Webseite mit spielen die `Video` Helper. Die `Video` Hilfsprogramm vereinfacht das Videos auf einer Webseite einbetten, da es automatisch generiert die `object` und `embed` HTML-Elemente, mit denen normalerweise Video auf der Seite hinzufügen.
+Es gibt viele Formate für Videodateien, und jedes Format in der Regel erfordert einen anderen Player und eine andere Möglichkeit, die der Spieler zu konfigurieren. In ASP.NET Razor-Pages, können Sie ein Video in einer Webseite mit spielen die `Video` Helper. Die `Video` Hilfsprogramm vereinfacht das Videos auf einer Webseite einbetten, da es automatisch generiert die `object` und `embed` HTML-Elemente, mit denen normalerweise Video auf der Seite hinzufügen.
 
 Die `Video` Hilfsprogramm unterstützt die folgenden MediaPlayer:
 

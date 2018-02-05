@@ -1,5 +1,5 @@
 ---
-title: "Razor-Seiten mit EF-Core - lesen verknüpften Daten - 6 8"
+title: "Razor-Pages mit EF-Core - lesen verknüpften Daten - 6 8"
 author: rick-anderson
 description: "In diesem Lernprogramm lesen und Anzeigen von verknüpften Daten – d. h. die Daten, die das Entity Framework in Navigationseigenschaften lädt."
 manager: wpickett
@@ -15,7 +15,7 @@ ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/30/2018
 ---
-# <a name="reading-related-data---ef-core-with-razor-pages-6-of-8"></a>Lesen bezogene Daten per Push – EF-Core mit Razor-Seiten (6 von 8)
+# <a name="reading-related-data---ef-core-with-razor-pages-6-of-8"></a>Lesen bezogene Daten per Push – EF-Core mit Razor-Pages (6 von 8)
 
 Durch [Tom Dykstra](https://github.com/tdykstra), [Jon P Smith](https://twitter.com/thereformedprog), und [Rick Anderson](https://twitter.com/RickAndMSFT)
 
@@ -273,7 +273,7 @@ Der folgende Code füllt des Ansichtsmodells `Enrollments` Eigenschaft, wenn Sie
 
 [!code-csharp[Main](intro/samples/cu/Pages/Instructors/Index2.cshtml.cs?name=snippet_courseID)]
 
-Fügen Sie das folgende Markup bis zum Ende der *Pages/Courses/Index.cshtml* Razor-Seite:
+Fügen Sie das folgende Markup bis zum Ende der *Pages/Courses/Index.cshtml* Razor-Page:
 
 [!code-html[](intro/samples/cu/Pages/Instructors/IndexRRD.cshtml?range=60-102&highlight=7-)]
 
