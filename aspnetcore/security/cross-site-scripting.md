@@ -1,7 +1,9 @@
 ---
 title: "Verhindern von siteübergreifendem Skripting"
 author: rick-anderson
-description: Dieses Dokument stellt Cross-Site-Skripting (XSS) und Techniken zur Behebung dieses Sicherheitsrisiko in ASP.NET Core-app.
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,15 +11,15 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/cross-site-scripting
-ms.openlocfilehash: 679d9689fbc2679d9ba20bf9c6dba5c95d76dbce
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: d0880fda4ee726bd30a48cce0907a3887f2a4545
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="preventing-cross-site-scripting"></a>Verhindern von siteübergreifendem Skripting
 
-Von [Rick Anderson](https://twitter.com/RickAndMSFT)
+<a name="security-cross-site-scripting"></a>
 
 Cross-Site-Skripting (XSS) ist ein Sicherheitsrisiko Dadurch kann ein Angreifer clientseitige Skripts (normalerweise "JavaScript") in Webseiten zu platzieren. Wenn andere Benutzer betroffene Seiten geladen werden, die Angreifer Skripts ausgeführt werden, Aktivieren der Angreifer Cookies und Sitzungstoken zu stehlen ändern Sie den Inhalt der Webseite über DOM-Manipulation oder den Browser zu einer anderen Seite umgeleitet. XSS-Sicherheitsrisiken auftreten in der Regel auf, wenn eine Anwendung eine Benutzereingabe akzeptiert und ihn auf einer Seite gibt ohne überprüfen, Codierung, oder er Escapezeichen.
 

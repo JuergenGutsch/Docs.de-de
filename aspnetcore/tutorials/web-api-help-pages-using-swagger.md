@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: tutorials/web-api-help-pages-using-swagger
-ms.openlocfilehash: 911504d9472ae78a0d1d002f1feb57f3a160d5bf
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 8a87972a7394246ece2af3485d93739975ba5383
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="aspnet-core-web-api-help-pages-using-swagger"></a>ASP.NET Core-Web-API-Hilfeseiten mit Swagger
 

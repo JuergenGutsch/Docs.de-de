@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/facebook-logins
-ms.openlocfilehash: 283de1df68c45fa1b41ed75710fe9eb7925f815f
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 1eb563a5067fe4b063e5bd593d441e4e2a719b18
+ms.sourcegitcommit: 93785b6b29a4996066fba05149348f1bdf881263
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configuring-facebook-authentication"></a>Konfigurieren von Facebook-Authentifizierung
 

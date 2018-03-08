@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: tutorials/first-mvc-app/details
-ms.openlocfilehash: 4a0004fc79f8e1d334e3acb96b28b2954d19f0a1
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 28ed7a7a56415d7eb675c06353fb9a8f65fb571f
+ms.sourcegitcommit: c9658c0db446f7cb2e443f62b00cf773bed545fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 09/30/2017
 ---
 # <a name="examining-the-details-and-delete-methods"></a>Untersuchen der Methoden „Details“ und „Delete“
 
@@ -56,7 +56,7 @@ public async Task<IActionResult> Delete(int id, bool notUsed)
 
 ### <a name="publish-to-azure"></a>Veröffentlichen in Azure
 
-Anweisungen zum Veröffentlichen dieser App in Azure mit Visual Studio finden Sie unter [Veröffentlichen einer ASP.NET Core-Web-App in Azure App Service mit Visual Studio](xref:tutorials/publish-to-azure-webapp-using-vs).  Die App kann auch über die [Befehlszeile](xref:tutorials/publish-to-azure-webapp-using-cli) veröffentlicht werden.
+Anweisungen zum Veröffentlichen dieser App in Azure finden Sie unter [Veröffentlichen einer ASP.NET Core-Web-App in Azure App Service mit Visual Studio](xref:tutorials/publish-to-azure-webapp-using-vs).
 
 Vielen Dank für Ihr Interesse an dieser Einführung in ASP.NET Core MVC. Wir freuen uns über Kommentare, die Sie hinterlassen. [Erste Schritte mit MVC und EF Core](xref:data/ef-mvc/intro) ist ein ausgezeichneter Anschlussartikel an dieses Tutorial.
 

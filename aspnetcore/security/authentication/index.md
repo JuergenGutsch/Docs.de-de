@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/index
-ms.openlocfilehash: fbef1545f3cdcbe3887a5dd9ceca0e9b420193f1
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 92f480236d035bafe329b14c7383e25c3edd3499
+ms.sourcegitcommit: af6c2a58ea828899d5fbe6bc442a1b1ea3e46cf7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/05/2017
 ---
 # <a name="authentication"></a>Authentifizierung
 
@@ -49,4 +49,6 @@ ms.lasthandoff: 01/30/2018
 
 * [Schützen von ASP.NET Core-Apps mit der Azure App Service-Authentifizierung (Easy Auth)](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview)
 
-* [Artikel auf der Grundlage von Projekten, die mit individuellen Benutzerkonten erstellt wurden](xref:security/authentication/individual)
+* [Sichern von ASP.NET Core-Apps mit IdentityServer4](https://identityserver4.readthedocs.io/release/)
+
+* [Sichern von ASP.NET Core-Apps mit der Azure App Service-Authentifizierung (Easy Auth)](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview)

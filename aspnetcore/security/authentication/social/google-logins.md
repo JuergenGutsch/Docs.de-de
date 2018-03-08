@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/google-logins
-ms.openlocfilehash: 1ca63593a7cf2b0eff1e52c0beda7ef2b826d474
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: d7c5e1f1564c1bbf345e28fa76ce0b11ae65b0d4
+ms.sourcegitcommit: 93785b6b29a4996066fba05149348f1bdf881263
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configuring-google-authentication-in-aspnet-core"></a>Konfigurieren von Google-Authentifizierung in ASP.NET Core
 

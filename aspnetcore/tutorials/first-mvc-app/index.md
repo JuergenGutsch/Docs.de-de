@@ -2,28 +2,25 @@
 title: Erstellen einer Web-App mit ASP.NET Core MVC unter Windows
 author: rick-anderson
 description: "Inhaltsverzeichnis für die Einführung in ASP.NET Core MVC mithilfe von Visual Studio unter Windows."
-manager: wpickett
+keywords: "ASP.NET Core, MVC, Tutorial, Einführung"
 ms.author: riande
-ms.date: 10/26/2017
+manager: wpickett
+ms.date: 10/06/2017
+ms.topic: get-started-article
+ms.technology: aspnet
 ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: tutorials/first-mvc-app/index
-ms.openlocfilehash: 76b3125b452fa3de8e19cd884a24ab6a3bbc0d42
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 123ee5d08849a2a6f31e9299f45b20f3e5589e31
+ms.sourcegitcommit: ab91aad2680efc4eb5c0642746e2b981db7f81b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="create-a-web-app-with-aspnet-core-mvc-using-visual-studio"></a>Erstellen einer Web-App mit ASP.NET Core MVC und Visual Studio
 
-[!INCLUDE[consider RP](../../includes/razor.md)]
-
-Es gibt drei Versionen dieses Tutorials:
-
-* Windows: Diese Reihe
-* macOS: [Erstellen einer ASP.NET Core MVC-App mit Visual Studio für Mac](xref:tutorials/first-mvc-app-mac/start-mvc)
-* macOS, Linux und Windows: [Erstellen einer ASP.NET Core MVC-App mit Visual Studio Code](xref:tutorials/first-mvc-app-xplat/start-mvc) Die Tutorialreihe umfasst folgende Themen:
+ [!INCLUDE[consider RP](../../includes/razor.md)]
 
 1. [Erste Schritte](start-mvc.md)
 1. [Hinzufügen eines Controllers](adding-controller.md)

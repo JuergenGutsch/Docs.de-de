@@ -10,11 +10,11 @@ ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/dependency-injection
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 7a5a0991694b2c7caa79dbc09f6471d614f67dac
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: a3a6f755d8825d4bd31cad4e459750c549709c6d
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="introduction-to-dependency-injection-in-aspnet-core"></a>Einführung in die Abhängigkeitsinjektion in ASP.NET Core
 

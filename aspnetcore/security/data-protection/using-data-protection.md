@@ -1,7 +1,9 @@
 ---
 title: Erste Schritte mit Data Protection-APIs
 author: rick-anderson
-description: "Dieses Dokument erläutert, wie Sie die ASP.NET Core Datenschutz-APIs zum Schützen und Aufheben des Schutzes Daten in eine app."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/using-data-protection
-ms.openlocfilehash: e8c4183f5c47d8ffec8edf163eb1e4d6f2757d9d
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 9489b55b1de626b77bcbe21cb9678e561b559099
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="getting-started-with-the-data-protection-apis"></a>Erste Schritte mit Data Protection-APIs
 

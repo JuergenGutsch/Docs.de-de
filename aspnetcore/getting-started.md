@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: getting-started
-ms.openlocfilehash: eb1fd748029743ca6991927cc95b612ed1975338
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 5cba57c23ab66475648b19cba3f9aaa02bea3dba
+ms.sourcegitcommit: d56f36805ce70470775da58db63c0965d65660d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="get-started-with-aspnet-core"></a>Erste Schritte mit ASP.NET Core
 

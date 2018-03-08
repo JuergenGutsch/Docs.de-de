@@ -1,7 +1,9 @@
 ---
 title: Einfache Autorisierung
 author: rick-anderson
-description: "Dieses Dokument erläutert, wie die Authorize-Attribut verwenden, um Zugriff zu ASP.NET Core-Controllern und Aktionen."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authorization/simple
-ms.openlocfilehash: 3299a8fcbd8d8e089d8d7f95e46551c102bcc054
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 91f402b1cbf73e212418d197a8a7230ce22e9e1d
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="simple-authorization"></a>Einfache Autorisierung
 

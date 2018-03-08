@@ -9,11 +9,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/environments
-ms.openlocfilehash: 60a1543ce11d08490e6df0eb84f980672ecfe672
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: becdfa647acb6483b39f5421ab881c4817f31c40
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="working-with-multiple-environments"></a>Arbeiten mit mehreren Umgebungen
 
@@ -25,7 +25,7 @@ ASP.NET Core bietet Unterstützung für das Verhalten der Anwendung zur Laufzeit
 
 ## <a name="environments"></a>Umgebungen
 
-ASP.NET Core liest die Umgebungsvariable `ASPNETCORE_ENVIRONMENT` am Start der Anwendung und Speichervorgänge aus, die im Wert [IHostingEnvironment.EnvironmentName](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment.environmentname?view=aspnetcore-2.0#Microsoft_AspNetCore_Hosting_IHostingEnvironment_EnvironmentName). `ASPNETCORE_ENVIRONMENT`kann auf einen beliebigen Wert festgelegt werden, aber [drei Werte](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.environmentname?view=aspnetcore-2.0) werden durch das Framework unterstützt: [Entwicklung](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.environmentname.development?view=aspnetcore-2.0), [Staging](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.environmentname.staging?view=aspnetcore-2.0), und [Produktion](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.environmentname.production?view=aspnetcore-2.0). Wenn `ASPNETCORE_ENVIRONMENT` ist nicht festgelegt ist, wird standardmäßig `Production`.
+ASP.NET Core verweist auf eine bestimmte Umgebungsvariable `ASPNETCORE_ENVIRONMENT` die Umgebung beschreiben Sie die Anwendung im derzeit ausgeführt wird. Diese Variable kann festgelegt werden, auf einen beliebigen Wert gewünscht jedoch drei Werte werden gemäß der Konvention verwendet: `Development`, `Staging`, und `Production`. Finden Sie diese in den Beispielen verwendeten Werte und die Vorlagen mit ASP.NET Core bereitgestellt.
 
 [!code-csharp[Main](environments/sample/WebApp1/Startup.cs?name=snippet)]
 
@@ -50,7 +50,8 @@ Die Entwicklungsumgebung kann Funktionen aktivieren, die in der Produktion verf�
 
 Die Umgebung für die Entwicklung des lokalen Computers kann festgelegt werden, der *Properties\launchSettings.json* -Datei des Projekts. Umgebungswerte festgelegt *launchSettings.json* in die Umgebung für die festgelegte Werte zu überschreiben.
 
-Das folgende XML zeigt drei Profile aus einem *launchSettings.json* Datei:
+>[!WARNING]
+> In Umgebungsvariablen gespeichert *launchSettings.json* nicht in keiner Weise gesichert werden und werden Teil der Quellcoderepository für Ihr Projekt aus, wenn Sie einen. **Nie Anmeldeinformationen oder anderen vertraulichen Daten in dieser Datei gespeichert werden.** Wenn Sie solche Daten speichern möchten, verwenden die *geheimen Manager* Tool beschrieben, [sichere Speicherung von app-Kennwörter während der Entwicklung](xref:security/app-secrets).
 
 [!code-xml[Main](environments/sample/WebApp1/Properties/launchSettings.json?highlight=10,11,18,26)]
 

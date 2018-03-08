@@ -2,6 +2,7 @@
 title: "Razor-syntaxverweis für ASP.NET Core"
 author: rick-anderson
 description: "Erfahren Sie Markup Razor-Syntax für das Einbetten von serverbasiertem Code in Webseiten aus."
+keywords: ASP.NET Core, Razor, Razor-Direktiven
 ms.author: riande
 manager: wpickett
 ms.date: 10/18/2017
@@ -9,11 +10,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: mvc/views/razor
-ms.openlocfilehash: abdbb8112533d42f81180abad52f5ee86e3b280f
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: 743c42b26c62d0e24b5d5b487b3154bc249fcff4
+ms.sourcegitcommit: a873f862c8e68b2cf2998aaed3dddd93eeba9e0f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="razor-syntax-for-aspnet-core"></a>Razor-Syntax für ASP.NET Core
 
@@ -23,7 +24,7 @@ Razor ist eine Markupsyntax für das Einbetten von serverbasiertem Code in Webse
 
 ## <a name="rendering-html"></a>Rendern von HTML
 
-Die Standardsprache für den Razor ist HTML. Rendern von HTML in Razor-Markuperweiterung unterscheidet sich nicht als HTML-Datei aus einer HTML-Datei gerendert. HTML-Markup *cshtml* Razor-Dateien vom Server unverändert gerendert wird.
+Die Standardsprache für den Razor ist HTML. Rendern von HTML in Razor-Markuperweiterung unterscheidet sich nicht als HTML-Datei aus einer HTML-Datei gerendert.  HTML-Markup *cshtml* Razor-Dateien vom Server unverändert gerendert wird.
 
 ## <a name="razor-syntax"></a>Razor-syntax
 
@@ -72,10 +73,10 @@ Implicit-Ausdrücken **kann nicht** C#-Generika, als eines der Zeichen innerhalb
 
 Der vorhergehende Code generiert einen Compilerfehler, der einen der folgenden ähnelt:
 
- * Das Element "Int" wurde nicht geschlossen. Alle Elemente muss entweder selbst schließen oder ein entsprechendes Endtag vorhanden.
+ * Das Element "Int" wurde nicht geschlossen.  Alle Elemente muss entweder selbst schließen oder ein entsprechendes Endtag vorhanden.
  *  Die Methodengruppe "GenericMethod" nicht mit Typ "Object" Delegaten kann nicht konvertiert werden. Wollten Sie die Methode aufrufen? " 
  
-Generische Methodenaufrufen, müssen umschlossen werden ein [expliziter Razor-Ausdruck](#explicit-razor-expressions) oder ein [Razor-Codeblock](#razor-code-blocks).
+Generische Methodenaufrufen, müssen umschlossen werden ein [expliziter Razor-Ausdruck](#explicit-razor-expressions) oder ein [Razor-Codeblock](#razor-code-blocks). Diese Einschränkung gilt nicht für *vbhtml* Razor-Dateien, da Visual Basic-Syntax Klammern um generische Typparameter anstelle von Klammern platziert.
 
 ## <a name="explicit-razor-expressions"></a>Explizite Razor-Ausdrücke
 
@@ -118,14 +119,16 @@ EXPLICIT-Ausdrücken dienen zum Rendern der Ausgabe von generischen Methoden in 
 
 Der vorhergehende Code generiert einen Compilerfehler, der einen der folgenden ähnelt:
 
- * Das Element "Int" wurde nicht geschlossen. Alle Elemente muss entweder selbst schließen oder ein entsprechendes Endtag vorhanden.
+ * Das Element "Int" wurde nicht geschlossen.  Alle Elemente muss entweder selbst schließen oder ein entsprechendes Endtag vorhanden.
  *  Die Methodengruppe "GenericMethod" nicht mit Typ "Object" Delegaten kann nicht konvertiert werden. Wollten Sie die Methode aufrufen? " 
  
- Das folgende Markup zeigt die richtige Methode schreiben, diesen Code. Der Code wird als ein expliziter Ausdruck geschrieben:
+ Das folgende Markup zeigt die richtige Methode schreiben, diesen Code.  Der Code wird als ein expliziter Ausdruck geschrieben:
 
 ```cshtml
 <p>@(GenericMethod<int>())</p>
 ```
+
+Hinweis: Diese Einschränkung gilt nicht für *vbhtml* Razor-Dateien.  Mit *vbhtml* Razor-Dateien, Visual Basic-Syntax platziert Klammern um generische Typparameter anstelle von eckigen Klammern.
 
 ## <a name="expression-encoding"></a>Expression-Codierung
 
@@ -189,7 +192,7 @@ Der Code wird der folgenden HTML-Code gerendert:
 
 ### <a name="implicit-transitions"></a>Implizite Übergänge
 
-In einem Codeblock die Standardsprache ist c#, aber die Razor-Page können Übergang zurück zum HTML:
+In einem Codeblock die Standardsprache ist c#, aber die Razor-Seite können Übergang zurück zum HTML:
 
 ```cshtml
 @{
@@ -231,7 +234,7 @@ Um den Rest der eine ganze Zeile in einem Codeblock als HTML zu rendern, verwend
 
 Ohne die `@:` im Code wird ein Razor-Laufzeitfehler generiert.
 
-Warnung: Zusätzliche `@` Zeichen in einer Razor-Datei können dazu führen, dass Ursache Compiler-Fehler bei den Anweisungen weiter unten in den Block. Dieser Compilerfehler können schwierig sein, zu verstehen, da der tatsächliche Fehler vor den gemeldeten Fehler auftritt. Dieser Fehler tritt häufig nach mehrere implizite/explizite Ausdrücke in einen einzelnen Codeblock zu kombinieren.
+Warnung: Zusätzliche `@` Zeichen in einer Razor-Datei können dazu führen, dass Ursache Compiler-Fehler bei den Anweisungen weiter unten in den Block. Dieser Compilerfehler können schwierig sein, zu verstehen, da der tatsächliche Fehler vor den gemeldeten Fehler auftritt.  Dieser Fehler tritt häufig nach mehrere implizite/explizite Ausdrücke in einen einzelnen Codeblock zu kombinieren.
 
 ## <a name="control-structures"></a>Steuerungsstrukturen
 
@@ -284,7 +287,7 @@ Das folgende Markup zeigt, wie eine Switch-Anweisung:
 
 ### <a name="looping-for-foreach-while-and-do-while"></a>Schleifen @for, @foreach, @while, und @do während
 
-Auf Vorlagen basierende HTML kann mit Schleifen Steueranweisungen gerendert werden. Um eine Liste der Personen zu rendern:
+Auf Vorlagen basierende HTML kann mit Schleifen Steueranweisungen gerendert werden.  Um eine Liste der Personen zu rendern:
 
 ```cshtml
 @{
@@ -481,7 +484,7 @@ Die `@inherits` Richtlinie bietet vollen Zugriff auf die Klasse erbt von die Sic
 @inherits TypeNameOfClassToInheritFrom
 ```
 
-Der folgende Code ist ein benutzerdefinierter Typ des Razor-Page:
+Der folgende Code ist ein benutzerdefinierter Typ des Razor-Seite:
 
 [!code-csharp[Main](razor/sample/Classes/CustomRazorPage.cs)]
 
@@ -495,7 +498,7 @@ Der Code wird der folgenden HTML-Code gerendert:
 <div>Custom text: Gardyloo! - A Scottish warning yelled from a window before dumping a slop bucket on the street below.</div>
 ```
 
- `@model`und `@inherits` in derselben Ansicht verwendet werden kann. `@inherits`kann einem *_ViewImports.cshtml* -Datei, die die Sicht importiert:
+ `@model`und `@inherits` in derselben Ansicht verwendet werden kann.  `@inherits`kann einem *_ViewImports.cshtml* -Datei, die die Sicht importiert:
 
 [!code-cshtml[Main](razor/sample/Views/_ViewImportsModel.cshtml)]
 
@@ -513,11 +516,11 @@ Wenn "rick@contoso.com" übergeben wird im Modell, Ansicht die folgenden HTML-Ma
 ### <a name="inject"></a>@inject
 
 
-Die `@inject` Richtlinie ermöglicht die Razor-Page zum Einfügen von eines Diensts von der [Dienstcontainer](xref:fundamentals/dependency-injection) in eine Sicht. Weitere Informationen finden Sie unter [Abhängigkeitsinjektion in Sichten](xref:mvc/views/dependency-injection).
+Die `@inject` Richtlinie ermöglicht die Razor-Seite zum Einfügen von eines Diensts von der [Dienstcontainer](xref:fundamentals/dependency-injection) in eine Sicht. Weitere Informationen finden Sie unter [Abhängigkeitsinjektion in Sichten](xref:mvc/views/dependency-injection).
 
 ### <a name="functions"></a>@functions
 
-Die `@functions` Richtlinie ermöglicht eine Razor-Page, um eine Sicht Funktionsebene Inhalt hinzuzufügen:
+Die `@functions` Richtlinie ermöglicht eine Razor-Seite, um eine Sicht Funktionsebene Inhalt hinzuzufügen:
 
 ```cshtml
 @functions { // C# Code }
@@ -609,11 +612,11 @@ Das Razor-Ansichtsmodul führt die Groß-/Kleinschreibung Suchvorgänge für Ans
 * Basis-Dateiquelle: 
   * Unter Betriebssystemen mit Groß-/Kleinschreibung beachten Dateisystemen (z. B. Windows) sind die physische Datei Anbieter Suchvorgänge Groß-/Kleinschreibung beachtet. Beispielsweise `return View("Test")` ergibt Übereinstimmungen für */Views/Home/Test.cshtml*, */Views/home/test.cshtml*, und eine andere Variante der Schreibweise.
   * Auf Dateisystemen, Groß-/Kleinschreibung (z. B. Linux, OS x, und mit `EmbeddedFileProvider`), Suchvorgänge Groß-/Kleinschreibung beachtet. Beispielsweise `return View("Test")` speziell Übereinstimmungen */Views/Home/Test.cshtml*.
-* Vorkompilierte Sichten: Nachschlagen vorkompilierte Sichten mit ASP.NET Core 2.0 und höher, Groß-/Kleinschreibung beachtet, unter allen Betriebssystemen ist. Das Verhalten ist identisch mit dem Verhalten der physischen Datei des Anbieters unter Windows. Wenn zwei vorkompilierte Sichten nur im Fall unterschiedlich sind, ist das Ergebnis der Suche nicht deterministisch.
+* Vorkompilierte Sichten: Nachschlagen vorkompilierte Sichten mit ASP.Net Core 2.0 und höher, Groß-/Kleinschreibung beachtet, unter allen Betriebssystemen ist. Das Verhalten ist identisch mit dem Verhalten der physischen Datei des Anbieters unter Windows. Wenn zwei vorkompilierte Sichten nur im Fall unterschiedlich sind, ist das Ergebnis der Suche nicht deterministisch.
 
 Entwicklern wird empfohlen, die Groß-/Kleinschreibung von Datei- und Verzeichnisnamen, die Groß-/Kleinschreibung der entsprechen:
 
     * Namen von Bereich, Controller und Aktion. 
-    * Razor-Pages.
+    * Razor-Seiten.
     
 Groß-wird sichergestellt, dass die Bereitstellungen ihrer Ansichten unabhängig von der zugrunde liegenden Dateisystem suchen.

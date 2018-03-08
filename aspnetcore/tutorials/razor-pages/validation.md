@@ -1,19 +1,20 @@
 ---
 title: "Hinzufügen der Validierung"
 author: rick-anderson
-description: "Erläutert, wie einer Razor-Page Validierung hinzugefügt wird."
-manager: wpickett
+description: "Gewusst wie: Hinzufügen der Validierung zu einer Razor-Seite"
+keywords: ASP.NET Core, Validierung, DataAnnotations, Razor, Razor-Seiten
 ms.author: riande
+manager: wpickett
 ms.date: 08/07/2017
-ms.prod: aspnet-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.technology: aspnet
+ms.prod: aspnet-core
 uid: tutorials/razor-pages/validation
-ms.openlocfilehash: 770b930373888c8b4bd578ba6d2524546549800e
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 302e3077e8cf1cc3b145fcb4ba2ff677023d1524
+ms.sourcegitcommit: c9658c0db446f7cb2e443f62b00cf773bed545fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 09/30/2017
 ---
 # <a name="adding-validation-to-a-razor-page"></a>Hinzufügen der Validierung zu einer Razor-Page
 
@@ -131,8 +132,6 @@ Es wird allgemein nicht empfohlen, feste Datumsangaben in Ihren Modellen zu komp
 Der folgende Code zeigt die Kombination von Attributen in einer Zeile:
 
 [!code-csharp[Main](razor-pages-start/sample/RazorPagesMovie/Models/MovieDateRatingDAmult.cs?name=snippet1)]
-
-[Erste Schritte mit Razor-Pages und EF Core](xref:data/ef-rp/intro) zeigt erweiterte EF Core-Vorgänge mit Razor-Pages.
 
 ### <a name="publish-to-azure"></a>Veröffentlichen in Azure
 

@@ -9,11 +9,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: mvc/controllers/routing
-ms.openlocfilehash: 497ce47fa567f163cb7b1eb891408f0100d15b8a
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: cc3277400aee956f47c53e5a4f3d4e84d3a3d1a3
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="routing-to-controller-actions"></a>Routing zum Controlleraktionen
 

@@ -1,7 +1,9 @@
 ---
 title: Aktivieren von Cross-Origin-Anforderungen (CORS)
 author: rick-anderson
-description: "Dieses Dokument wird als Standard für das zulassen oder ablehnen von Cross-Origin-Anforderungen in einer ASP.NET Core app CORS eingeführt."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 05/17/2017
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/cors
-ms.openlocfilehash: 1c0d87b61882f69dbf2aeb0a896d9294bd029374
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 0d1c34f5c82fe1a28a405617ea77084db899139b
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="enabling-cross-origin-requests-cors"></a>Aktivieren von Cross-Origin-Anforderungen (CORS)
 

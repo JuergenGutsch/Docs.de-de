@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/compatibility/replacing-machinekey
-ms.openlocfilehash: 865c949a526e07d41ac4627fdf0411d5422adc16
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 2c2f6e04c42d547592cc1c2e6e66da7133b8bbef
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="replacing-machinekey-in-aspnet"></a>Ersetzen von `<machineKey>` in ASP.NET
 

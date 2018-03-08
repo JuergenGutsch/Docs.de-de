@@ -1,26 +1,27 @@
 ---
-title: Benutzerdefinierte Richtlinie basierende Autorisierung in ASP.NET Core
+title: Benutzerdefinierte Richtlinie basierende Autorisierung
 author: rick-anderson
-description: Informationen Sie zum Erstellen und Verwenden von benutzerdefinierten Autorisierungs-Policy-Handler zum Erzwingen von autorisierungsanforderungen in einer ASP.NET Core-app.
-manager: wpickett
+description: 
+keywords: ASP.NET Core,
 ms.author: riande
-ms.custom: mvc
-ms.date: 11/21/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
+manager: wpickett
+ms.date: 10/14/2016
 ms.topic: article
+ms.assetid: e422a1b2-dc4a-4bcc-b8d9-7ee62009b6a3
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: security/authorization/policies
-ms.openlocfilehash: 0eb5451828a51771d9388c2db610ede6231ced51
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 24585ed5b4c21a357fc0eed4de6ccedf9fa50d3e
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="custom-policy-based-authorization"></a>Benutzerdefinierte Richtlinie basierende Autorisierung
 
-Im Hintergrund [rollenbasierte Autorisierung](xref:security/authorization/roles) und [anspruchsbasierte Autorisierung](xref:security/authorization/claims) erforderlich, einen Handler für die Anforderung und eine vorkonfigurierte Richtlinie verwenden. Diese Bausteine unterstützen den Ausdruck der auswertungen für die Autorisierung im Code. Das Ergebnis ist eine umfangreichere, wiederverwendbare, testfähig Autorisierung-Struktur.
+<a name="security-authorization-policies-based"></a>
 
-Eine Autorisierungsrichtlinie besteht aus einer oder mehreren Anforderungen. Wird als Teil der Dienstkonfiguration Autorisierung in registriert die `ConfigureServices` Methode der `Startup` Klasse:
+Im Hintergrund der [Rolle Autorisierung](roles.md) und [Ansprüche Autorisierung](claims.md) Verwenden einer Anforderung verwendet wird, einen Handler für die Anforderung und eine vorkonfigurierte Richtlinie. Diese Bausteine ermöglichen es Ihnen, Autorisierung auswertungen in Code, sodass eine umfangreichere, wiederverwendet werden kann, und einer leicht testfähig Autorisierung Struktur auszudrücken.
 
 [!code-csharp[](policies/samples/PoliciesAuthApp1/Startup.cs?range=40-41,50-55,63,72)]
 
@@ -51,7 +52,7 @@ Der Handler Mindestalter kann wie folgt aussehen:
 
 [!code-csharp[](policies/samples/PoliciesAuthApp1/Services/Handlers/MinimumAgeHandler.cs?name=snippet_MinimumAgeHandlerClass)]
 
-Der vorangehende Code bestimmt, ob der aktuelle Benutzer principal aufweist, ein Geburtsdatum Anspruch, der von einem bekannten und vertrauenswürdigen Aussteller ausgegeben wurde. Autorisierung kann nicht auftreten, wenn der Anspruch nicht vorhanden ist, in diesem Fall eine vollständige Aufgabe zurückgegeben hat. Wenn ein Anspruch vorhanden ist, wird das Alter des Benutzers berechnet. Wenn der Benutzer das Mindestalter definiert, indem Sie die Anforderung erfüllt, wird die Autorisierung erfolgreich angesehen. Wenn die Autorisierung erfolgreich war, `context.Succeed` mit die Anforderung erfüllt, als Parameter aufgerufen wird.
+<a name="security-authorization-policies-based-handler-registration"></a>
 
 <a name="security-authorization-policies-based-handler-registration"></a>
 

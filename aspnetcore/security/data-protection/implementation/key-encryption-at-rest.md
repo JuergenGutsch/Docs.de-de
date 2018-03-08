@@ -1,7 +1,9 @@
 ---
 title: "Verschlüsselung ruhender"
 author: rick-anderson
-description: "In diesem Dokument werden die Implementierungsdetails der ASP.NET Core Schutz Key Verschlüsselung ruhender Daten."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/key-encryption-at-rest
-ms.openlocfilehash: c66430bfe547cf061e9e79a703ac665a968bbe0b
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 5d0eb4036a3d491336cbe9357779c150b5cbb236
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="key-encryption-at-rest"></a>Verschlüsselung ruhender
 

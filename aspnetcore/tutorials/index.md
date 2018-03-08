@@ -2,18 +2,19 @@
 title: ASP.NET Core-Tutorials
 author: rick-anderson
 description: Eine Liste von detaillierten Anleitungen zum Entwickeln von ASP.NET Core-Anwendungen
-manager: wpickett
+keywords: ASP.NET Core,
 ms.author: riande
+manager: wpickett
 ms.date: 10/14/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: tutorials/index
-ms.openlocfilehash: 01a804151ad813dbf47ab4b2415076a4e01bf1d9
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: ba5d9d8a27b1df282783a15bb8dd945e14c61db0
+ms.sourcegitcommit: a873f862c8e68b2cf2998aaed3dddd93eeba9e0f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/17/2017
 ---
 # <a name="aspnet-core-tutorials"></a>ASP.NET Core-Tutorials
 
@@ -36,6 +37,19 @@ Die folgenden detaillierten Anleitungen für die Entwicklung von ASP.NET Core-An
    * [Web-App mit Visual Studio für Mac](first-mvc-app-mac/index.md)
    * [Web-App mit Visual Studio Code unter Mac oder Linux](first-mvc-app-xplat/index.md)
 
+* [Einführung in Razor-Seiten in ASP.NET Core](xref:mvc/razor-pages/index)
+* Erstellen einer Razor-Seiten-Web-App mit ASP.NET Core
+
+   * [Razor-Seiten unter Windows](xref:tutorials/razor-pages/index)
+   * [Razor-Seiten unter Mac](xref:tutorials/razor-pages-mac/index)
+   * [Razor-Seiten mit VS Code](xref:tutorials/razor-pages-vsc/index)  
+
+* Erstellen einer ASP.NET Core-MVC-Web-App
+
+   * [Web-App mit Visual Studio für Windows](first-mvc-app/index.md)
+   * [Web-App mit Visual Studio für Mac](first-mvc-app-mac/index.md)
+   * [Web-App mit Visual Studio Code unter Mac oder Linux](first-mvc-app-xplat/index.md)
+
 * [Erste Schritte mit ASP.NET Core und Entity Framework Core mithilfe von Visual Studio](../data/ef-mvc/index.md)
 * [Erstellen von Taghilfsprogrammen](../mvc/views/tag-helpers/authoring.md)
 * [Erstellen einer einfachen Ansichtskomponente](../mvc/views/view-components.md#walkthrough-creating-a-simple-view-component)
@@ -44,12 +58,15 @@ Die folgenden detaillierten Anleitungen für die Entwicklung von ASP.NET Core-An
 ## <a name="build-web-apis"></a>Erstellen von Web-APIs
 * Erstellen einer Web-API mit ASP.NET Core
 
+## <a name="building-web-apis"></a>Erstellen von Web-APIs
+* Erstellen einer Web-API mit ASP.NET Core
+
   * [Web-API mit Visual Studio für Windows](first-web-api.md)
   * [Web-API mit Visual Studio für Mac](xref:tutorials/first-web-api-mac)
   * [Web-API mit Visual Studio Code](web-api-vsc.md)
   
 * [ASP.NET Core-Web-API-Hilfeseiten mit Swagger](web-api-help-pages-using-swagger.md)
-* [Erstellen von Back-End-Webdiensten für native mobile Apps](../mobile/native-mobile-backend.md)
+* [Erstellen von Back-End-Webdiensten für native mobile Anwendungen](../mobile/native-mobile-backend.md)
 
 ## <a name="data-access-and-storage"></a>Datenzugriff und -speicherung
 * [Erste Schritte mit ASP.NET Core und Entity Framework Core mithilfe von Visual Studio](../data/ef-mvc/index.md)

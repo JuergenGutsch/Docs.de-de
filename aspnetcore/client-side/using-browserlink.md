@@ -10,11 +10,12 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: client-side/using-browserlink
-ms.openlocfilehash: 3e62bdd180bb1f5e2ce0645a8cf13c9ffe76197e
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.custom: H1Hack27Feb2017
+ms.openlocfilehash: 95062961877b8da843ce47fb1719ee85224fa8c8
+ms.sourcegitcommit: 9c27fa0f0c57ad611aa43f63afb9b9c9571d4a94
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/11/2017
 ---
 # <a name="browser-link-in-aspnet-core"></a>Browserlink in ASP.NET Core 
 

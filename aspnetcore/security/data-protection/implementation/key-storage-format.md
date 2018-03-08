@@ -1,7 +1,9 @@
 ---
 title: "In Softwareschlüsselspeicher-Format"
 author: tdykstra
-description: "Dieses Dokument erläutert die Implementierungsdetails für das ASP.NET Core-Schutz-Schlüsselspeicher-Datenformat."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/key-storage-format
-ms.openlocfilehash: 66783eb7264a4551eafdd9d5c7d99b014701a6de
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 832f150b269e36ac35f0d00cafbf4903f7aef4fc
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="key-storage-format"></a>In Softwareschlüsselspeicher-Format
 

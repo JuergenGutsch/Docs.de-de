@@ -10,11 +10,11 @@ ms.technology: aspnet
 ms.prod: asp.net-core
 uid: mvc/views/working-with-forms
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: 9fd51755e1dc9a1dfb9ab5cc4558f7da9475ce32
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: da36985206521798d3bfe71f6372dc5cc4fca09a
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="introduction-to-using-tag-helpers-in-forms-in-aspnet-core"></a>Einführung in die Verwendung von Tag-Hilfsprogramme in Formularen in ASP.NET Core
 

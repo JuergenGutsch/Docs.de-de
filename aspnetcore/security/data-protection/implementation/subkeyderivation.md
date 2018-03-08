@@ -1,7 +1,9 @@
 ---
 title: "Unterschlüssel Ableitung und authentifizierten Verschlüsselung"
 author: rick-anderson
-description: "Dieses Dokument erläutert die Implementierungsdetails des Datenschutzes ASP.NET Core Ableitung Unterschlüssel und Verschlüsselung authentifiziert."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/subkeyderivation
-ms.openlocfilehash: 4b905bbc7bb064b6ba1741557bd694c8c67ccfa8
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: e070742b5d9966c4772fd2f0a6d637d98a46137c
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="subkey-derivation-and-authenticated-encryption"></a>Unterschlüssel Ableitung und authentifizierten Verschlüsselung
 

@@ -1,31 +1,32 @@
 ---
-title: Arbeiten Sie mit statischen Dateien in ASP.NET Core
+title: Arbeiten mit statischen Dateien in ASP.NET Core
 author: rick-anderson
-description: Erfahren Sie, wie dienen, statische Dateien gesichert werden, und konfigurieren statischen Datei hosting Middleware-Verhalten in einer ASP.NET Core-Web-app.
-manager: wpickett
+description: Informationen Sie zum Arbeiten mit statischen Dateien in ASP.NET Core.
+keywords: ASP.NET Core, statische Dateien, statische Assets, HTML, CSS und JavaScript
 ms.author: riande
-ms.custom: mvc
-ms.date: 01/18/2018
-ms.devlang: csharp
-ms.prod: asp.net-core
-ms.technology: aspnet
+manager: wpickett
+ms.date: 4/07/2017
 ms.topic: article
+ms.assetid: e32245c7-4eee-4831-bd2e-915dbf9f5f70
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: fundamentals/static-files
-ms.openlocfilehash: 60b205bf0a45e2965f9dab46f46956947ae513fd
-ms.sourcegitcommit: 3e303620a125325bb9abd4b2d315c106fb8c47fd
+ms.custom: H1Hack27Feb2017
+ms.openlocfilehash: 40c9a799c6ac8a2ce712df4b8fbf3c142ef3fd82
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="work-with-static-files-in-aspnet-core"></a>Arbeiten Sie mit statischen Dateien in ASP.NET Core
 
-Durch [Rick Anderson](https://twitter.com/RickAndMSFT) und [Scott Addie](https://twitter.com/Scott_Addie)
+<a name="fundamentals-static-files"></a>
 
 Statische Dateien, z. B. HTML, CSS, Bilder und JavaScript, sind Objekte, die eine ASP.NET Core app direkt an Clients dient. Einige Konfigurationen ist erforderlich, um die Bereitstellung dieser Dateien ausgeführt werden kann.
 
 [Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/static-files/samples) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 
-## <a name="serve-static-files"></a>Statischen Dateien
+[Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/fundamentals/static-files/sample) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 
 Statische Dateien sind im Web-Stammverzeichnis des Projekts gespeichert. Das Standardverzeichnis ist  *\<Content_root > / "Wwwroot"*, aber sie kann geändert werden, über die [UseWebRoot](/dotnet/api/microsoft.aspnetcore.hosting.hostingabstractionswebhostbuilderextensions.usewebroot#Microsoft_AspNetCore_Hosting_HostingAbstractionsWebHostBuilderExtensions_UseWebRoot_Microsoft_AspNetCore_Hosting_IWebHostBuilder_System_String_) Methode. Finden Sie unter [Content Stamm](xref:fundamentals/index#content-root) und [Stammweb](xref:fundamentals/index#web-root) für Weitere Informationen.
 

@@ -2,18 +2,20 @@
 title: Ansichten im Kern der ASP.NET MVC
 author: ardalis
 description: Erfahren Sie, wie Ansichten der app-datendarstellung und die Benutzerinteraktion in ASP.NET Core MVC behandeln.
+keywords: ASP.NET Core, MVC, Razor, Viewmodel, Viewdata, Viewbag anzeigen
 ms.author: riande
 manager: wpickett
-ms.date: 12/12/2017
+ms.date: 09/26/2017
 ms.topic: article
+ms.assetid: 668c320d-c050-45e3-8161-2f460dc93b2f
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: mvc/views/overview
-ms.openlocfilehash: dc36c76dbd7d82a926e39d8a8ab3a2a53b65d954
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: d3fbdecaed87b3432f0532748a0833c833c65129
+ms.sourcegitcommit: a60a99104fe7a29e271667cead6a06b6d8258d03
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="views-in-aspnet-core-mvc"></a>Ansichten im Kern der ASP.NET MVC
 
@@ -330,7 +332,7 @@ Mit beiden `ViewData` und `ViewBag` auf die gleiche Uhrzeit funktioniert wie mis
 
 **Wann ViewData oder ViewBag verwenden**
 
-Beide `ViewData` und `ViewBag` sind gleichermaßen gültig Ansätze für kleine Mengen von Daten zwischen Controllern und Ansichten übergeben. Die Wahl des welcher Typ verwendet basiert auf bevorzugt. Mischen und zuordnen `ViewData` und `ViewBag` Objekte, die Code ist jedoch einfacher zu lesen und zu verwalten, mit der ein Ansatz besteht darin, die konsistent verwendet. Beide Vorgehensweisen sind dynamisch zur Laufzeit aufgelöst und anfällig für Laufzeitfehler verursachen. Einige Entwicklungsteams vermeiden.
+Beide `ViewData` und `ViewBag` sind gleichermaßen gültig Ansätze für kleine Mengen von Daten zwischen Controllern und Ansichten übergeben. Die Auswahl der, die eine zu verwenden (oder beides) nach unten zu überlassen oder die Einstellung Ihrer Organisation stammen. Obwohl Sie mischen und zuordnen können `ViewData` und `ViewBag` -Objekte ist der Code einfacher zu lesen und zu verwalten, wenn Sie wählen Sie nur einen und verwenden Sie diese durchgängig. Da beide dynamisch zur Laufzeit aufgelöst und anfällig für Laufzeitfehler verursacht werden, verwenden Sie sie sorgfältig. Einige Entwickler vermeiden komplett.
 
 ### <a name="dynamic-views"></a>Dynamische Ansichten
 

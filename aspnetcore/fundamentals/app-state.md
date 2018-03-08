@@ -4,17 +4,17 @@ author: rick-anderson
 description: "Ansätze zum Beibehalten der Anwendung und des Benutzerstatus (Sitzung) zwischen Anforderungen."
 ms.author: riande
 manager: wpickett
-ms.date: 11/27/2017
+ms.date: 10/08/2017
 ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/app-state
 ms.custom: H1Hack27Feb2017
-ms.openlocfilehash: e00960370fbe87ac0f81f8455526221fa992decd
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: d4d10ef45d562f34c3f8b5ce025abaf763c862d3
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="introduction-to-session-and-application-state-in-aspnet-core"></a>Einführung in die Sitzung und Anwendungsstatus in ASP.NET Core
 
@@ -35,10 +35,11 @@ Der Server behält eine Sitzung für einen begrenzten Zeitraum nach der letzten 
 
 Die in-Memory-sitzungsanbieters speichert Sitzungsdaten auf dem lokalen Server. Wenn Sie beabsichtigen, Ihre Web-app auf einer Serverfarm auszuführen, müssen Sie persistente Sitzungen verwenden, um jede Sitzung an einen bestimmten Server zu verbinden. Die Websites der Windows Azure-Plattform wird standardmäßig auf persistente Sitzungen (Application Request Routing oder ARR). Allerdings können persistente Sitzungen Auswirkungen auf die Skalierbarkeit und Web-app-Updates erschweren. Eine bessere Option ist die Verwendung des Redis oder verteilten SQL Server zwischengespeichert werden, die nicht persistente Sitzungen erfordern. Weitere Informationen finden Sie unter [arbeiten mit einem verteilten Cache](xref:performance/caching/distributed). Weitere Informationen zum Einrichten der Dienstanbieter, finden Sie unter [konfigurieren Sitzung](#configuring-session) weiter unten in diesem Artikel.
 
+
 <a name="temp"></a>
 ## <a name="tempdata"></a>TempData
 
-ASP.NET Core MVC macht die [TempData](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata?view=aspnetcore-2.0#Microsoft_AspNetCore_Mvc_Controller_TempData) Eigenschaft auf einen [Controller](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller?view=aspnetcore-2.0). Diese Eigenschaft speichert Daten an, bis er gelesen wird. Die Methoden `Keep` und `Peek` können verwendet werden, um die Daten zu überprüfen, ohne sie zu löschen. `TempData`ist besonders nützlich für die Umleitung, wenn Daten für mehr als eine einzelne Anforderung benötigt werden. `TempData`wird von TempData-Anbieter, z. B. implementiert mithilfe von Cookies oder Sitzungsstatus.
+ASP.NET Core MVC macht die [TempData](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller.tempdata?view=aspnetcore-2.0#Microsoft_AspNetCore_Mvc_Controller_TempData) Eigenschaft auf einen [Controller](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controller?view=aspnetcore-2.0). Diese Eigenschaft speichert Daten, bis sie gelesen wurden. Die Methoden `Keep` und `Peek` können verwendet werden, um die Daten zu überprüfen, ohne sie zu löschen. `TempData`ist besonders nützlich für die Umleitung, wenn Daten für mehr als eine einzelne Anforderung benötigt werden. `TempData`wird von TempData-Anbieter, z. B. implementiert mithilfe von Cookies oder Sitzungsstatus.
 
 <a name="tempdata-providers"></a>
 ### <a name="tempdata-providers"></a>TempData-Anbieter
@@ -47,7 +48,7 @@ ASP.NET Core MVC macht die [TempData](https://docs.microsoft.com/dotnet/api/micr
 
 In ASP.NET Core 2.0 und höher, wird standardmäßig der Cookie-basierte TempData-Anbieter verwendet, um TempData in Cookies zu speichern.
 
-Ist die Cookiedaten codiert die [Base64UrlTextEncoder](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.webutilities.base64urltextencoder?view=aspnetcore-2.0). Daran, dass das Cookie verschlüsselt und aus Ihren Segmenten zusammengesetzt wird, Größe der einzelne Cookie Grenzwert gefunden in ASP.NET Core 1.x nicht gilt. Die Cookiedaten werden nicht komprimiert werden, da das Komprimieren verschlüsselter Daten Sicherheitsprobleme wie führen, kann die [CRIME](https://wikipedia.org/wiki/CRIME_(security_exploit)) und [Verletzung](https://wikipedia.org/wiki/BREACH_(security_exploit)) Angriffe. Weitere Informationen für den Cookie-basierte TempData-Anbieter finden Sie unter [CookieTempDataProvider](https://github.com/aspnet/Mvc/blob/dev/src/Microsoft.AspNetCore.Mvc.ViewFeatures/ViewFeatures/CookieTempDataProvider.cs).
+Ist die Cookiedaten codiert die [Base64UrlTextEncoder](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.webutilities.base64urltextencoder?view=aspnetcore-2.0). Daran, dass das Cookie verschlüsselt und aus Ihren Segmenten zusammengesetzt wird, Größe der einzelne Cookie Grenzwert gefunden in ASP.NET Core 1.x nicht gilt. Die Cookiedaten werden nicht komprimiert werden, da beim Komprimieren von Daten Encryped Sicherheitsprobleme wie führen, kann die [CRIME](https://wikipedia.org/wiki/CRIME_(security_exploit)) und [Verletzung](https://wikipedia.org/wiki/BREACH_(security_exploit)) Angriffe. Weitere Informationen für den Cookie-basierte TempData-Anbieter finden Sie unter [CookieTempDataProvider](https://github.com/aspnet/Mvc/blob/dev/src/Microsoft.AspNetCore.Mvc.ViewFeatures/ViewFeatures/CookieTempDataProvider.cs).
 
 # <a name="aspnet-core-1xtabaspnetcore1x"></a>[ASP.NET Core 1.x](#tab/aspnetcore1x)
 
@@ -55,7 +56,6 @@ In ASP.NET Core 1.0 und 1.1 ist der TempData Sitzungsstatusanbieter die Standard
 
 --------------
 
-<a name="choose-temp"></a>
 ### <a name="choosing-a-tempdata-provider"></a>TempData-Anbieter auswählen
 
 Auswählen eines Anbieters TempData umfasst verschiedene Aspekte im Zusammenhang, z. B.:
@@ -67,27 +67,19 @@ Auswählen eines Anbieters TempData umfasst verschiedene Aspekte im Zusammenhang
 > [!NOTE]
 > Die meisten Webclients (z. B. Webbrowser) zu erzwingen Grenzwerte für die maximale Größe der einzelnen Cookies, die Gesamtanzahl von Cookies oder beide. Wenn das Cookie TempData-Anbieter verwenden, überprüfen Sie daher, dass die app beim Überschreiten dieser Grenzwerte wird nicht. Betrachten Sie die Gesamtgröße der Daten, für die Kosten der Verschlüsselung Kontoführung und Segmentierung.
 
-<a name="config-temp"></a>
-### <a name="configure-the-tempdata-provider"></a>Konfigurieren des TempData-Anbieters
+Um den TempData-Anbieter für eine Anwendung zu konfigurieren, registrieren Sie eine Implementierung eines Anbieters TempData in `ConfigureServices`:
 
-# <a name="aspnet-core-2xtabaspnetcore2x"></a>[ASP.NET Core 2.x](#tab/aspnetcore2x)
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services
+        .AddMvc()
+        .AddSessionStateTempDataProvider();
 
-Der Cookie-basierte TempData-Anbieter ist standardmäßig aktiviert. Die folgenden `Startup` Klassencode dient zum Konfigurieren des sitzungsbasierte TempData-Anbieters:
-
-[!code-csharp[](app-state/sample/src/WebAppSessionDotNetCore2.0App/StartupTempDataSession.cs?name=snippet_TempDataSession&highlight=4,6,11)]
-
-# <a name="aspnet-core-1xtabaspnetcore1x"></a>[ASP.NET Core 1.x](#tab/aspnetcore1x)
-
-Die folgenden `Startup` Klassencode dient zum Konfigurieren des sitzungsbasierte TempData-Anbieters:
-
-[!code-csharp[](app-state/sample/src/WebAppSession/StartupTempDataSession.cs?name=snippet_TempDataSession&highlight=4,9)]
-
----
-
-Reihenfolge ist wichtig für middlewarekomponenten gemeinsam sind. Im vorherigen Beispiel, eine Ausnahme vom Typ `InvalidOperationException` tritt auf, wenn `UseSession` wird aufgerufen, nachdem `UseMvcWithDefaultRoute`. Finden Sie unter [Middleware Sortierung](xref:fundamentals/middleware#ordering) für weitere Details.
-
-> [!IMPORTANT]
-> Wenn .NET Framework abzielt, und Verwenden des Anbieters sitzungsbasierte Hinzufügen der [Microsoft.AspNetCore.Session](https://www.nuget.org/packages/Microsoft.AspNetCore.Session) NuGet-Paket zum Projekt.
+    // The Session State TempData Provider requires adding the session state service
+    services.AddSession();
+}
+```
 
 ## <a name="query-strings"></a>Abfragezeichenfolgen
 

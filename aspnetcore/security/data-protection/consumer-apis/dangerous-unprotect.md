@@ -1,7 +1,9 @@
 ---
 title: "Aufheben des Schutzes Nutzlasten, deren Schlüssel gesperrt wurden."
 author: rick-anderson
-description: "Dieses Dokument wird erläutert, wie zum Aufheben des Schutzes von Daten, mit Schlüsseln, die zwischenzeitlich, in einer ASP.NET Core app gesperrt wurden geschützt wird."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/consumer-apis/dangerous-unprotect
-ms.openlocfilehash: 584dbb545c15add4401086b9160d4bf30caf41b5
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 082fd69769dd0ef000b39ec148c12719d66f7aac
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="unprotecting-payloads-whose-keys-have-been-revoked"></a>Aufheben des Schutzes Nutzlasten, deren Schlüssel gesperrt wurden.
 

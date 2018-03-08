@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/cookie
-ms.openlocfilehash: 1f20a2f7cab123e5a41ee1d232271da9de4c9058
-ms.sourcegitcommit: f2a11a89037471a77ad68a67533754b7bb8303e2
+ms.openlocfilehash: ea9c93e34a3242b5b3716404228edb8902baf625
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="using-cookie-authentication-without-aspnet-core-identity"></a>Mithilfe der Cookieauthentifizierung ohne ASP.NET Core Identität
 
@@ -84,7 +84,7 @@ ASP.NET Core 1.x verwendet Cookies [Middleware](xref:fundamentals/middleware/ind
 
 Installieren der [Microsoft.AspNetCore.Authentication.Cookies](https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Cookies/) NuGet-Paket im Projekt. Dieses Paket enthält die Cookie-Middleware.
 
-Verwenden der `UseCookieAuthentication` Methode in der `Configure` Methode in Ihrer *Startup.cs* Datei vor dem `UseMvc` oder `UseMvcWithDefaultRoute`:
+* `AuthenticationScheme`-Dies ist ein Wert, der unter dem ein bestimmtes Cookie-Authentifizierungsschema bekannt ist. Dies ist nützlich, wenn mehrere der Cookieauthentifizierung und der app muss Instanzen [Beschränken der Autorisierung mit einer Instanz](xref:security/authorization/limitingidentitybyscheme).
 
 ```csharp
 app.UseCookieAuthentication(new CookieAuthenticationOptions()

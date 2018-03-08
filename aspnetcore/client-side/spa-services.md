@@ -10,11 +10,12 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: client-side/spa-services
-ms.openlocfilehash: bd18d342de7c147e3588bd6daa3aebd68aa81c36
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.custom: H1Hack27Feb2017
+ms.openlocfilehash: f3c38a1730e43586f37cd773bb8daa418736952f
+ms.sourcegitcommit: b3d46df910fb679edb8dd47234db6b4da604eedb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="using-javascriptservices-for-creating-single-page-applications-with-aspnet-core"></a>Verwenden JavaScriptServices für einseitige Anwendungen mit ASP.NET Core erstellen
 

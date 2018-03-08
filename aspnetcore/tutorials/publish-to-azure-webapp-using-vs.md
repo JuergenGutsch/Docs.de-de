@@ -1,29 +1,29 @@
 ---
 title: "Veröffentlichen einer ASP.NET Core-App in Azure mit Visual Studio"
 author: rick-anderson
-description: "Erfahren Sie, wie eine ASP.NET Core-App in Azure App Service mit Visual Studio veröffentlicht wird."
-manager: wpickett
+description: 
+keywords: ASP.NET Core
 ms.author: riande
-ms.date: 12/16/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
+manager: wpickett
+ms.date: 10/05/2017
 ms.topic: get-started-article
+ms.assetid: 78571e4a-a143-452d-9cf2-0860f85972e6
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: tutorials/publish-to-azure-webapp-using-vs
-ms.openlocfilehash: 14d8dd0a5e6a99bacce3bf50b0468b20e0dddb96
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: df22852d2daddb2a3faef8404d0d250a6a1697a5
+ms.sourcegitcommit: e987c950caae7af9c4ece8a82228caa364e0a5df
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/05/2017
 ---
 # <a name="publish-an-aspnet-core-web-app-to-azure-app-service-using-visual-studio"></a>Veröffentlichen einer ASP.NET Core-Web-App in Azure App Service mit Visual Studio
 
 Von [Rick Anderson](https://twitter.com/RickAndMSFT), [Cesar Blum Silveira](https://github.com/cesarbs) und [Rachel Appel](https://twitter.com/rachelappel)
 
-Lesen Sie [Veröffentlichen in Azure aus Visual Studio für Mac](https://blog.xamarin.com/publish-azure-visual-studio-mac/), wenn Sie auf einem Mac arbeiten.
-
 ## <a name="set-up"></a>Einrichten
 
-* Eröffnen Sie ein [kostenloses Azure-Konto](https://aka.ms/K5y5yh), wenn Sie noch über kein Konto verfügen. 
+* Öffnen Sie ein [kostenloses Azure-Konto](https://aka.ms/K5y5yh), wenn Sie noch keines haben. 
 
 ## <a name="create-a-web-app"></a>Erstellen einer Web-App
 
@@ -178,10 +178,4 @@ Sobald Sie das Testen der App abgeschlossen haben, wechseln Sie zum [Azure-Porta
 
 ### <a name="next-steps"></a>Nächste Schritte
 
-* [Continuous Deployment in Azure mit Visual Studio und Git](xref:host-and-deploy/azure-apps/azure-continuous-deployment)
-
-## <a name="additonal-resources"></a>Zusätzliche Ressourcen
-
-* [Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview)
-* [Azure-Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview#resource-groups)
-* [Azure SQL-Datenbank](https://docs.microsoft.com/azure/sql-database/)
+* [Continuous Deployment in Azure mit Visual Studio und Git](../publishing/azure-continuous-deployment.md)

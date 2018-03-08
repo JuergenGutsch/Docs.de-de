@@ -2,18 +2,20 @@
 title: ASP.NET Core MVC mit Entity Framework Core - 10-Lernprogramm 1
 author: tdykstra
 description: 
-manager: wpickett
+keywords: ASP.NET Core, Entity Framework Core-Lernprogramm
 ms.author: tdykstra
+manager: wpickett
 ms.date: 03/15/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.assetid: b67c3d4a-f2bf-4132-a48b-4b0d599d7981
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: data/ef-mvc/intro
-ms.openlocfilehash: 7de43a390ee0e11f6eda811b0774343ab330c53b
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 379802f644b977563b0b50354feb1fb9a4c8fabb
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="getting-started-with-aspnet-core-mvc-and-entity-framework-core-using-visual-studio-1-of-10"></a>Erste Schritte mit ASP.NET Core MVC und Entity Framework Core mithilfe von Visual Studio (1 von 10)
 

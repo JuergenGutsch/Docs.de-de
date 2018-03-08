@@ -9,11 +9,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/metapackage
-ms.openlocfilehash: 8a44ee7ebb7e6b0112000429f1f080bceb7dc895
-ms.sourcegitcommit: 3e303620a125325bb9abd4b2d315c106fb8c47fd
+ms.openlocfilehash: ff25d80be907994f7ac3d64a8ffa39ae53278ba6
+ms.sourcegitcommit: 73bf6b222474d9f1f6aba3feaca4e191069d2121
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 10/03/2017
 ---
 #<a name="microsoftaspnetcoreall-metapackage-for-aspnet-core-2x"></a>Microsoft.AspNetCore.All Metapackage für ASP.NET Core 2.x
 

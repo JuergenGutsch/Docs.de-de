@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: tutorials/first-mvc-app/new-field
-ms.openlocfilehash: f8a5f9528d899f75aaabfbca38f075a27763567f
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 9c872a48aba4974ddac2e49ca40c944da356f0e0
+ms.sourcegitcommit: 79bbe7481c3d1297a0db8e41dd2b635b0f778264
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="adding-a-new-field"></a>Hinzufügen eines neuen Felds
 

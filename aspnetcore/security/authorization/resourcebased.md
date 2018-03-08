@@ -1,7 +1,9 @@
 ---
-title: Ressource-basierte Autorisierung in ASP.NET Core
-author: scottaddie
-description: Erfahren Sie, wie bei der Authorize-Attribut ausreichen wird nicht ressourcenbasierte Autorisierung in einer app ASP.NET Core implementieren.
+title: Resource Based Autorisierung
+author: rick-anderson
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: scaddie
 ms.custom: mvc
@@ -11,11 +13,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authorization/resourcebased
-ms.openlocfilehash: 723e371e0d0b4877f96898c68cd59b433fa97dc1
-ms.sourcegitcommit: 7a87d66cf1d01febe6635c7306f2f679434901d1
+ms.openlocfilehash: d3575619c53e77dadc293ea2bb7dc72501a8a1e3
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="resource-based-authorization"></a>Ressourcenbasierte Autorisierung
 
@@ -25,7 +27,7 @@ Attribut-Auswertung erfolgt, vor dem Datenbindung und vor der Ausführung der Se
 
 Verwenden der [Beispiel-apps](https://github.com/aspnet/Docs/tree/master/aspnetcore/security/authorization/resourcebased/samples) ([zum Herunterladen von](xref:tutorials/index#how-to-download-a-sample)), die in diesem Thema beschriebenen Funktionen zu untersuchen.
 
-[Erstellen einer ASP.NET Core-app mit Benutzerdaten durch Autorisierung geschützt](xref:security/authorization/secure-data) enthält eine Beispielapp, ressourcenbasierte Autorisierung verwendet.
+<a name="security-authorization-resource-based"></a>
 
 ## <a name="use-imperative-authorization"></a>Verwenden Sie eine imperative Autorisierung
 
@@ -57,7 +59,7 @@ Task<bool> AuthorizeAsync(ClaimsPrincipal user,
                           string policyName);
 ```
 
----
+<a name="security-authorization-resource-based-imperative"></a>
 
 <a name="security-authorization-resource-based-imperative"></a>
 

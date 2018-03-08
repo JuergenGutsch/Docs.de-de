@@ -1,7 +1,9 @@
 ---
 title: Data Protection computerweite Supportrichtlinie in ASP.NET Core
 author: rick-anderson
-description: "Informationen Sie zur Unterstützung für das Festlegen von computerweiten Standardrichtlinie für alle apps, die ASP.NET Core-Datenschutz nutzen."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,15 +11,15 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/configuration/machine-wide-policy
-ms.openlocfilehash: 53ded37e9fd5f1a2eaa37935d1c52efb1e9231ac
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: fde8f75422c9dd84311a65b21e1e38b47fbe0306
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="data-protection-machine-wide-policy-support-in-aspnet-core"></a>Data Protection computerweite Supportrichtlinie in ASP.NET Core
 
-Von [Rick Anderson](https://twitter.com/RickAndMSFT)
+<a name="data-protection-configuration-machinewidepolicy"></a>
 
 Bei Ausführung auf Windows verfügt das System den Datenschutz über eingeschränkte Unterstützung für das Festlegen von computerweiten Standardrichtlinie für alle apps, die ASP.NET Core-Datenschutz nutzen. Die Idee ist, dass ein Administrator ändern möchten, kann einen Standardwert festlegen, z. B. die Algorithmen verwendet oder Schlüsselgültigkeitsdauer, ohne dass Sie jede app auf dem Computer manuell aktualisieren müssen.
 
@@ -26,11 +28,29 @@ Bei Ausführung auf Windows verfügt das System den Datenschutz über eingeschr�
 
 ## <a name="setting-default-policy"></a>Standardrichtlinie festlegen
 
-Um die Standardrichtlinie festlegen, kann ein Administrator bekannte Werte in der Registrierung unter dem folgenden Registrierungsschlüssel festlegen:
+Um die Standardrichtlinie festlegen, kann ein Administrator bekannte Werte in der Registrierung unter folgendem Schlüssel festlegen.
+Wenn Sie auf einem 64-Bit-Betriebssystem und das Verhalten von 32-Bit-Anwendungen zu beeinflussen möchten, beachten Sie außerdem das Wow6432Node äquivalent zu den oben angegebenen Schlüssels zu konfigurieren.
+
+Die unterstützten Werte sind:
+
+* EncryptionType [Zeichenfolge] – Gibt an, welche Algorithmen für den Datenschutz verwendet werden soll. Dieser Wert kann "CNG-CBC", "CNG-GCM" oder "Verwaltet", und wird ausführlicher beschrieben [unten](#data-protection-encryption-types).
+
+* DefaultKeyLifetime [DWORD -] Gibt die Gültigkeitsdauer für die neu generierten Schlüssel. Dieser Wert wird in Tagen angegeben und muss ≥ 7.
+
+* KeyEscrowSinks [Zeichenfolge] – Gibt die Typen, die zur schlüsselhinterlegung verwendet werden soll. Dieser Wert ist eine durch Semikolons getrennte Liste von schlüsselhinterlegung senken, in dem jedes Element in der Liste der Assembly qualifizierte Name eines Typs ist das IKeyEscrowSink implementiert.
+
+<a name="data-protection-encryption-types"></a>
+
+### <a name="encryption-types"></a>Verschlüsselungstypen
+
+Wenn EncryptionType "CNG-CBC" ist, wird das System konfiguriert um symmetrische Blockchiffre CBC-Modus für die Vertraulichkeit und HMAC Authentizität mit Dienste von Windows CNG zu verwenden (finden Sie unter [angeben benutzerdefinierte Windows CNG-Algorithmen](overview.md#data-protection-changing-algorithms-cng)Weitere Details). Die folgenden zusätzlichen Werte werden unterstützt, von denen jeder eine Eigenschaft für die CngCbcAuthenticatedEncryptionSettings-Typ entspricht:
+
+* "EncryptionAlgorithm" [Zeichenfolge] - der Name des Verschlüsselungsalgorithmus einen symmetrischen Block CNG verständlich. Dieser Algorithmus wird im CBC-Modus geöffnet werden.
+
+* EncryptionAlgorithmProvider [Zeichenfolge] - der Name der CNG-Anbieter-Implementierung, die vom Algorithmus "EncryptionAlgorithm" erzeugt werden kann.
 
 **HKLM\SOFTWARE\Microsoft\DotNetPackages\Microsoft.AspNetCore.DataProtection**
 
-Wenn Sie auf einem 64-Bit-Betriebssystem und beeinflussen das Verhalten von 32-Bit-apps, denken Sie daran, das Äquivalent Wow6432Node des oben angegebenen Schlüssels konfigurieren möchten.
 
 Die unterstützten Werte sind unten dargestellt.
 

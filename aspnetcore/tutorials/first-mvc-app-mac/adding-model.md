@@ -10,11 +10,11 @@ ms.prod: .net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: tutorials/first-mvc-app-mac/adding-model
-ms.openlocfilehash: bf4d5d289266b585cbdfbb70c7482620fd4ced54
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 15fef14ab754b48935d17e754daa011acdd90b42
+ms.sourcegitcommit: a73fb5161fbdbee1d2e8474205e9840a134ee2ad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 [!INCLUDE[adding-model](../../includes/mvc-intro/adding-model1.md)]
 

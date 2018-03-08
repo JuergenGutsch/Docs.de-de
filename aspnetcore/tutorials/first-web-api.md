@@ -51,7 +51,7 @@ Wählen Sie im Dialogfeld **ASP.NET Core-Webanwendung – TodoAPI** die Vorlage 
 
 ### <a name="launch-the-app"></a>Starten der App
 
-Drücken Sie in Visual Studio STRG+F5 zum Starten der App. Visual Studio startet einen Browser und navigiert zu `http://localhost:port/api/values`, wobei *port* eine zufällig ausgewählte Portnummer ist. Chrome, Edge und Firefox zeigen die folgende Ausgabe an:
+Drücken Sie in Visual Studio STRG+F5 zum Starten der App. Visual Studio startet einen Browser und navigiert zu `http://localhost:port/api/values`, wobei es sich bei *port* um eine zufällig ausgewählte Portnummer handelt. Chrome, Microsoft Edge und Firefox zeigen Folgendes an:
 
 ```
 ["value1","value2"]
@@ -97,7 +97,7 @@ Ersetzen Sie die Klasse durch den folgenden Code:
 
 ### <a name="launch-the-app"></a>Starten der App
 
-Drücken Sie in Visual Studio STRG+F5 zum Starten der App. Visual Studio startet einen Browser und navigiert zu `http://localhost:port/api/values`, wobei *port* eine zufällig ausgewählte Portnummer ist. Navigieren Sie zum `Todo`-Controller auf `http://localhost:port/api/todo`.
+Drücken Sie in Visual Studio STRG+F5 zum Starten der App. Visual Studio startet einen Browser und navigiert zu `http://localhost:port/api/values`, wobei *port* eine zufällig ausgewählte Portnummer ist. Wenn Sie Chrome, Microsoft Edge oder Firefox verwenden, werden die Daten angezeigt. Wenn Sie Internet Explorer verwenden, werden Sie aufgefordert, die Datei *values.json* zu öffnen oder zu speichern. Navigieren Sie zum `Todo`-Controller, den wir eben erstellt haben `http://localhost:port/api/todo`.
 
 [!INCLUDE[last part of web API](../includes/webApi/end.md)]
 

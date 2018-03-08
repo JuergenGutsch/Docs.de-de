@@ -2,18 +2,19 @@
 title: "Aktivieren der Generierung von QR-Code für Authentifikator-apps in ASP.NET Core"
 author: rick-anderson
 description: "Aktivieren der Generierung von QR-Code für Authentifikator-apps in ASP.NET Core"
-manager: wpickett
+keywords: ASP.NET Core, MVC QR-Code-Generierung, Authentifizierer, 2FA
 ms.author: riande
+manager: wpickett
 ms.date: 09/24/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
 ms.topic: article
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: security/authentication/identity-enable-qrcodes
-ms.openlocfilehash: cf941314d54aa4a7bd1724805dc62c763ca71dfb
-ms.sourcegitcommit: 7a87d66cf1d01febe6635c7306f2f679434901d1
+ms.openlocfilehash: a3029e68164dd91d1bc43704c5e96bd591bcae05
+ms.sourcegitcommit: a73fb5161fbdbee1d2e8474205e9840a134ee2ad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="enabling-qr-code-generation-for-authenticator-apps-in-aspnet-core"></a>Aktivieren der Generierung von QR-Code für Authentifikator-apps in ASP.NET Core
 
@@ -29,7 +30,7 @@ Verwenden Sie diese Anweisungen *qrcode.js* über https://davidshimjs.github.io/
 
 * Herunterladen der [qrcode.js Javascript-Bibliothek](https://davidshimjs.github.io/qrcodejs/) auf die `wwwroot\lib` Ordner des Projekts.
 
-* In *Pages\Account\Manage\EnableAuthenticator.cshtml* (Razor-Pages) oder *Views\Manage\EnableAuthenticator.cshtml* (MVC), suchen Sie die `Scripts` Abschnitt am Ende der Datei:
+* In *Pages\Account\Manage\EnableAuthenticator.cshtml* (Razor-Seiten) oder *Views\Manage\EnableAuthenticator.cshtml* (MVC), suchen Sie die `Scripts` Abschnitt am Ende der Datei:
 
 ```cshtml
 @section Scripts {
@@ -61,7 +62,7 @@ Ausführen der app, und stellen Sie sicher, dass Sie den QR-Code Scannen und üb
 
 ## <a name="change-the-site-name-in-the-qr-code"></a>Ändern Sie den Namen der Website in den QR-Code
 
-Der Websitename in den QR-Code stammt aus den Namen des Projekts, die Sie auswählen, wenn das Projekt zunächst erstellen. Können Sie Sie ändern, indem Sie die Suche nach der `GenerateQrCodeUri(string email, string unformattedKey)` Methode in der *Pages\Account\Manage\EnableAuthenticator.cshtml.cs* (Razor-Pages)-Datei oder das *Controllers\ManageController.cs* (MVC)-Datei. 
+Der Websitename in den QR-Code stammt aus den Namen des Projekts, die Sie auswählen, wenn das Projekt zunächst erstellen. Können Sie Sie ändern, indem Sie die Suche nach der `GenerateQrCodeUri(string email, string unformattedKey)` Methode in der *Pages\Account\Manage\EnableAuthenticator.cshtml.cs* (Razor-Seiten)-Datei oder das *Controllers\ManageController.cs* (MVC)-Datei. 
 
 Der Standard-Code aus der Vorlage sieht wie folgt aus:
 

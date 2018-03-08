@@ -2,6 +2,8 @@
 title: Migrieren von HTTP-Handler und Module auf ASP.NET Core authentifizierungsmiddleware beziehen.
 author: rick-anderson
 description: 
+keywords: ASP.NET Core,
+ms.author: tdykstra
 manager: wpickett
 ms.author: tdykstra
 ms.date: 12/07/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: migration/http-modules
-ms.openlocfilehash: 8aac6c649b22dc8f6cfc916aa78d56efad7821a0
-ms.sourcegitcommit: f2a11a89037471a77ad68a67533754b7bb8303e2
+ms.openlocfilehash: eb5049d4d63c224ca74fc39072ae2c0d98ba330d
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="migrating-http-handlers-and-modules-to-aspnet-core-middleware"></a>Migrieren von HTTP-Handler und Module auf ASP.NET Core authentifizierungsmiddleware beziehen. 
 

@@ -9,19 +9,19 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/configuration/overview
-ms.openlocfilehash: 0fe1fd7b81a0e5aa00ae14c7e6fdbd9cc88ec4fe
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: d35e0e806999ffd2e0f8f82e0adfc940ea2b503d
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="configuring-data-protection-in-aspnet-core"></a>Konfigurieren des Datenschutzes in ASP.NET Core
 
-Von [Rick Anderson](https://twitter.com/RickAndMSFT)
+<a name="data-protection-configuring"></a>
 
 Wenn das System den Datenschutz initialisiert wird, gilt es [Standardeinstellungen](xref:security/data-protection/configuration/default-settings) basierend auf der betriebsumgebung. Diese Einstellungen sind im Allgemeinen geeignet für apps, die auf einem einzelnen Computer ausgeführt. Es gibt Fälle, in denen ein Entwickler möchten vielleicht die Standardeinstellungen geändert werden, da es sich bei ihrer app auf mehrere Computer oder aus Compliance-Gründen verteilt wird. Für die folgenden Szenarien bietet das Data Protection-System eine umfangreiche Konfigurations-API.
 
-Es ist eine Erweiterungsmethode [AddDataProtection](/dotnet/api/microsoft.extensions.dependencyinjection.dataprotectionservicecollectionextensions.adddataprotection) zurückgibt ein [IDataProtectionBuilder](/dotnet/api/microsoft.aspnetcore.dataprotection.idataprotectionbuilder). `IDataProtectionBuilder`macht Erweiterungsmethoden, dass Sie miteinander Optionen verketten können so konfigurieren Sie den Schutz von Daten an.
+<a name="data-protection-configuration-callback"></a>
 
 ## <a name="persistkeystofilesystem"></a>PersistKeysToFileSystem
 
@@ -38,7 +38,7 @@ public void ConfigureServices(IServiceCollection services)
 > [!WARNING]
 > Wenn Sie den Speicherort der schlüsselpersistenz ändern, verschlüsselt das System nicht mehr automatisch Schlüssel im Ruhezustand, da er nicht weiß, ob eine entsprechende Verschlüsselungsmechanismus bei DPAPI handelt es.
 
-## <a name="protectkeyswith"></a>ProtectKeysWith\*
+<a name="configuring-x509-certificate"></a>
 
 Sie können konfigurieren, dass Schlüssel im Ruhezustand zu schützen, durch das Aufrufen einer der im System die [ProtectKeysWith\* ](/dotnet/api/microsoft.aspnetcore.dataprotection.dataprotectionbuilderextensions) Konfigurations-APIs. Betrachten Sie das folgenden Beispiel wird die Tasten auf einer UNC-Freigabe gespeichert und verschlüsselt den Schlüssel im Ruhezustand mit einem bestimmten x. 509-Zertifikat aus:
 
@@ -67,7 +67,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ## <a name="setapplicationname"></a>SetApplicationName
 
-Standardmäßig isoliert die Datenschutz-System apps von einem anderen, auch wenn sie die gleiche physischen Schlüssel Repository gemeinsam nutzen. Dadurch wird verhindert, dass die apps Grundlegendes zur jeweils anderen geschützten Nutzlasten. Zum Freigeben von geschützter Nutzlasten zwischen zwei Web-apps verwenden [SetApplicationName](/dotnet/api/microsoft.aspnetcore.dataprotection.dataprotectionbuilderextensions.setapplicationname) mit demselben Wert für jede app:
+<a name="data-protection-code-sample-application-name"></a>
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -77,7 +77,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-## <a name="disableautomatickeygeneration"></a>DisableAutomaticKeyGeneration
+<a name="data-protection-configuring-disable-automatic-key-generation"></a>
 
 Sie möglicherweise ein Szenario, in dem Sie nicht möchten eine app an (zum Erstellen neuer Schlüssel) Schlüssel automatisch zurücksetzen, wie sie Ablaufdatum nähern. Ein Beispiel hierfür ist möglicherweise apps, die in einer Beziehung primär/Sekundär, in dem nur die primäre app ist verantwortlich für schlüsselverwaltung Bedenken und sekundären apps haben einfach eine schreibgeschützte Ansicht des Rings Schlüssel einrichten. Die sekundären apps konfiguriert werden können um der Schlüssel Ring als schreibgeschützt zu behandeln, indem Sie die Konfiguration des Systems mit [DisableAutomaticKeyGeneration](/dotnet/api/microsoft.aspnetcore.dataprotection.dataprotectionbuilderextensions.disableautomatickeygeneration):
 
@@ -88,6 +88,8 @@ public void ConfigureServices(IServiceCollection services)
         .DisableAutomaticKeyGeneration();
 }
 ```
+
+<a name="data-protection-configuration-per-app-isolation"></a>
 
 ## <a name="per-application-isolation"></a>Pro Anwendungsisolation
 
@@ -103,7 +105,7 @@ Der eindeutige Bezeichner dient zum Zurücksetzen von Kennwörtern überstehen &
 
 Dieser Mechanismus für die Sicherheitsisolation wird davon ausgegangen, dass die apps nicht bösartig sind. Eine böswillige Anwendung beeinträchtigt immer jede andere app unter der gleichen Arbeitsprozesskonto ausgeführt wird. In einer freigegebenen Hostingumgebung nicht gegenseitig vertrauenswürdigen apps gegangenem geboten des hostenden Anbieters Schritte, um auf Betriebssystemebene Isolation zwischen apps, einschließlich trennen, die apps zugrunde liegenden Key Repositorys sicherzustellen.
 
-Wenn das System Schutz von Daten von einem ASP.NET Core-Host nicht bereitgestellt wird (z. B., wenn Sie auch über Instanziieren der `DataProtectionProvider` konkreten Typ) Isolieren von Apps ist standardmäßig deaktiviert. Beim Isolieren von Apps deaktiviert ist, alle apps, die durch das gleiche Schlüsselmaterial gesichert können freigeben Nutzlasten solange sie die entsprechende bieten [Zwecke](xref:security/data-protection/consumer-apis/purpose-strings). Zum Isolieren von Apps in dieser Umgebung bereitstellen möchten, rufen Sie die [SetApplicationName](#setapplicationname) Methode für die Konfiguration Objekt, und geben Sie einen eindeutigen Namen für jede app.
+<a name="data-protection-changing-algorithms"></a>
 
 ## <a name="changing-algorithms-with-usecryptographicalgorithms"></a>Algorithmen mit UseCryptographicAlgorithms ändern
 
@@ -141,8 +143,10 @@ Aufrufen von `UseCryptographicAlgorithms` können Sie den gewünschten Algorithm
 
 Sie können manuell angeben, um über einen Aufruf an eine Implementierung [UseCustomCryptographicAlgorithms](/dotnet/api/microsoft.aspnetcore.dataprotection.dataprotectionbuilderextensions.usecustomcryptographicalgorithms).
 
-> [!TIP]
-> Ändern die Algorithmen wirkt sich nicht auf vorhandene Schlüssel im Schlüssel Ring aus. Er wirkt sich nur auf neu generierten Schlüssel.
+>[!TIP]
+> Ändern die Algorithmen wirkt sich nicht auf den vorhandenen Schlüssel im Schlüssel Ring aus. Er wirkt sich nur auf neu generierten Schlüssel.
+
+<a name="data-protection-changing-algorithms-custom-managed"></a>
 
 ### <a name="specifying-custom-managed-algorithms"></a>Angeben von benutzerdefinierten verwalteten Algorithmen
 
@@ -191,7 +195,9 @@ serviceCollection.AddDataProtection()
 Im Allgemeinen die \*Typeigenschaften müssen auf konkrete, zeigen instanziierbaren (über einen öffentlichen parameterlosen Ctor) Implementierungen von [SymmetricAlgorithm](/dotnet/api/system.security.cryptography.symmetricalgorithm) und [KeyedHashAlgorithm](/dotnet/api/system.security.cryptography.keyedhashalgorithm), obwohl die System spezielle-Fällen einige Werte wie `typeof(Aes)` der Einfachheit halber.
 
 > [!NOTE]
-> Die SymmetricAlgorithm muss eine Schlüssellänge von ≥ 128 Bits und eine Blockgröße von ≥ 64 Bits haben, und es muss CBC-Modus-Verschlüsselung mit PKCS #7-Auffüllung unterstützen. Der KeyedHashAlgorithm benötigen Nachrichtenhash Größe > = 128 Bits und müssen Schlüssel, der den Hashalgorithmus Digestlänge gleich Länge unterstützt. Die KeyedHashAlgorithm ist nicht zwingend erforderlich, dass HMAC.
+> Die SymmetricAlgorithm muss eine Schlüssellänge von ≥ 128 Bits und eine Blockgröße von ≥ 64 Bits haben, und es muss CBC-Modus-Verschlüsselung mit PKCS #7-Auffüllung unterstützen. Der KeyedHashAlgorithm benötigen Nachrichtenhash Größe > = 128 Bits und müssen Schlüssel, der den Hashalgorithmus Digestlänge gleich Länge unterstützt. Die KeyedHashAlgorithm ist nicht zwingend erforderlich, HMAC sein.
+
+<a name="data-protection-changing-algorithms-cng"></a>
 
 ### <a name="specifying-custom-windows-cng-algorithms"></a>Angeben von benutzerdefinierten Windows CNG-Algorithmen
 

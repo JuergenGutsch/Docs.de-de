@@ -1,3 +1,0 @@
-# <a name="aspnet-core-logging-sample-application"></a>ASP.NET Core Protokollierung-beispielanwendung
-
-Diese beispielanwendung ist für die [ASP.NET Core Protokollierung](https://docs.microsoft.com/aspnet/core/fundamentals/logging) Artikel und basiert auf das Beispiel erstellt die [ersten Web-API mit ASP.NET Core MVC](https://docs.microsoft.com/aspnet/core/tutorials/first-web-api) Lernprogramm.

@@ -2,19 +2,21 @@
 title: "ASP.NET Core – Grundlagen"
 author: rick-anderson
 description: Lernen Sie die grundlegenden Konzepte zum Erstellen einer ASP.NET Core-Anwendung kennen.
-manager: wpickett
+keywords: "ASP.NET Core, Grundlagen, Übersicht"
 ms.author: riande
-ms.custom: H1Hack27Feb2017
+manager: wpickett
 ms.date: 09/30/2017
-ms.prod: asp.net-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.assetid: a19b7836-63e4-44e8-8250-50d426dd1070
+ms.technology: aspnet
+ms.prod: asp.net-core
 uid: fundamentals/index
-ms.openlocfilehash: 7f0e30b3ac7f9cc3a32bd96f45d83ba13505a475
-ms.sourcegitcommit: f2a11a89037471a77ad68a67533754b7bb8303e2
+ms.custom: H1Hack27Feb2017
+ms.openlocfilehash: e707bb92b2d8b1776ae2970001f1699248580e5f
+ms.sourcegitcommit: 732cd2684246e49e796836596643a8d37e20c46d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 10/01/2017
 ---
 # <a name="aspnet-core-fundamentals"></a>ASP.NET Core – Grundlagen
 
@@ -71,13 +73,13 @@ public class Startup
 }
 ```
 
-`ConfigureServices` definiert die [Dienste](#dependency-injection-services) Ihrer Anwendung (z.B. ASP.NET Core MVC, Entity Framework Core, Identity). `Configure` definiert die [Middleware](xref:fundamentals/middleware/index) für die Anforderungspipeline.
+`ConfigureServices` definiert die [Dienste](#dependency-injection-services) Ihrer Anwendung (z.B. ASP.NET Core MVC, Entity Framework Core, Identity). `Configure` definiert die [Middleware](xref:fundamentals/middleware) für die Anforderungspipeline.
 
 Weitere Informationen finden Sie unter [Application startup (Starten von Anwendungen)](xref:fundamentals/startup).
 
 ## <a name="content-root"></a>Inhaltsstammverzeichnis
 
-Das Inhaltsstammverzeichnis ist der Basispfad zu allen von der Anwendung verwendeten Inhalten wie Ansichten, [Razor-Pages](xref:mvc/razor-pages/index) und statischen Objekten. Standardmäßig entspricht das Inhaltsstammverzeichnis dem Anwendungsbasispfad der ausführbaren Datei, mit der die Anwendung gehostet wird.
+Das Inhaltsstammverzeichnis ist der Basispfad zu allen von der Anwendung verwendeten Inhalten wie Ansichten, [Razor-Seiten](xref:mvc/razor-pages/index) und statischen Objekten. Standardmäßig entspricht das Inhaltsstammverzeichnis dem Anwendungsbasispfad der ausführbaren Datei, mit der die Anwendung gehostet wird.
 
 ## <a name="web-root"></a>Webstammverzeichnis
 
@@ -85,7 +87,7 @@ Das Webstammverzeichnis einer Anwendung ist das Projektverzeichnis, in dem sich 
 
 ## <a name="dependency-injection-services"></a>Abhängigkeitsinjektion (Dienste)
 
-Ein Dienst ist eine Komponente, die für die gemeinsame Nutzung in einer Anwendung vorgesehen ist. Dienste werden über die [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection) zur Verfügung gestellt. ASP.NET Core enthält einen nativen IoC-Container (**I**nversion **o**f **C**ontrol, Steuerungsumkehr), der die [Konstruktorinjektion](xref:mvc/controllers/dependency-injection#constructor-injection) standardmäßig unterstützt. Bei Bedarf können Sie den nativen Standardcontainer durch einen anderen ersetzen. Neben der losen Kopplung besteht ein weiterer Vorteil darin, dass durch die Abhängigkeitsinjektion Dienste in der gesamten Anwendung zur Verfügung gestellt werden (z.B. die [Protokollierung](xref:fundamentals/logging/index)).
+Ein Dienst ist eine Komponente, die für die gemeinsame Nutzung in einer Anwendung vorgesehen ist. Dienste werden über die [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection) zur Verfügung gestellt. ASP.NET Core enthält einen nativen IoC-Container (**I**nversion **o**f **C**ontrol, Steuerungsumkehr), der die [Konstruktorinjektion](xref:mvc/controllers/dependency-injection#constructor-injection) standardmäßig unterstützt. Bei Bedarf können Sie den nativen Standardcontainer durch einen anderen ersetzen. Neben der losen Kopplung besteht ein weiterer Vorteil darin, dass durch die Abhängigkeitsinjektion Dienste in der gesamten Anwendung zur Verfügung gestellt werden (z.B. die [Protokollierung](xref:fundamentals/logging)).
 
 Weitere Informationen finden Sie unter [Dependency injection (Abhängigkeitsinjektion)](xref:fundamentals/dependency-injection).
 
@@ -103,7 +105,33 @@ ASP.NET Core enthält standardmäßig zahlreiche Middlewareanwendungen:
 
 Jede auf [OWIN](http://owin.org) basierende Middleware steht für ASP.NET Core zur Verfügung. Darüber hinaus können Sie auch Ihre eigene benutzerdefinierte Middleware erstellen.
 
-Weitere Informationen finden Sie unter [Middleware](xref:fundamentals/middleware/index) und [Introduction to Open Web Interface for .NET (OWIN) (Einführung in Open Web Interface for .NET (OWIN))](xref:fundamentals/owin).
+ASP.NET Core verfügt über Features zum Routing von App-Anforderung an Routenhandler.
+
+Weitere Informationen finden Sie unter [Routing](xref:fundamentals/routing).
+
+## <a name="file-providers"></a>Dateianbieter
+
+ASP.NET Core abstrahiert den Dateisystemzugriff mithilfe von Dateianbietern, wodurch eine einfache Schnittstelle zum plattformübergreifenden Arbeiten mit Dateien zur Verfügung gestellt wird.
+
+Weitere Informationen finden Sie unter [Dateianbieter](xref:fundamentals/file-providers).
+
+## <a name="static-files"></a>Statische Dateien
+
+Middleware für statische Dateien kümmert sich um statische Dateien wie etwa HTML, CSS, Image und JavaScript.
+
+Weitere Informationen finden Sie unter [Arbeiten mit statischen Dateien](xref:fundamentals/static-files).
+
+## <a name="hosting"></a>Hosting
+
+ASP.NET Core-Apps konfigurieren und starten einen *Host*, der für das Starten der App und das Verwalten deren Lebensdauer verantwortlich ist.
+
+Weitere Informationen finden Sie unter [Hosting](xref:fundamentals/hosting).
+
+## <a name="session-and-application-state"></a>Sitzungs- und Anwendungszustand
+
+Sitzungszustand ist ein Feature in ASP.NET Core, das Sie verwenden können, um Benutzerdaten zu speichern, während der Benutzer Ihre Web-App durchsucht.
+
+Weitere Informationen finden Sie unter [Session and application state (Sitzungs- und Anwendungszustand)](xref:fundamentals/app-state).
 
 ## <a name="environments"></a>Umgebungen
 
@@ -115,13 +143,13 @@ Weitere Informationen finden Sie unter [Working with Multiple Environments (Verw
 
 ASP.NET Core verwendet ein Konfigurationsmodell, das auf Name/Wert-Paaren basiert. Das Konfigurationsmodell basiert weder auf `System.Configuration` noch auf *web.config*. Die Konfiguration erhält Einstellungen von einer geordneten Menge an Konfigurationsanbietern. Die integrierten Konfigurationsanbieter unterstützen zahlreiche Dateiformate (XML, JSON, INI) und Umgebungsvariablen, durch die eine umgebungsbasierte Konfiguration ermöglicht wird. Sie können auch benutzerdefinierte Konfigurationsanbieter erstellen.
 
-Weitere Informationen finden Sie unter [Konfiguration](xref:fundamentals/configuration/index).
+Weitere Informationen finden Sie unter [Konfiguration](xref:fundamentals/configuration).
 
 ## <a name="logging"></a>Protokollierung
 
 ASP.NET Core unterstützt eine Protokollierungs-API, die mit mehreren verschiedenen Protokollanbietern funktioniert. Integrierte Anbieter unterstützen das Senden von Protokollen an mindestens einen Zielanbieter. Protokollierungsframeworks von Drittanbietern sind ebenso zulässig.
 
-[Logging (Protokollierung)](xref:fundamentals/logging/index)
+[Logging (Protokollierung)](xref:fundamentals/logging)
 
 ## <a name="error-handling"></a>Fehlerbehandlung
 
@@ -161,7 +189,7 @@ Weitere Informationen finden Sie unter [Session and application state (Sitzungs-
 
 ## <a name="servers"></a>Server
 
-Das Hostingmodell von ASP.NET Core lauscht nicht direkt auf Anforderungen. Das Hostingmodell ist darauf angewiesen, dass eine HTTP-Serverimplementierung die Anforderungen an die App weiterleitet. Die weitergeleitete Anforderung wird von Funktionsobjekten umschlossen, auf die Sie über Schnittstellen zugreifen können. ASP.NET Core enthält den verwalteten, plattformübergreifenden Webserver [Kestrel](xref:fundamentals/servers/kestrel). Kestrel wird in der Regel hinter einem Produktionswebserver wie [IIS](https://www.iis.net/) oder [Nginx](http://nginx.org) ausgeführt. Kestrel kann als Edgeserver ausgeführt werden.
+Das Hostingmodell von ASP.NET Core lauscht nicht direkt auf Anforderungen. Das Hostingmodell ist darauf angewiesen, dass eine HTTP-Serverimplementierung die Anforderungen an die App weiterleitet. Die weitergeleitete Anforderung wird von Funktionsobjekten umschlossen, auf die Sie über Schnittstellen zugreifen können. ASP.NET Core enthält den verwalteten, plattformübergreifenden Webserver [Kestrel](xref:fundamentals/servers/kestrel). Kestrel wird in der Regel hinter einem Produktionswebserver wie [IIS](https://www.iis.net/) oder [nginx](http://nginx.org) ausgeführt. Kestrel kann als Edgeserver ausgeführt werden.
 
 Weitere Informationen finden Sie unter [Server](xref:fundamentals/servers/index) und in den folgenden Themen:
 

@@ -3,17 +3,19 @@ title: Azure Active Directory
 author: rick-anderson
 description: "Dieses Dokument dient als Inhaltsverzeichnis für die verschiedenen Azure Active Directory-Themen in Bezug auf ASP.NET Core."
 manager: wpickett
-ms.author: riande
 ms.date: 10/4/2017
+ms.topic: article
+ms.assetid: bd272e10-7b7d-43cf-85e2-42a7f87fedb5
+ms.technology: aspnet
 ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/azure-active-directory/index
-ms.openlocfilehash: 3bc8991ff6c2017be43d9fd43ac22e5334b62681
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 4169380bd791a19c0e3363f19d4250919d58f7cd
+ms.sourcegitcommit: b23c8bd76bfe6078922dd0d50b1f94ab3772c302
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="azure-active-directory"></a>Azure Active Directory
 

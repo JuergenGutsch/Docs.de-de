@@ -1,7 +1,9 @@
 ---
 title: "Schlüsselverwaltungsdienst-Erweiterbarkeit"
 author: rick-anderson
-description: "Dieses Dokument beschreibt ASP.NET Core Data Protection schlüsselverwaltung Erweiterbarkeit."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 11/22/2017
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/extensibility/key-management
-ms.openlocfilehash: 68f590dffe8bb98813f974a5ecb9b270a5419ddf
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: ce23931e72404347ebc17c69ae90e70cd15328bc
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="key-management-extensibility"></a>Schlüsselverwaltungsdienst-Erweiterbarkeit
 

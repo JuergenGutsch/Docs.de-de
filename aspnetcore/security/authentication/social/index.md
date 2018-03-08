@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authentication/social/index
-ms.openlocfilehash: 475656b03b0d1a3e79e78e6cf3816f091ccd640b
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 7b72421f703db919daf640c54b725fc1497d2481
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="enabling-authentication-using-facebook-google-and-other-external-providers"></a>Aktivieren der Authentifizierung mithilfe von Facebook, Google und anderen externen Anbietern
 

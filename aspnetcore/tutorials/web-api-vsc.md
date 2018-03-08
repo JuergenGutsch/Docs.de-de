@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 manager: wpickett
 uid: tutorials/web-api-vsc
-ms.openlocfilehash: 9fec8904cf05fc486160c0641731c6336fe2766a
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: caf40ee1c2d45d2fbf33b07d707fa4f1be98d31c
+ms.sourcegitcommit: 8b5733f1cd5d2c2b6d432bf82fcd4be2d2d6b2a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="create-a-web-api-with-aspnet-core-mvc-and-visual-studio-code-on-linux-macos-and-windows"></a>Erstellen einer Web-API mit ASP.NET Core MVC und Visual Studio Code unter macOS Linux und Windows
 

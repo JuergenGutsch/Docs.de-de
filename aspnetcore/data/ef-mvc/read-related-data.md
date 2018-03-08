@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: get-started-article
 uid: data/ef-mvc/read-related-data
-ms.openlocfilehash: 58b05587458aacad1a633a04f0359a4d2a3605a3
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 778ef976fdbef70684ca26b0c7c548ffcc83ee00
+ms.sourcegitcommit: e45f8912ce32b4071bf7e83b8f8315cd8bba3520
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="reading-related-data---ef-core-with-aspnet-core-mvc-tutorial-6-of-10"></a>Lesen-bezogene Daten – EF-Core mit ASP.NET Core MVC-Lernprogramm (6 von 10)
 

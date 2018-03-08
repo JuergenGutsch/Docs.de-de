@@ -9,11 +9,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/localization
-ms.openlocfilehash: 5f1579b5682b2f0b3f8227f0cf6b4c0361eb1e67
-ms.sourcegitcommit: 060879fcf3f73d2366b5c811986f8695fff65db8
+ms.openlocfilehash: 1922037245a33f49c17f1c361003260462d96264
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="globalization-and-localization-in-aspnet-core"></a>Globalisierung und Lokalisierung in ASP.NET Core
 
@@ -41,7 +41,7 @@ Eingeführt in ASP.NET Core, `IStringLocalizer` und `IStringLocalizer<T>` wurden
 
 Im obigen Code die `IStringLocalizer<T>` Implementierung ergibt sich aus der [Abhängigkeitsinjektion](dependency-injection.md). Wenn der lokalisierte Wert von "Zu Title" nicht gefunden wird, der Indexerschlüssel zurückgegeben wird, d. h. die Zeichenfolge "Zu Title". Sie können die Standardeinstellung Sprache Literalzeichenfolgen in der app und umschließen sie den Lokalisierungsexperten, damit Sie sich bei der Entwicklung der app konzentrieren können. Sie entwickeln von Apps mit der Standardsprache und Schritt der Lokalisierung vorbereiten, ohne zunächst eine Standarddatei für die Ressource erstellt. Alternativ können Sie den herkömmlichen Ansatz verwenden, und geben Sie einen Schlüssel zum Abrufen der Zeichenfolge der Standardsprache. Für viele Entwickler den neuen Workflow, der ohne einer Standardsprache *resx* Datei sowie das Umbrechen von einfach die Zeichenfolgenliterale können die gering Lokalisierungsprozess einer app. Andere Entwickler bevorzugt den herkömmlichen Ablauf wie vereinfachen können zum Arbeiten mit länger Zeichenfolgenliterale und erleichtern die lokalisierte Zeichenfolgen zu aktualisieren.
 
-Verwenden der `IHtmlLocalizer<T>` Implementierung für Ressourcen, die HTML enthalten. `IHtmlLocalizer`HTML-codiert Argumente, die in der Ressourcenzeichenfolge formatiert werden, jedoch keine HTML-Codierung die Ressourcenzeichenfolge selbst darstellt. Im Beispiel für den hervorgehobenen, nur des Wert des `name` Parameter ist HTML-codiert.
+Verwenden der `IHtmlLocalizer<T>` Implementierung für Ressourcen, die HTML enthalten. `IHtmlLocalizer`HTML-codiert Argumente, die in der Ressourcenzeichenfolge formatiert werden, jedoch wird keine HTML-codiert die Ressourcenzeichenfolge selbst darstellt. Im Beispiel für den hervorgehobenen, nur des Wert des `name` Parameter ist HTML-codiert.
 
 [!code-csharp[Main](../fundamentals/localization/sample/Localization/Controllers/BookController.cs?highlight=3,5,20&start=1&end=24)]
 

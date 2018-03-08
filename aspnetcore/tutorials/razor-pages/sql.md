@@ -2,18 +2,19 @@
 title: Arbeiten mit SQL Server LocalDB und ASP.NET Core
 author: rick-anderson
 description: Informationen zum Arbeiten mit SQL Server LocalDB und ASP.NET Core.
-manager: wpickett
+keywords: ASP.NET Core, Razor-Seiten, Razor, MVC, SQL, LocalDB
 ms.author: riande
+manager: wpickett
 ms.date: 08/07/2017
-ms.prod: aspnet-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.technology: aspnet
+ms.prod: aspnet-core
 uid: tutorials/razor-pages/sql
-ms.openlocfilehash: 3bec0b7b547443dbb20c7e3a7422262c05f93975
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 1e35ce49980bf026de35359cdf413961051e3bee
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="working-with-sql-server-localdb-and-aspnet-core"></a>Arbeiten mit SQL Server LocalDB und ASP.NET Core
 

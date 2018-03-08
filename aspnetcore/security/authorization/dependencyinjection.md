@@ -1,7 +1,9 @@
 ---
 title: "Abhängigkeitsinjektion in Anforderung Handler"
 author: rick-anderson
-description: "Dieses Dokument beschreibt, wie Sie Autorisierung Anforderung Handler in einer ASP.NET Core-app mithilfe der Abhängigkeitsinjektion einfügen."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authorization/dependencyinjection
-ms.openlocfilehash: 1b7506b49109264a8c628ea2e39ded9f5ace95d3
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 308951a45ee6576f096e1cdc792208b89e476e61
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="dependency-injection-in-requirement-handlers"></a>Abhängigkeitsinjektion in Anforderung Handler
 

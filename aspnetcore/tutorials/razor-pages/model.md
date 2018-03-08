@@ -1,19 +1,20 @@
 ---
-title: "Hinzufügen eines Modells zu einer App mit Razor-Pages in ASP.NET Core"
+title: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
 author: rick-anderson
-description: "Hinzufügen eines Modells zu einer App mit Razor-Pages in ASP.NET Core"
-manager: wpickett
+description: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
+keywords: ASP.NET Core, Razor-Seiten, Razor, MVC
 ms.author: riande
+manager: wpickett
 ms.date: 07/27/2017
-ms.prod: aspnet-core
-ms.technology: aspnet
 ms.topic: get-started-article
+ms.technology: aspnet
+ms.prod: aspnet-core
 uid: tutorials/razor-pages/model
-ms.openlocfilehash: 0ce7693bfdc37d930488304b329dbcd533a5ec1d
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 195128f670223f15e1679c51fb6354c1aa527c01
+ms.sourcegitcommit: 3ba32b2b6425ed94604cb0f681db0d5bb5f8ad58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="adding-a-model-to-a-razor-pages-app"></a>Hinzufügen eines Modells zu einer App mit Razor-Pages
 

@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/app-secrets
-ms.openlocfilehash: 337782a0530a37916b04aa562174b5921ddbc46b
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 280819a6a0afb72311f0d50f7d3b83a942e9fcc3
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="safe-storage-of-app-secrets-during-development-in-aspnet-core"></a>Sichere Speicherung von app-Kennwörter während der Entwicklung in ASP.NET Core
 

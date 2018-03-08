@@ -1,7 +1,9 @@
 ---
 title: "Schutz für kurzlebige Datenanbieter"
 author: rick-anderson
-description: "Dieses Dokument erläutert die Implementierungsdetails der ASP.NET Core kurzlebige Schutz Datenanbieter."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/key-storage-ephemeral
-ms.openlocfilehash: fe8a020c77bfe614691bfd0f5d403c7d25a0df56
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: ee8dccac3ba990b110758042192779426b01fc53
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="ephemeral-data-protection-providers"></a>Schutz für kurzlebige Datenanbieter
 

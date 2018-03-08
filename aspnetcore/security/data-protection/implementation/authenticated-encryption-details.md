@@ -9,11 +9,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/authenticated-encryption-details
-ms.openlocfilehash: b58f36a5f0353da69d6f1ef4db542aba8267027a
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 6229adaa7145ff192104e2243daefb77f516c2c5
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="authenticated-encryption-details"></a>Authentifizierte Verschlüsselungsdetails
 

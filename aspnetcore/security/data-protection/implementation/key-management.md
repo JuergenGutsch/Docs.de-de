@@ -1,7 +1,9 @@
 ---
 title: "Schlüsselverwaltung"
 author: rick-anderson
-description: In diesem Dokument werden die Implementierungsdetails der ASP.NET Core Data Protection Key Management-APIs.
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/implementation/key-management
-ms.openlocfilehash: 00f48718ad8b9cc9070b7adc54b26ecd89eb320f
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 687207cb6a1cea89166fd2b6172cdc0a013de4b3
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="key-management"></a>Schlüsselverwaltung
 

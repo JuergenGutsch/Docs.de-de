@@ -9,11 +9,11 @@ ms.topic: article
 ms.technology: aspnet
 ms.prod: asp.net-core
 uid: fundamentals/url-rewriting
-ms.openlocfilehash: 99f8d1cc73fdcbd99cffe595ae89f3c61a6f9a53
-ms.sourcegitcommit: 3d512ea991ac36dfd4c800b7d1f8a27bfc50635e
+ms.openlocfilehash: dde0b5673c9885db2fecbb24b384752e5ddf70eb
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="url-rewriting-middleware-in-aspnet-core"></a>Überschreiben von URLs in ASP.NET Core Middleware
 

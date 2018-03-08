@@ -1,19 +1,20 @@
 ---
-title: Erste Schritte mit Razor-Pages mit ASP.NET Core
+title: Erste Schritte mit Razor-Seiten mit ASP.NET Core
 author: rick-anderson
-description: Erste Schritte mit Razor-Pages mit ASP.NET Core
-manager: wpickett
+description: Erste Schritte mit Razor-Seiten mit ASP.NET Core
+keywords: ASP.NET Core, Razor-Seiten, Razor, MVC
 ms.author: riande
-ms.date: 12/22/2017
-ms.prod: aspnet-core
-ms.technology: aspnet
+manager: wpickett
+ms.date: 08/27/2017
 ms.topic: get-started-article
+ms.technology: aspnet
+ms.prod: aspnet-core
 uid: tutorials/razor-pages/razor-pages-start
-ms.openlocfilehash: 54fa970d136de3903ae08b710b55f15f96f9a012
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 9d647657f21dd7e952808e5fe020f7a9e8767cd8
+ms.sourcegitcommit: 3ba32b2b6425ed94604cb0f681db0d5bb5f8ad58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="get-started-with-razor-pages-in-aspnet-core"></a>Erste Schritte mit Razor-Pages in ASP.NET Core
 
@@ -56,7 +57,4 @@ Drücken Sie **F5**, um die App im Debugmodus auszuführen, oder **STRG+F5** zur
 [!INCLUDE[razor-pages-start](../../includes/RP/razor-pages-start.md)]
 
 >[!div class="step-by-step"]
-[Weiter: Hinzufügen eines Modells](xref:tutorials/razor-pages/model)
-
->[!div class="step-by-step"]
-[Weiter: Hinzufügen eines Modells](xref:tutorials/razor-pages/model)
+[Nächstes Tutorial: Adding a model to a Razor Pages app in ASP.NET Core with Visual Studio for Mac (Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core mit Visual Studio für Mac)](xref:tutorials/razor-pages/model)

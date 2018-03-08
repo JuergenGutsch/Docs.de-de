@@ -3,17 +3,18 @@ title: Migrieren von ASP.NET Core 1.x zu 2.0
 author: scottaddie
 description: "In diesem Artikel werden die Voraussetzungen und üblichen Schritte zum Migrieren eines ASP.NET Core 1.x-Projekts zu ASP.NET Core 2.0 behandelt."
 manager: wpickett
-ms.author: scaddie
 ms.date: 10/03/2017
+ms.topic: article
+ms.technology: aspnet
 ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: migration/1x-to-2x/index
-ms.openlocfilehash: a88d22c88689d20376fec748b05fc4b5ecca3510
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 9574f1f8e0970e1b64c2910bf46794621583f18d
+ms.sourcegitcommit: 3cf879f6beaaca2d401ad980cd26cfec70c05c24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="migrating-from-aspnet-core-1x-to-aspnet-core-20"></a>Migrieren von ASP.NET Core 1.x zu ASP.NET Core 2.0
 
@@ -122,7 +123,7 @@ Um die von `WebHostBuilder.CreateDefaultBuilder` hinzugefügten Standardanbieter
 
 Die von der `CreateDefaultBuilder`-Methode verwendete Konfiguration im vorherigen Codeausschnitt können Sie sich [hier](https://github.com/aspnet/MetaPackages/blob/rel/2.0.0/src/Microsoft.AspNetCore/WebHost.cs#L152) ansehen.
 
-Weitere Informationen finden Sie unter [Konfiguration in ASP.NET Core](xref:fundamentals/configuration/index).
+Weitere Informationen finden Sie unter [Konfiguration in ASP.NET Core](xref:fundamentals/configuration).
 
 <a name="db-init-code"></a>
 

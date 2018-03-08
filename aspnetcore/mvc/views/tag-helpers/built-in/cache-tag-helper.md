@@ -81,7 +81,7 @@ Beispiel:
 
 | Attributtyp    | Beispielwert     |
 |----------------   |----------------   |
-| TimeSpan    | "@TimeSpan.FromSeconds(120)"    |
+| TimeSpan    | " @TimeSpan.FromSeconds (120)"    |
 
 
 Legt die Zeitspanne seit der ersten Anforderung, zum Zwischenspeichern des Inhalts. 
@@ -100,7 +100,7 @@ Beispiel:
 
 | Attributtyp    | Beispielwert     |
 |----------------   |----------------   |
-| TimeSpan    | "@TimeSpan.FromSeconds(60)"     |
+| TimeSpan    | " @TimeSpan.FromSeconds (60)"     |
 
 
 Legt die Zeit, die ein Eintrag im Cache entfernt werden soll, wenn er nicht zugegriffen wurde.
@@ -226,7 +226,7 @@ Mit diesem Attribut behält den Inhalt im Cache für eine Anmeldung und Abmeldun
 
 | Attributtyp    | Beispielwerte                |
 |----------------   |----------------               |
-| Zeichenfolge             | "@Model"                 |
+| Zeichenfolge             | " @Model "                 |
 
 
 Ermöglicht die Anpassung der Daten zwischengespeichert, ruft. Wenn das Objekt verweist auf das Attribut Zeichenfolge geändert wird, den Inhalt des Hilfsprogramms Tag Cache aktualisiert wurde. Eine zeichenfolgenverkettung aus Modellwerte werden häufig mit diesem Attribut zugewiesen.  Praktisch bedeutet dies, dass ein Update für die verketteten Werte des Caches erklärt wird.

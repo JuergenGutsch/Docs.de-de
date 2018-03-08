@@ -1,7 +1,9 @@
 ---
 title: Zweck Zeichenfolgen
 author: rick-anderson
-description: "Dieses Dokument wird erläutert, wie Zeichenfolgen Zweck in der ASP.NET Core Datenschutz-APIs verwendet werden."
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/consumer-apis/purpose-strings
-ms.openlocfilehash: b4a0db801ecc1c4ba0762f0c9faf7429b4ac097b
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 799c3dc2768e264307783efafee626a346a9362c
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="purpose-strings"></a>Zweck Zeichenfolgen
 

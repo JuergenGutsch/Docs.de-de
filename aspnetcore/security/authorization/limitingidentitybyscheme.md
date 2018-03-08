@@ -2,18 +2,22 @@
 title: Autorisieren Sie mit einem bestimmten Schema - ASP.NET Core
 author: rick-anderson
 description: "In diesem Artikel erläutert die Identität, die für ein bestimmtes Schema zu beschränken, bei der Arbeit mit mehrere Authentifizierungsmethoden."
-manager: wpickett
+keywords: "ASP.NET Core, Identität, Authentifizierungsschema"
 ms.author: riande
+manager: wpickett
 ms.date: 10/12/2017
+ms.topic: article
+ms.assetid: d3d6ca1b-b4b5-4bf7-898e-dcd90ec1bf8c
+ms.technology: aspnet
 ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/authorization/limitingidentitybyscheme
-ms.openlocfilehash: dd044a0829382f9f7f0c3256c6e669340f2d5240
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: cf3259f206b8d970cc6f2b0b9e52e233c30d6df3
+ms.sourcegitcommit: e3b1726cc04e80dc28464c35259edbd3bc39a438
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="authorize-with-a-specific-scheme"></a>Mit einem bestimmten Schema autorisieren
 
@@ -85,20 +89,14 @@ Die app zum Zeitpunkt der Autorisierung gibt an, dass der Handler verwendet werd
 # <a name="aspnet-core-2xtabaspnetcore2x"></a>[ASP.NET Core 2.x](#tab/aspnetcore2x)
 
 ```csharp
-[Authorize(AuthenticationSchemes = AuthSchemes)]
+[Authorize(AuthenticationSchemes = "Cookie,Bearer")]
 public class MixedController : Controller
-    // Requires the following imports:
-    // using Microsoft.AspNetCore.Authentication.Cookies;
-    // using Microsoft.AspNetCore.Authentication.JwtBearer;
-    private const string AuthSchemes =
-        CookieAuthenticationDefaults.AuthenticationScheme + "," +
-        JwtBearerDefaults.AuthenticationScheme;
 ```
 
 # <a name="aspnet-core-1xtabaspnetcore1x"></a>[ASP.NET Core 1.x](#tab/aspnetcore1x)
 
 ```csharp
-[Authorize(ActiveAuthenticationSchemes = AuthSchemes)]
+[Authorize(AuthenticationSchemes = AuthSchemes)]
 public class MixedController : Controller
     // Requires the following imports:
     // using Microsoft.AspNetCore.Authentication.Cookies;
@@ -115,16 +113,14 @@ Im vorherigen Beispiel wird dem Cookie und den Träger-Handler ausgeführt und h
 # <a name="aspnet-core-2xtabaspnetcore2x"></a>[ASP.NET Core 2.x](#tab/aspnetcore2x)
 
 ```csharp
-[Authorize(AuthenticationSchemes = 
-    JwtBearerDefaults.AuthenticationScheme)]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class MixedController : Controller
 ```
 
 # <a name="aspnet-core-1xtabaspnetcore1x"></a>[ASP.NET Core 1.x](#tab/aspnetcore1x)
 
 ```csharp
-[Authorize(ActiveAuthenticationSchemes = 
-    JwtBearerDefaults.AuthenticationScheme)]
+[Authorize(ActiveAuthenticationSchemes = "Bearer")]
 public class MixedController : Controller
 ```
 
@@ -134,14 +130,14 @@ Im vorangehenden Code ausgeführt wird nur der Handler mit dem Schema "Träger" 
 
 ## <a name="selecting-the-scheme-with-policies"></a>Das Schema mit Richtlinien auswählen
 
-Wenn Sie es vorziehen, geben Sie die gewünschten Schemas in [Richtlinie](xref:security/authorization/policies), Sie können festlegen, die `AuthenticationSchemes` Auflistung bei Ihrer Richtlinie hinzufügen:
+Wenn Sie es vorziehen, geben Sie die gewünschten Schemas in [Richtlinie](xref:security/authorization/policies#security-authorization-policies-based), Sie können festlegen, die `AuthenticationSchemes` Auflistung bei Ihrer Richtlinie hinzufügen:
 
 ```csharp
 services.AddAuthorization(options =>
 {
     options.AddPolicy("Over18", policy =>
     {
-        policy.AuthenticationSchemes.Add(JwtBearerDefaults.AuthenticationScheme);
+        policy.AuthenticationSchemes.Add("Bearer");
         policy.RequireAuthenticatedUser();
         policy.Requirements.Add(new MinimumAgeRequirement());
     });

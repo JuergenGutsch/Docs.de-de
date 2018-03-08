@@ -1,7 +1,9 @@
 ---
 title: Verschiedene APIs
 author: rick-anderson
-description: In diesem Dokument werden die ASP.NET Core Data Protection ISecret-Schnittstelle.
+description: 
+keywords: ASP.NET Core,
+ms.author: riande
 manager: wpickett
 ms.author: riande
 ms.date: 10/14/2016
@@ -9,11 +11,11 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/extensibility/misc-apis
-ms.openlocfilehash: 26474de3a1c681a8c7f8b7812e9ef859f5d448bb
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 72274a0da94a14bcd5af11d245ba626214fa2607
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="miscellaneous-apis"></a>Verschiedene APIs
 

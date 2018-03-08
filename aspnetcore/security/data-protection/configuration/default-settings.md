@@ -9,15 +9,15 @@ ms.prod: asp.net-core
 ms.technology: aspnet
 ms.topic: article
 uid: security/data-protection/configuration/default-settings
-ms.openlocfilehash: b43c14af015d5e03f46200c51a1218a581b1de0c
-ms.sourcegitcommit: a510f38930abc84c4b302029d019a34dfe76823b
+ms.openlocfilehash: 5ac2d80e7d1cebcbc792e1247608e67991ec36f4
+ms.sourcegitcommit: 8f4d4fad1ca27adf9e396f5c205c9875a3963664
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="data-protection-key-management-and-lifetime-in-aspnet-core"></a>Data Protection schlüsselverwaltung sowie seine Lebensdauer in ASP.NET Core
 
-Von [Rick Anderson](https://twitter.com/RickAndMSFT)
+<a name="data-protection-default-settings"></a>
 
 ## <a name="key-management"></a>Schlüsselverwaltung
 

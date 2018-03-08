@@ -10,11 +10,11 @@ uid: tutorials/first-web-api-mac
 helpviewer_heywords: ASP.NET Core, WebAPI, Web API, REST, mac, macOS, HTTP, Service, HTTP Service
 ms.technology: aspnet
 manager: wpickett
-ms.openlocfilehash: 4f2643a91e1523008b68df670a9734e3d4dea5a8
-ms.sourcegitcommit: 3e303620a125325bb9abd4b2d315c106fb8c47fd
+ms.openlocfilehash: 6bbd5e332e395928d8f79888ecf190f7f59a4bbc
+ms.sourcegitcommit: 732cd2684246e49e796836596643a8d37e20c46d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 10/01/2017
 ---
 # <a name="create-a-web-api-with-aspnet-core-mvc-and-visual-studio-for-mac"></a>Erstellen einer Web-API mit ASP.NET Core MVC und Visual Studio für Mac
 
@@ -196,7 +196,7 @@ Die Antwort ist [204 (Kein Inhalt)](http://www.w3.org/Protocols/rfc2616/rfc2616-
 ## <a name="next-steps"></a>Nächste Schritte
 
 * [Routing to Controller Actions (Routing zu Controlleraktionen)](xref:mvc/controllers/routing)
-* Weitere Informationen zum Bereitstellen Ihrer API finden Sie unter [Host and deploy (Hosten und Bereitstellen)](xref:host-and-deploy/index).
+* Weitere Informationen zum Bereitstellen Ihrer API finden Sie unter [Publishing and Deployment (Veröffentlichung und Bereitstellung)](../publishing/index.md).
 * [Anzeigen oder Herunterladen von Beispielcode](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/first-web-api/sample) ([Vorgehensweise zum Herunterladen](xref:tutorials/index#how-to-download-a-sample))
 * [Postman](https://www.getpostman.com/)
 * [Fiddler](https://www.telerik.com/download/fiddler)
