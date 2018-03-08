@@ -1,8 +1,8 @@
 ---
 title: "Hinzufügen der Validierung"
 author: rick-anderson
-description: "Gewusst wie: Hinzufügen der Validierung zu einer Razor-Seite"
-keywords: ASP.NET Core, Validierung, DataAnnotations, Razor, Razor-Seiten
+description: "Gewusst wie: Hinzufügen der Validierung zu einer Racor-Page"
+keywords: ASP.NET Core, Validierung, DataAnnotations, Razor, Racor-Pages
 ms.author: riande
 manager: wpickett
 ms.date: 08/07/2017

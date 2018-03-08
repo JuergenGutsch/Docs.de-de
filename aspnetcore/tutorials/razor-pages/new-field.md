@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen eines neuen Felds zu einer Razor-Seite"
+title: "Hinzufügen eines neuen Felds zu einer Racor-Page"
 author: rick-anderson
-description: "Veranschaulicht das Hinzufügen ein neues Felds zu einer Razor-Seite mit Entity Framework Core"
+description: "Veranschaulicht das Hinzufügen ein neues Felds zu einer Racor-Page mit Entity Framework Core"
 keywords: ASP.NET Core, Entity Framework Core, Migrationen
 ms.author: riande
 manager: wpickett

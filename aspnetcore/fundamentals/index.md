@@ -79,7 +79,7 @@ Weitere Informationen finden Sie unter [Application startup (Starten von Anwendu
 
 ## <a name="content-root"></a>Inhaltsstammverzeichnis
 
-Das Inhaltsstammverzeichnis ist der Basispfad zu allen von der Anwendung verwendeten Inhalten wie Ansichten, [Razor-Seiten](xref:mvc/razor-pages/index) und statischen Objekten. Standardmäßig entspricht das Inhaltsstammverzeichnis dem Anwendungsbasispfad der ausführbaren Datei, mit der die Anwendung gehostet wird.
+Das Inhaltsstammverzeichnis ist der Basispfad zu allen von der Anwendung verwendeten Inhalten wie Ansichten, [Racor-Pages](xref:mvc/razor-pages/index) und statischen Objekten. Standardmäßig entspricht das Inhaltsstammverzeichnis dem Anwendungsbasispfad der ausführbaren Datei, mit der die Anwendung gehostet wird.
 
 ## <a name="web-root"></a>Webstammverzeichnis
 

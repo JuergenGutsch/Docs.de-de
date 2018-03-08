@@ -2,7 +2,7 @@
 title: Arbeiten mit SQL Server LocalDB und ASP.NET Core
 author: rick-anderson
 description: Informationen zum Arbeiten mit SQL Server LocalDB und ASP.NET Core.
-keywords: ASP.NET Core, Razor-Seiten, Razor, MVC, SQL, LocalDB
+keywords: ASP.NET Core, Racor-Pages, Razor, MVC, SQL, LocalDB
 ms.author: riande
 manager: wpickett
 ms.date: 08/07/2017

@@ -1,8 +1,8 @@
 ---
-title: Erste Schritte mit Razor-Seiten mit ASP.NET Core
+title: Erste Schritte mit Racor-Pages mit ASP.NET Core
 author: rick-anderson
-description: Erste Schritte mit Razor-Seiten mit ASP.NET Core
-keywords: ASP.NET Core, Razor-Seiten, Razor, MVC
+description: Erste Schritte mit Racor-Pages mit ASP.NET Core
+keywords: ASP.NET Core, Racor-Pages, Razor, MVC
 ms.author: riande
 manager: wpickett
 ms.date: 08/27/2017
@@ -57,4 +57,4 @@ Drücken Sie **F5**, um die App im Debugmodus auszuführen, oder **STRG+F5** zur
 [!INCLUDE[razor-pages-start](../../includes/RP/razor-pages-start.md)]
 
 >[!div class="step-by-step"]
-[Nächstes Tutorial: Adding a model to a Razor Pages app in ASP.NET Core with Visual Studio for Mac (Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core mit Visual Studio für Mac)](xref:tutorials/razor-pages/model)
+[Nächstes Tutorial: Adding a model to a Razor Pages app in ASP.NET Core with Visual Studio for Mac (Hinzufügen eines Modells zu einer App mit Racor-Pages in ASP.NET Core mit Visual Studio für Mac)](xref:tutorials/razor-pages/model)

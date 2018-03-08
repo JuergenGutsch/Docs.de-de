@@ -1,8 +1,8 @@
 ---
-title: "Gerüstbau mit Razor-Seiten in ASP.NET Core"
+title: "Gerüstbau mit Racor-Pages in ASP.NET Core"
 author: rick-anderson
-description: "Gibt nähere Informationen über durch Gerüstbau erstellte Razor-Seiten."
-keywords: ASP.NET Core, Razor-Seiten, Razor, MVC
+description: "Gibt nähere Informationen über durch Gerüstbau erstellte Racor-Pages."
+keywords: ASP.NET Core, Racor-Pages, Razor, MVC
 ms.author: riande
 manager: wpickett
 ms.date: 09/27/2017
@@ -20,7 +20,7 @@ ms.lasthandoff: 10/04/2017
 
 [!INCLUDE[model1](../../includes/RP/page1.md)]
 
-In diesem Tutorial werden die Razor-Seiten näher untersucht, die im vorherigen Tutorial [Hinzufügen eines Modells](xref:tutorials/razor-pages/model#scaffold-the-movie-model) durch Gerüstbau erstellt wurden. 
+In diesem Tutorial werden die Racor-Pages näher untersucht, die im vorherigen Tutorial [Hinzufügen eines Modells](xref:tutorials/razor-pages/model#scaffold-the-movie-model) durch Gerüstbau erstellt wurden. 
 
 Beispiel [Anzeigen oder Herunterladen](https://github.com/aspnet/Docs/tree/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie).
 
@@ -28,11 +28,11 @@ Beispiel [Anzeigen oder Herunterladen](https://github.com/aspnet/Docs/tree/maste
 
 Betrachten Sie die *Pages/Movies/Index.cshtml.cs*-CodeBehind-Datei: [!code-csharp[Main](razor-pages-start/snapshot_sample/RazorPagesMovie/Pages/Movies/Index.cshtml.cs)]
 
-Razor-Seiten werden von `PageModel` abgeleitet. Gemäß der Konvention wird die von `PageModel` abgeleitete Klasse `<PageName>Model` genannt. Der Konstruktor verwendet [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection), um `MovieContext` zur Seite hinzuzufügen. Alle per Gerüstbau erstellten Seiten folgen diesem Muster.
+Racor-Pages werden von `PageModel` abgeleitet. Gemäß der Konvention wird die von `PageModel` abgeleitete Klasse `<PageName>Model` genannt. Der Konstruktor verwendet [Abhängigkeitsinjektion](xref:fundamentals/dependency-injection), um `MovieContext` zur Seite hinzuzufügen. Alle per Gerüstbau erstellten Seiten folgen diesem Muster.
 
-Wenn eine Anforderung an die Seite erfolgt, gibt die Methode `OnGetAsync` eine Filmliste an die Razor-Seite zurück. `OnGetAsync` oder `OnGet` werden für eine Razor-Seite aufgerufen, um den Zustand der Seite zu initialisieren. In diesem Fall ruft `OnGetAsync` eine Liste von Filmen für die Anzeige ab.
+Wenn eine Anforderung an die Seite erfolgt, gibt die Methode `OnGetAsync` eine Filmliste an die Racor-Page zurück. `OnGetAsync` oder `OnGet` werden für eine Racor-Page aufgerufen, um den Zustand der Seite zu initialisieren. In diesem Fall ruft `OnGetAsync` eine Liste von Filmen für die Anzeige ab.
 
-Betrachten Sie die *Pages/Movies/Index.cshtml*-Razor-Seite:
+Betrachten Sie die *Pages/Movies/Index.cshtml*-Racor-Page:
 
 [!code-cshtml[Main](razor-pages-start/snapshot_sample/RazorPagesMovie/Pages/Movies/Index.cshtml)]
 
@@ -53,7 +53,7 @@ Das HTML-Hilfsprogramm `DisplayNameFor` überprüft die Eigenschaft `Title`, auf
 
 [!code-cshtml[Main](razor-pages-start/snapshot_sample/RazorPagesMovie/Pages/Movies/Index.cshtml?range=1-2&highlight=2)]
 
-Die `@model`-Anweisung gibt den Typ des Modells an, das an die Razor-Seite weitergegeben wird. Im vorherigen Beispiel macht die `@model`-Linie die von `PageModel` abgeleitete Klasse der Razor-Seite verfügbar. Das Modell wird in den [HTML Helpers (HTML-Hilfsprogrammen)](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs#understanding-html-helpers) `@Html.DisplayNameFor` und `@Html.DisplayName` auf der Seite verwendet.
+Die `@model`-Anweisung gibt den Typ des Modells an, das an die Racor-Page weitergegeben wird. Im vorherigen Beispiel macht die `@model`-Linie die von `PageModel` abgeleitete Klasse der Racor-Page verfügbar. Das Modell wird in den [HTML Helpers (HTML-Hilfsprogrammen)](https://docs.microsoft.com/aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs#understanding-html-helpers) `@Html.DisplayNameFor` und `@Html.DisplayName` auf der Seite verwendet.
 
 <!-- why don't xref links work?
 [HTML Helpers 2](xref:aspnet/mvc/overview/older-versions-1/views/creating-custom-html-helpers-cs)
@@ -99,7 +99,7 @@ Ersetzen Sie das vorhergehende Element durch das folgende Markup.
 <a asp-page="/Movies/Index" class="navbar-brand">RpMovie</a>
 ```
 
-Das vorangehende Ankerelement ist ein [Tag Helper (Taghilfsprogramm)](xref:mvc/views/tag-helpers/intro). In diesem Fall handelt es sich um ein [Anchor Tag Helper (Anchor-Taghilfsprogramm)](xref:mvc/views/tag-helpers/builtin-th/anchor-tag-helper). Das Taghilfsattribut und der -wert `asp-page="/Movies/Index"` erstellt einen Link zur Razor-Seite `/Movies/Index`.
+Das vorangehende Ankerelement ist ein [Tag Helper (Taghilfsprogramm)](xref:mvc/views/tag-helpers/intro). In diesem Fall handelt es sich um ein [Anchor Tag Helper (Anchor-Taghilfsprogramm)](xref:mvc/views/tag-helpers/builtin-th/anchor-tag-helper). Das Taghilfsattribut und der -wert `asp-page="/Movies/Index"` erstellt einen Link zur Racor-Page `/Movies/Index`.
 
 Speichern Sie Ihre Änderungen, und testen Sie die App, indem Sie auf den Link **RpMovie** klicken. Weitere Informationen finden Sie in der Datei [_Layout.cshtml](https://github.com/aspnet/Docs/blob/master/aspnetcore/tutorials/razor-pages/razor-pages-start/sample/RazorPagesMovie/Pages/_Layout.cshtml) in GitHub.
 
@@ -121,9 +121,9 @@ Wenn es zu Modellfehlern kommt, wird das Formular mit allen bereitgestellten For
 
 Wenn keine Modellfehler auftreten, werden die Daten gespeichert und der Browser zur Indexseite umgeleitet.
 
-### <a name="the-create-razor-page"></a>Die Razor-Seite „Create“
+### <a name="the-create-razor-page"></a>Die Racor-Page „Create“
 
-Betrachten Sie die Datei *Pages/Movies/Create.cshtml* der Razor-Seite:
+Betrachten Sie die Datei *Pages/Movies/Create.cshtml* der Racor-Page:
 
 [!code-cshtml[Main](razor-pages-start/snapshot_sample/RazorPagesMovie/Pages/Movies/Create.cshtml)]
 

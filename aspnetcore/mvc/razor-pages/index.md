@@ -1,8 +1,8 @@
 ---
-title: "Einführung in Razor-Seiten in ASP.NET Core"
+title: "Einführung in Racor-Pages in ASP.NET Core"
 author: Rick-Anderson
-description: "Diese Dokumentation stellt eine Übersicht über die Verwendung von Razor-Seiten in ASP.NET Core bereit, um die Entwicklung von auf Seiten bezogene Szenarios zu vereinfachen."
-keywords: ASP.NET Core, Razor-Seiten
+description: "Diese Dokumentation stellt eine Übersicht über die Verwendung von Racor-Pages in ASP.NET Core bereit, um die Entwicklung von auf Seiten bezogene Szenarios zu vereinfachen."
+keywords: ASP.NET Core, Racor-Pages
 ms.author: riande
 manager: wpickett
 ms.date: 09/12/2017

@@ -37,12 +37,12 @@ Die folgenden detaillierten Anleitungen für die Entwicklung von ASP.NET Core-An
    * [Web-App mit Visual Studio für Mac](first-mvc-app-mac/index.md)
    * [Web-App mit Visual Studio Code unter Mac oder Linux](first-mvc-app-xplat/index.md)
 
-* [Einführung in Razor-Seiten in ASP.NET Core](xref:mvc/razor-pages/index)
-* Erstellen einer Razor-Seiten-Web-App mit ASP.NET Core
+* [Einführung in Racor-Pages in ASP.NET Core](xref:mvc/razor-pages/index)
+* Erstellen einer Racor-Pages-Web-App mit ASP.NET Core
 
-   * [Razor-Seiten unter Windows](xref:tutorials/razor-pages/index)
-   * [Razor-Seiten unter Mac](xref:tutorials/razor-pages-mac/index)
-   * [Razor-Seiten mit VS Code](xref:tutorials/razor-pages-vsc/index)  
+   * [Racor-Pages unter Windows](xref:tutorials/razor-pages/index)
+   * [Racor-Pages unter Mac](xref:tutorials/razor-pages-mac/index)
+   * [Racor-Pages mit VS Code](xref:tutorials/razor-pages-vsc/index)  
 
 * Erstellen einer ASP.NET Core-MVC-Web-App
 

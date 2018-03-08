@@ -1,8 +1,8 @@
 ---
-title: Hochladen von Dateien auf eine Razor-Seite in ASP.NET Core
+title: Hochladen von Dateien auf eine Racor-Page in ASP.NET Core
 author: guardrex
-description: Erfahren Sie, wie Sie Dateien auf eine Razor-Seite hochladen.
-keywords: ASP.NET Core, Razor, Razor-Seiten, IFormFile, Dateiupload, Dateiupload
+description: Erfahren Sie, wie Sie Dateien auf eine Racor-Page hochladen.
+keywords: ASP.NET Core, Razor, Racor-Pages, IFormFile, Dateiupload, Dateiupload
 ms.author: riande
 manager: wpickett
 ms.date: 09/12/2017

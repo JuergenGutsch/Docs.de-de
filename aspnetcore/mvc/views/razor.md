@@ -192,7 +192,7 @@ Der Code wird der folgenden HTML-Code gerendert:
 
 ### <a name="implicit-transitions"></a>Implizite Übergänge
 
-In einem Codeblock die Standardsprache ist c#, aber die Razor-Seite können Übergang zurück zum HTML:
+In einem Codeblock die Standardsprache ist c#, aber die Racor-Page können Übergang zurück zum HTML:
 
 ```cshtml
 @{
@@ -484,7 +484,7 @@ Die `@inherits` Richtlinie bietet vollen Zugriff auf die Klasse erbt von die Sic
 @inherits TypeNameOfClassToInheritFrom
 ```
 
-Der folgende Code ist ein benutzerdefinierter Typ des Razor-Seite:
+Der folgende Code ist ein benutzerdefinierter Typ des Racor-Page:
 
 [!code-csharp[Main](razor/sample/Classes/CustomRazorPage.cs)]
 
@@ -516,11 +516,11 @@ Wenn "rick@contoso.com" übergeben wird im Modell, Ansicht die folgenden HTML-Ma
 ### <a name="inject"></a>@inject
 
 
-Die `@inject` Richtlinie ermöglicht die Razor-Seite zum Einfügen von eines Diensts von der [Dienstcontainer](xref:fundamentals/dependency-injection) in eine Sicht. Weitere Informationen finden Sie unter [Abhängigkeitsinjektion in Sichten](xref:mvc/views/dependency-injection).
+Die `@inject` Richtlinie ermöglicht die Racor-Page zum Einfügen von eines Diensts von der [Dienstcontainer](xref:fundamentals/dependency-injection) in eine Sicht. Weitere Informationen finden Sie unter [Abhängigkeitsinjektion in Sichten](xref:mvc/views/dependency-injection).
 
 ### <a name="functions"></a>@functions
 
-Die `@functions` Richtlinie ermöglicht eine Razor-Seite, um eine Sicht Funktionsebene Inhalt hinzuzufügen:
+Die `@functions` Richtlinie ermöglicht eine Racor-Page, um eine Sicht Funktionsebene Inhalt hinzuzufügen:
 
 ```cshtml
 @functions { // C# Code }
@@ -617,6 +617,6 @@ Das Razor-Ansichtsmodul führt die Groß-/Kleinschreibung Suchvorgänge für Ans
 Entwicklern wird empfohlen, die Groß-/Kleinschreibung von Datei- und Verzeichnisnamen, die Groß-/Kleinschreibung der entsprechen:
 
     * Namen von Bereich, Controller und Aktion. 
-    * Razor-Seiten.
+    * Racor-Pages.
     
 Groß-wird sichergestellt, dass die Bereitstellungen ihrer Ansichten unabhängig von der zugrunde liegenden Dateisystem suchen.

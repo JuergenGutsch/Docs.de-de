@@ -1,8 +1,8 @@
 ---
-title: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
+title: "Hinzufügen eines Modells zu einer App mit Racor-Pages in ASP.NET Core"
 author: rick-anderson
-description: "Hinzufügen eines Modells zu einer App mit Razor-Seiten in ASP.NET Core"
-keywords: ASP.NET Core, Razor-Seiten, Razor, MVC
+description: "Hinzufügen eines Modells zu einer App mit Racor-Pages in ASP.NET Core"
+keywords: ASP.NET Core, Racor-Pages, Razor, MVC
 ms.author: riande
 manager: wpickett
 ms.date: 07/27/2017
